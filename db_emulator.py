@@ -102,7 +102,7 @@ class Neo4jDatabaseEmulator:
         
         return db_emulator
     
-    def save_to_file(self, data: Dict[str, Any], filename: str = "db_emulator.json"):
+    def save_to_file(self, data: Dict[str, Any], filename: str = "src/lib/db_emulator.json"):
         """Save the database emulator data to a JSON file."""
         try:
             with open(filename, 'w', encoding='utf-8') as f:

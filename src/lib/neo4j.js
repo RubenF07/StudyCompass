@@ -52,10 +52,8 @@ export async function runQuery(query, parameters = {}) {
 	// }
 
 	// For demo: Return the student data from db_emulator.json if available
-	const fs = await import('fs/promises');
 	try {
-		const dbEmulatorRaw = await fs.readFile('db_emulator.json', 'utf-8');
-		const dbEmulator = JSON.parse(dbEmulatorRaw);
+		const dbEmulator = await import('./db_emulator.json');
 
 		// Use the id as passed in parameters
 		let studentId = parameters.studentId;
@@ -64,7 +62,7 @@ export async function runQuery(query, parameters = {}) {
 			throw new Error('No studentId provided in parameters');
 		}
 
-		const studentData = dbEmulator[studentId]["studentData"];
+		const studentData = dbEmulator.default[studentId]["studentData"];
 		if (!studentData) {
 			throw new Error(`Student ID ${studentId} not found in db_emulator.json`);
 		}
