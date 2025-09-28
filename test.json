@@ -1,0 +1,4649 @@
+[{
+  "s": {
+      "identity": {
+          "low": 191,
+          "high": 0
+      },
+      "labels": [
+          "Student"
+      ],
+      "properties": {
+          "preferredCourseLoad": {
+              "low": 5,
+              "high": 0
+          },
+          "preferredInstructionMode": "Hybrid",
+          "workHoursPerWeek": {
+              "low": 13,
+              "high": 0
+          },
+          "learningStyle": "Auditory",
+          "financialAidStatus": "Self-Pay",
+          "name": "April Shea",
+          "enrollmentDate": {
+              "year": {
+                  "low": 2020,
+                  "high": 0
+              },
+              "month": {
+                  "low": 5,
+                  "high": 0
+              },
+              "day": {
+                  "low": 21,
+                  "high": 0
+              }
+          },
+          "id": "NC59222",
+          "expectedGraduation": {
+              "year": {
+                  "low": 2027,
+                  "high": 0
+              },
+              "month": {
+                  "low": 6,
+                  "high": 0
+              },
+              "day": {
+                  "low": 2,
+                  "high": 0
+              }
+          },
+          "preferredPace": "Standard"
+      },
+      "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:191"
+  },
+  "relationships": [
+      {
+          "relationship": "PURSUING",
+          "target": {
+              "identity": {
+                  "low": 39,
+                  "high": 0
+              },
+              "labels": [
+                  "Degree"
+              ],
+              "properties": {
+                  "coreCreditsRequired": {
+                      "low": 75,
+                      "high": 0
+                  },
+                  "electiveCreditsRequired": {
+                      "low": 45,
+                      "high": 0
+                  },
+                  "name": "Bachelor of Science in Computer Science",
+                  "id": "BS-ComputerScience-1",
+                  "department": "Computer Science",
+                  "type": "Bachelor",
+                  "totalCreditsRequired": {
+                      "low": 120,
+                      "high": 0
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:39"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "PURSUING",
+          "target": {
+              "identity": {
+                  "low": 44,
+                  "high": 0
+              },
+              "labels": [
+                  "Degree"
+              ],
+              "properties": {
+                  "coreCreditsRequired": {
+                      "low": 65,
+                      "high": 0
+                  },
+                  "electiveCreditsRequired": {
+                      "low": 55,
+                      "high": 0
+                  },
+                  "name": "Bachelor of Arts in Biology",
+                  "id": "BA-Biology-2",
+                  "department": "Biology",
+                  "type": "Bachelor",
+                  "totalCreditsRequired": {
+                      "low": 120,
+                      "high": 0
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:44"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "COMPLETED",
+          "target": {
+              "identity": {
+                  "low": 1,
+                  "high": 0
+              },
+              "labels": [
+                  "Course"
+              ],
+              "properties": {
+                  "auditoryLearnerSuccess": 0.86,
+                  "avgDifficulty": {
+                      "low": 4,
+                      "high": 0
+                  },
+                  "level": {
+                      "low": 400,
+                      "high": 0
+                  },
+                  "avgTimeCommitment": {
+                      "low": 11,
+                      "high": 0
+                  },
+                  "readingLearnerSuccess": 0.92,
+                  "tags": [
+                      "Computer Science",
+                      "Level-4"
+                  ],
+                  "credits": {
+                      "low": 3,
+                      "high": 0
+                  },
+                  "termAvailability": [
+                      "Fall",
+                      "Spring"
+                  ],
+                  "name": "Special Topics in Edge Computing",
+                  "instructionModes": [
+                      "In-person",
+                      "Online",
+                      "Hybrid"
+                  ],
+                  "id": "CSDD 400",
+                  "department": "Computer Science",
+                  "kinestheticLearnerSuccess": 0.88,
+                  "visualLearnerSuccess": 0.71
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:1"
+          },
+          "properties": {
+              "enjoyment": false,
+              "term": "Fall2023",
+              "grade": "D",
+              "difficulty": {
+                  "low": 4,
+                  "high": 0
+              },
+              "instructionMode": "Hybrid",
+              "timeSpent": {
+                  "low": 11,
+                  "high": 0
+              }
+          }
+      },
+      {
+          "relationship": "COMPLETED",
+          "target": {
+              "identity": {
+                  "low": 4,
+                  "high": 0
+              },
+              "labels": [
+                  "Course"
+              ],
+              "properties": {
+                  "auditoryLearnerSuccess": 0.73,
+                  "avgDifficulty": {
+                      "low": 4,
+                      "high": 0
+                  },
+                  "level": {
+                      "low": 200,
+                      "high": 0
+                  },
+                  "avgTimeCommitment": {
+                      "low": 9,
+                      "high": 0
+                  },
+                  "readingLearnerSuccess": 0.77,
+                  "tags": [
+                      "Computer Science",
+                      "Level-2"
+                  ],
+                  "credits": {
+                      "low": 1,
+                      "high": 0
+                  },
+                  "termAvailability": [
+                      "Fall",
+                      "Spring",
+                      "Summer"
+                  ],
+                  "name": "Artificial Intelligence",
+                  "instructionModes": [
+                      "In-person",
+                      "Online"
+                  ],
+                  "id": "CSBB 200",
+                  "department": "Computer Science",
+                  "kinestheticLearnerSuccess": 0.62,
+                  "visualLearnerSuccess": 0.82
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:4"
+          },
+          "properties": {
+              "enjoyment": true,
+              "term": "Summer2023",
+              "grade": "A",
+              "difficulty": {
+                  "low": 4,
+                  "high": 0
+              },
+              "instructionMode": "Online",
+              "timeSpent": {
+                  "low": 10,
+                  "high": 0
+              }
+          }
+      },
+      {
+          "relationship": "COMPLETED",
+          "target": {
+              "identity": {
+                  "low": 5,
+                  "high": 0
+              },
+              "labels": [
+                  "Course"
+              ],
+              "properties": {
+                  "auditoryLearnerSuccess": 0.98,
+                  "avgDifficulty": {
+                      "low": 2,
+                      "high": 0
+                  },
+                  "level": {
+                      "low": 200,
+                      "high": 0
+                  },
+                  "avgTimeCommitment": {
+                      "low": 7,
+                      "high": 0
+                  },
+                  "readingLearnerSuccess": 0.73,
+                  "tags": [
+                      "Computer Science",
+                      "Level-2",
+                      "Intro",
+                      "Programming"
+                  ],
+                  "credits": {
+                      "low": 1,
+                      "high": 0
+                  },
+                  "termAvailability": [
+                      "Fall",
+                      "Spring"
+                  ],
+                  "name": "Introduction to Programming",
+                  "instructionModes": [
+                      "In-person",
+                      "Online",
+                      "Hybrid"
+                  ],
+                  "id": "CSUU 200",
+                  "department": "Computer Science",
+                  "kinestheticLearnerSuccess": 0.83,
+                  "visualLearnerSuccess": 0.74
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:5"
+          },
+          "properties": {
+              "enjoyment": true,
+              "term": "Spring2023",
+              "grade": "B",
+              "difficulty": {
+                  "low": 2,
+                  "high": 0
+              },
+              "instructionMode": "In-person",
+              "timeSpent": {
+                  "low": 6,
+                  "high": 0
+              }
+          }
+      },
+      {
+          "relationship": "COMPLETED",
+          "target": {
+              "identity": {
+                  "low": 8,
+                  "high": 0
+              },
+              "labels": [
+                  "Course"
+              ],
+              "properties": {
+                  "auditoryLearnerSuccess": 0.92,
+                  "avgDifficulty": {
+                      "low": 4,
+                      "high": 0
+                  },
+                  "level": {
+                      "low": 100,
+                      "high": 0
+                  },
+                  "avgTimeCommitment": {
+                      "low": 8,
+                      "high": 0
+                  },
+                  "readingLearnerSuccess": 0.88,
+                  "tags": [
+                      "Computer Science",
+                      "Level-1",
+                      "Mobile"
+                  ],
+                  "credits": {
+                      "low": 3,
+                      "high": 0
+                  },
+                  "termAvailability": [
+                      "Fall",
+                      "Spring"
+                  ],
+                  "name": "Principles of Mobile Computing",
+                  "instructionModes": [
+                      "In-person",
+                      "Hybrid"
+                  ],
+                  "id": "CSLL 100",
+                  "department": "Computer Science",
+                  "kinestheticLearnerSuccess": 0.93,
+                  "visualLearnerSuccess": 0.66
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:8"
+          },
+          "properties": {
+              "enjoyment": false,
+              "term": "Spring2023",
+              "grade": "C+",
+              "difficulty": {
+                  "low": 4,
+                  "high": 0
+              },
+              "instructionMode": "Hybrid",
+              "timeSpent": {
+                  "low": 7,
+                  "high": 0
+              }
+          }
+      },
+      {
+          "relationship": "COMPLETED",
+          "target": {
+              "identity": {
+                  "low": 9,
+                  "high": 0
+              },
+              "labels": [
+                  "Course"
+              ],
+              "properties": {
+                  "auditoryLearnerSuccess": 0.95,
+                  "avgDifficulty": {
+                      "low": 3,
+                      "high": 0
+                  },
+                  "level": {
+                      "low": 300,
+                      "high": 0
+                  },
+                  "avgTimeCommitment": {
+                      "low": 8,
+                      "high": 0
+                  },
+                  "readingLearnerSuccess": 0.98,
+                  "tags": [
+                      "Computer Science",
+                      "Level-3",
+                      "Theory",
+                      "Vision"
+                  ],
+                  "credits": {
+                      "low": 4,
+                      "high": 0
+                  },
+                  "termAvailability": [
+                      "Fall",
+                      "Spring",
+                      "Summer"
+                  ],
+                  "name": "Computer Vision Theory",
+                  "instructionModes": [
+                      "In-person",
+                      "Online",
+                      "Hybrid"
+                  ],
+                  "id": "CSLL 300",
+                  "department": "Computer Science",
+                  "kinestheticLearnerSuccess": 0.97,
+                  "visualLearnerSuccess": 0.64
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:9"
+          },
+          "properties": {
+              "enjoyment": false,
+              "term": "Summer2024",
+              "grade": "C-",
+              "difficulty": {
+                  "low": 3,
+                  "high": 0
+              },
+              "instructionMode": "Hybrid",
+              "timeSpent": {
+                  "low": 9,
+                  "high": 0
+              }
+          }
+      },
+      {
+          "relationship": "COMPLETED",
+          "target": {
+              "identity": {
+                  "low": 11,
+                  "high": 0
+              },
+              "labels": [
+                  "Course"
+              ],
+              "properties": {
+                  "auditoryLearnerSuccess": 0.82,
+                  "avgDifficulty": {
+                      "low": 2,
+                      "high": 0
+                  },
+                  "level": {
+                      "low": 100,
+                      "high": 0
+                  },
+                  "avgTimeCommitment": {
+                      "low": 4,
+                      "high": 0
+                  },
+                  "readingLearnerSuccess": 1,
+                  "tags": [
+                      "Computer Science",
+                      "Level-1",
+                      "Intro"
+                  ],
+                  "credits": {
+                      "low": 3,
+                      "high": 0
+                  },
+                  "termAvailability": [
+                      "Fall",
+                      "Spring"
+                  ],
+                  "name": "Introduction to Natural Language Processing",
+                  "instructionModes": [
+                      "In-person",
+                      "Online"
+                  ],
+                  "id": "CSTT 100",
+                  "department": "Computer Science",
+                  "kinestheticLearnerSuccess": 0.65,
+                  "visualLearnerSuccess": 1
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:11"
+          },
+          "properties": {
+              "enjoyment": false,
+              "term": "Spring2023",
+              "grade": "B-",
+              "difficulty": {
+                  "low": 2,
+                  "high": 0
+              },
+              "instructionMode": "Online",
+              "timeSpent": {
+                  "low": 5,
+                  "high": 0
+              }
+          }
+      },
+      {
+          "relationship": "COMPLETED",
+          "target": {
+              "identity": {
+                  "low": 14,
+                  "high": 0
+              },
+              "labels": [
+                  "Course"
+              ],
+              "properties": {
+                  "auditoryLearnerSuccess": 0.67,
+                  "avgDifficulty": {
+                      "low": 4,
+                      "high": 0
+                  },
+                  "level": {
+                      "low": 100,
+                      "high": 0
+                  },
+                  "avgTimeCommitment": {
+                      "low": 6,
+                      "high": 0
+                  },
+                  "readingLearnerSuccess": 0.88,
+                  "tags": [
+                      "Computer Science",
+                      "Level-1"
+                  ],
+                  "credits": {
+                      "low": 2,
+                      "high": 0
+                  },
+                  "termAvailability": [
+                      "Fall",
+                      "Spring"
+                  ],
+                  "name": "Basic Software Testing",
+                  "instructionModes": [
+                      "In-person",
+                      "Online"
+                  ],
+                  "id": "CSSS 100",
+                  "department": "Computer Science",
+                  "kinestheticLearnerSuccess": 0.65,
+                  "visualLearnerSuccess": 0.63
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:14"
+          },
+          "properties": {
+              "enjoyment": false,
+              "term": "Fall2024",
+              "grade": "C",
+              "difficulty": {
+                  "low": 4,
+                  "high": 0
+              },
+              "instructionMode": "Online",
+              "timeSpent": {
+                  "low": 6,
+                  "high": 0
+              }
+          }
+      },
+      {
+          "relationship": "COMPLETED",
+          "target": {
+              "identity": {
+                  "low": 15,
+                  "high": 0
+              },
+              "labels": [
+                  "Course"
+              ],
+              "properties": {
+                  "auditoryLearnerSuccess": 0.66,
+                  "avgDifficulty": {
+                      "low": 4,
+                      "high": 0
+                  },
+                  "level": {
+                      "low": 200,
+                      "high": 0
+                  },
+                  "avgTimeCommitment": {
+                      "low": 7,
+                      "high": 0
+                  },
+                  "readingLearnerSuccess": 0.9,
+                  "tags": [
+                      "Computer Science",
+                      "Level-2"
+                  ],
+                  "credits": {
+                      "low": 3,
+                      "high": 0
+                  },
+                  "termAvailability": [
+                      "Fall",
+                      "Spring",
+                      "Summer"
+                  ],
+                  "name": "Artificial Intelligence",
+                  "instructionModes": [
+                      "In-person",
+                      "Online"
+                  ],
+                  "id": "CSPP 200",
+                  "department": "Computer Science",
+                  "kinestheticLearnerSuccess": 0.83,
+                  "visualLearnerSuccess": 0.69
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:15"
+          },
+          "properties": {
+              "enjoyment": true,
+              "term": "Summer2023",
+              "grade": "B",
+              "difficulty": {
+                  "low": 4,
+                  "high": 0
+              },
+              "instructionMode": "Online",
+              "timeSpent": {
+                  "low": 5,
+                  "high": 0
+              }
+          }
+      },
+      {
+          "relationship": "COMPLETED",
+          "target": {
+              "identity": {
+                  "low": 18,
+                  "high": 0
+              },
+              "labels": [
+                  "Course"
+              ],
+              "properties": {
+                  "auditoryLearnerSuccess": 0.98,
+                  "avgDifficulty": {
+                      "low": 4,
+                      "high": 0
+                  },
+                  "level": {
+                      "low": 200,
+                      "high": 0
+                  },
+                  "avgTimeCommitment": {
+                      "low": 9,
+                      "high": 0
+                  },
+                  "readingLearnerSuccess": 0.82,
+                  "tags": [
+                      "Computer Science",
+                      "Level-2",
+                      "Game"
+                  ],
+                  "credits": {
+                      "low": 3,
+                      "high": 0
+                  },
+                  "termAvailability": [
+                      "Fall",
+                      "Spring"
+                  ],
+                  "name": "Game Development",
+                  "instructionModes": [
+                      "In-person",
+                      "Online",
+                      "Hybrid"
+                  ],
+                  "id": "CSHH 200",
+                  "department": "Computer Science",
+                  "kinestheticLearnerSuccess": 0.95,
+                  "visualLearnerSuccess": 0.9
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:18"
+          },
+          "properties": {
+              "enjoyment": true,
+              "term": "Fall2024",
+              "grade": "A-",
+              "difficulty": {
+                  "low": 4,
+                  "high": 0
+              },
+              "instructionMode": "Online",
+              "timeSpent": {
+                  "low": 7,
+                  "high": 0
+              }
+          }
+      },
+      {
+          "relationship": "COMPLETED",
+          "target": {
+              "identity": {
+                  "low": 20,
+                  "high": 0
+              },
+              "labels": [
+                  "Course"
+              ],
+              "properties": {
+                  "auditoryLearnerSuccess": 0.76,
+                  "avgDifficulty": {
+                      "low": 2,
+                      "high": 0
+                  },
+                  "level": {
+                      "low": 100,
+                      "high": 0
+                  },
+                  "avgTimeCommitment": {
+                      "low": 4,
+                      "high": 0
+                  },
+                  "readingLearnerSuccess": 0.88,
+                  "tags": [
+                      "Computer Science",
+                      "Level-1",
+                      "Data"
+                  ],
+                  "credits": {
+                      "low": 3,
+                      "high": 0
+                  },
+                  "termAvailability": [
+                      "Fall",
+                      "Spring"
+                  ],
+                  "name": "Fundamentals of Big Data Analytics",
+                  "instructionModes": [
+                      "In-person"
+                  ],
+                  "id": "CSMM 100",
+                  "department": "Computer Science",
+                  "kinestheticLearnerSuccess": 0.7,
+                  "visualLearnerSuccess": 0.68
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:20"
+          },
+          "properties": {
+              "enjoyment": true,
+              "term": "Fall2023",
+              "grade": "B",
+              "difficulty": {
+                  "low": 2,
+                  "high": 0
+              },
+              "instructionMode": "In-person",
+              "timeSpent": {
+                  "low": 3,
+                  "high": 0
+              }
+          }
+      },
+      {
+          "relationship": "COMPLETED",
+          "target": {
+              "identity": {
+                  "low": 25,
+                  "high": 0
+              },
+              "labels": [
+                  "Course"
+              ],
+              "properties": {
+                  "auditoryLearnerSuccess": 0.71,
+                  "avgDifficulty": {
+                      "low": 2,
+                      "high": 0
+                  },
+                  "level": {
+                      "low": 200,
+                      "high": 0
+                  },
+                  "avgTimeCommitment": {
+                      "low": 7,
+                      "high": 0
+                  },
+                  "readingLearnerSuccess": 0.76,
+                  "tags": [
+                      "Biology",
+                      "Level-2",
+                      "Ecology"
+                  ],
+                  "credits": {
+                      "low": 2,
+                      "high": 0
+                  },
+                  "termAvailability": [
+                      "Fall",
+                      "Spring"
+                  ],
+                  "name": "Ecology",
+                  "instructionModes": [
+                      "In-person",
+                      "Online",
+                      "Hybrid"
+                  ],
+                  "id": "BFFF 200",
+                  "department": "Biology",
+                  "kinestheticLearnerSuccess": 0.96,
+                  "visualLearnerSuccess": 0.72
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:25"
+          },
+          "properties": {
+              "enjoyment": true,
+              "term": "Spring2024",
+              "grade": "B",
+              "difficulty": {
+                  "low": 2,
+                  "high": 0
+              },
+              "instructionMode": "Hybrid",
+              "timeSpent": {
+                  "low": 7,
+                  "high": 0
+              }
+          }
+      },
+      {
+          "relationship": "COMPLETED",
+          "target": {
+              "identity": {
+                  "low": 26,
+                  "high": 0
+              },
+              "labels": [
+                  "Course"
+              ],
+              "properties": {
+                  "auditoryLearnerSuccess": 0.7,
+                  "avgDifficulty": {
+                      "low": 3,
+                      "high": 0
+                  },
+                  "level": {
+                      "low": 200,
+                      "high": 0
+                  },
+                  "avgTimeCommitment": {
+                      "low": 6,
+                      "high": 0
+                  },
+                  "readingLearnerSuccess": 0.8,
+                  "tags": [
+                      "Biology",
+                      "Level-2",
+                      "Biochemistry"
+                  ],
+                  "credits": {
+                      "low": 2,
+                      "high": 0
+                  },
+                  "termAvailability": [
+                      "Fall",
+                      "Spring"
+                  ],
+                  "name": "Biochemistry",
+                  "instructionModes": [
+                      "In-person",
+                      "Online"
+                  ],
+                  "id": "BVVV 200",
+                  "department": "Biology",
+                  "kinestheticLearnerSuccess": 0.72,
+                  "visualLearnerSuccess": 0.86
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:26"
+          },
+          "properties": {
+              "enjoyment": true,
+              "term": "Spring2024",
+              "grade": "A",
+              "difficulty": {
+                  "low": 3,
+                  "high": 0
+              },
+              "instructionMode": "In-person",
+              "timeSpent": {
+                  "low": 5,
+                  "high": 0
+              }
+          }
+      },
+      {
+          "relationship": "COMPLETED",
+          "target": {
+              "identity": {
+                  "low": 27,
+                  "high": 0
+              },
+              "labels": [
+                  "Course"
+              ],
+              "properties": {
+                  "auditoryLearnerSuccess": 0.73,
+                  "avgDifficulty": {
+                      "low": 4,
+                      "high": 0
+                  },
+                  "level": {
+                      "low": 100,
+                      "high": 0
+                  },
+                  "avgTimeCommitment": {
+                      "low": 7,
+                      "high": 0
+                  },
+                  "readingLearnerSuccess": 0.62,
+                  "tags": [
+                      "Biology",
+                      "Level-1",
+                      "Intro",
+                      "Tropical"
+                  ],
+                  "credits": {
+                      "low": 3,
+                      "high": 0
+                  },
+                  "termAvailability": [
+                      "Fall",
+                      "Spring"
+                  ],
+                  "name": "Introduction to Tropical Biology",
+                  "instructionModes": [
+                      "In-person",
+                      "Hybrid"
+                  ],
+                  "id": "BFFF 100",
+                  "department": "Biology",
+                  "kinestheticLearnerSuccess": 0.66,
+                  "visualLearnerSuccess": 0.76
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:27"
+          },
+          "properties": {
+              "enjoyment": true,
+              "term": "Fall2024",
+              "grade": "B",
+              "difficulty": {
+                  "low": 4,
+                  "high": 0
+              },
+              "instructionMode": "In-person",
+              "timeSpent": {
+                  "low": 6,
+                  "high": 0
+              }
+          }
+      },
+      {
+          "relationship": "COMPLETED",
+          "target": {
+              "identity": {
+                  "low": 28,
+                  "high": 0
+              },
+              "labels": [
+                  "Course"
+              ],
+              "properties": {
+                  "auditoryLearnerSuccess": 0.84,
+                  "avgDifficulty": {
+                      "low": 1,
+                      "high": 0
+                  },
+                  "level": {
+                      "low": 200,
+                      "high": 0
+                  },
+                  "avgTimeCommitment": {
+                      "low": 5,
+                      "high": 0
+                  },
+                  "readingLearnerSuccess": 0.89,
+                  "tags": [
+                      "Biology",
+                      "Level-2",
+                      "Conservation"
+                  ],
+                  "credits": {
+                      "low": 3,
+                      "high": 0
+                  },
+                  "termAvailability": [
+                      "Fall",
+                      "Spring"
+                  ],
+                  "name": "Conservation Biology",
+                  "instructionModes": [
+                      "In-person"
+                  ],
+                  "id": "BKKK 200",
+                  "department": "Biology",
+                  "kinestheticLearnerSuccess": 0.71,
+                  "visualLearnerSuccess": 0.85
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:28"
+          },
+          "properties": {
+              "enjoyment": true,
+              "term": "Spring2023",
+              "grade": "B",
+              "difficulty": {
+                  "low": 1,
+                  "high": 0
+              },
+              "instructionMode": "In-person",
+              "timeSpent": {
+                  "low": 5,
+                  "high": 0
+              }
+          }
+      },
+      {
+          "relationship": "COMPLETED",
+          "target": {
+              "identity": {
+                  "low": 31,
+                  "high": 0
+              },
+              "labels": [
+                  "Course"
+              ],
+              "properties": {
+                  "auditoryLearnerSuccess": 1,
+                  "avgDifficulty": {
+                      "low": 4,
+                      "high": 0
+                  },
+                  "level": {
+                      "low": 300,
+                      "high": 0
+                  },
+                  "avgTimeCommitment": {
+                      "low": 8,
+                      "high": 0
+                  },
+                  "readingLearnerSuccess": 0.74,
+                  "tags": [
+                      "Biology",
+                      "Level-3"
+                  ],
+                  "credits": {
+                      "low": 1,
+                      "high": 0
+                  },
+                  "termAvailability": [
+                      "Fall",
+                      "Spring"
+                  ],
+                  "name": "Metabolomics Theory",
+                  "instructionModes": [
+                      "In-person",
+                      "Online",
+                      "Hybrid"
+                  ],
+                  "id": "BPPP 300",
+                  "department": "Biology",
+                  "kinestheticLearnerSuccess": 0.75,
+                  "visualLearnerSuccess": 0.98
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:31"
+          },
+          "properties": {
+              "enjoyment": true,
+              "term": "Fall2024",
+              "grade": "B+",
+              "difficulty": {
+                  "low": 4,
+                  "high": 0
+              },
+              "instructionMode": "Hybrid",
+              "timeSpent": {
+                  "low": 5,
+                  "high": 0
+              }
+          }
+      },
+      {
+          "relationship": "COMPLETED",
+          "target": {
+              "identity": {
+                  "low": 36,
+                  "high": 0
+              },
+              "labels": [
+                  "Course"
+              ],
+              "properties": {
+                  "auditoryLearnerSuccess": 0.68,
+                  "avgDifficulty": {
+                      "low": 2,
+                      "high": 0
+                  },
+                  "level": {
+                      "low": 200,
+                      "high": 0
+                  },
+                  "avgTimeCommitment": {
+                      "low": 5,
+                      "high": 0
+                  },
+                  "readingLearnerSuccess": 0.86,
+                  "tags": [
+                      "Biology",
+                      "Level-2",
+                      "Bioinformatics"
+                  ],
+                  "credits": {
+                      "low": 3,
+                      "high": 0
+                  },
+                  "termAvailability": [
+                      "Fall",
+                      "Spring"
+                  ],
+                  "name": "Bioinformatics",
+                  "instructionModes": [
+                      "In-person"
+                  ],
+                  "id": "BZZZ 200",
+                  "department": "Biology",
+                  "kinestheticLearnerSuccess": 0.71,
+                  "visualLearnerSuccess": 0.6
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:36"
+          },
+          "properties": {
+              "enjoyment": true,
+              "term": "Spring2025",
+              "grade": "B+",
+              "difficulty": {
+                  "low": 2,
+                  "high": 0
+              },
+              "instructionMode": "In-person",
+              "timeSpent": {
+                  "low": 4,
+                  "high": 0
+              }
+          }
+      },
+      {
+          "relationship": "COMPLETED",
+          "target": {
+              "identity": {
+                  "low": 41,
+                  "high": 0
+              },
+              "labels": [
+                  "Course"
+              ],
+              "properties": {
+                  "auditoryLearnerSuccess": 1,
+                  "avgDifficulty": {
+                      "low": 4,
+                      "high": 0
+                  },
+                  "level": {
+                      "low": 300,
+                      "high": 0
+                  },
+                  "avgTimeCommitment": {
+                      "low": 8,
+                      "high": 0
+                  },
+                  "readingLearnerSuccess": 0.81,
+                  "tags": [
+                      "Biology",
+                      "Level-3",
+                      "Development"
+                  ],
+                  "credits": {
+                      "low": 3,
+                      "high": 0
+                  },
+                  "termAvailability": [
+                      "Fall",
+                      "Spring"
+                  ],
+                  "name": "Developmental Biology I",
+                  "instructionModes": [
+                      "In-person",
+                      "Online"
+                  ],
+                  "id": "BFFF 300",
+                  "department": "Biology",
+                  "kinestheticLearnerSuccess": 0.65,
+                  "visualLearnerSuccess": 0.75
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:41"
+          },
+          "properties": {
+              "enjoyment": true,
+              "term": "Fall2024",
+              "grade": "B+",
+              "difficulty": {
+                  "low": 4,
+                  "high": 0
+              },
+              "instructionMode": "In-person",
+              "timeSpent": {
+                  "low": 10,
+                  "high": 0
+              }
+          }
+      },
+      {
+          "relationship": "COMPLETED",
+          "target": {
+              "identity": {
+                  "low": 46,
+                  "high": 0
+              },
+              "labels": [
+                  "Course"
+              ],
+              "properties": {
+                  "auditoryLearnerSuccess": 0.7,
+                  "avgDifficulty": {
+                      "low": 3,
+                      "high": 0
+                  },
+                  "level": {
+                      "low": 100,
+                      "high": 0
+                  },
+                  "avgTimeCommitment": {
+                      "low": 6,
+                      "high": 0
+                  },
+                  "readingLearnerSuccess": 0.78,
+                  "tags": [
+                      "Biology",
+                      "Level-1",
+                      "Intro"
+                  ],
+                  "credits": {
+                      "low": 3,
+                      "high": 0
+                  },
+                  "termAvailability": [
+                      "Fall",
+                      "Spring",
+                      "Summer"
+                  ],
+                  "name": "Introduction to Computational Biology",
+                  "instructionModes": [
+                      "In-person"
+                  ],
+                  "id": "BGGG 100",
+                  "department": "Biology",
+                  "kinestheticLearnerSuccess": 0.91,
+                  "visualLearnerSuccess": 0.61
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:46"
+          },
+          "properties": {
+              "enjoyment": false,
+              "term": "Summer2023",
+              "grade": "B-",
+              "difficulty": {
+                  "low": 3,
+                  "high": 0
+              },
+              "instructionMode": "In-person",
+              "timeSpent": {
+                  "low": 4,
+                  "high": 0
+              }
+          }
+      },
+      {
+          "relationship": "ENROLLED_IN",
+          "target": {
+              "identity": {
+                  "low": 2,
+                  "high": 0
+              },
+              "labels": [
+                  "Course"
+              ],
+              "properties": {
+                  "auditoryLearnerSuccess": 0.95,
+                  "avgDifficulty": {
+                      "low": 3,
+                      "high": 0
+                  },
+                  "level": {
+                      "low": 300,
+                      "high": 0
+                  },
+                  "avgTimeCommitment": {
+                      "low": 9,
+                      "high": 0
+                  },
+                  "readingLearnerSuccess": 0.68,
+                  "tags": [
+                      "Computer Science",
+                      "Level-3",
+                      "Theory",
+                      "Game"
+                  ],
+                  "credits": {
+                      "low": 4,
+                      "high": 0
+                  },
+                  "termAvailability": [
+                      "Fall",
+                      "Spring",
+                      "Summer"
+                  ],
+                  "name": "Game Development Theory",
+                  "instructionModes": [
+                      "In-person"
+                  ],
+                  "id": "CSTT 300",
+                  "department": "Computer Science",
+                  "kinestheticLearnerSuccess": 0.73,
+                  "visualLearnerSuccess": 0.65
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:2"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "SIMILAR_LEARNING_STYLE",
+          "target": {
+              "identity": {
+                  "low": 193,
+                  "high": 0
+              },
+              "labels": [
+                  "Student"
+              ],
+              "properties": {
+                  "preferredCourseLoad": {
+                      "low": 3,
+                      "high": 0
+                  },
+                  "preferredInstructionMode": "In-person",
+                  "workHoursPerWeek": {
+                      "low": 13,
+                      "high": 0
+                  },
+                  "learningStyle": "Auditory",
+                  "financialAidStatus": "FinancialAid",
+                  "name": "Richard Gibson",
+                  "enrollmentDate": {
+                      "year": {
+                          "low": 2025,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 7,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 7,
+                          "high": 0
+                      }
+                  },
+                  "id": "SZ67045",
+                  "expectedGraduation": {
+                      "year": {
+                          "low": 2026,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 3,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 10,
+                          "high": 0
+                      }
+                  },
+                  "preferredPace": "Standard"
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:193"
+          },
+          "properties": {
+              "similarity": 0.71
+          }
+      },
+      {
+          "relationship": "SIMILAR_PERFORMANCE",
+          "target": {
+              "identity": {
+                  "low": 197,
+                  "high": 0
+              },
+              "labels": [
+                  "Student"
+              ],
+              "properties": {
+                  "preferredCourseLoad": {
+                      "low": 3,
+                      "high": 0
+                  },
+                  "preferredInstructionMode": "Hybrid",
+                  "workHoursPerWeek": {
+                      "low": 33,
+                      "high": 0
+                  },
+                  "learningStyle": "Visual",
+                  "financialAidStatus": "FinancialAid",
+                  "name": "Kerri Stewart",
+                  "enrollmentDate": {
+                      "year": {
+                          "low": 2023,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 8,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 2,
+                          "high": 0
+                      }
+                  },
+                  "id": "QM87698",
+                  "expectedGraduation": {
+                      "year": {
+                          "low": 2026,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 3,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 6,
+                          "high": 0
+                      }
+                  },
+                  "preferredPace": "Part-time"
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:197"
+          },
+          "properties": {
+              "courses": [
+                  "BGGG 100",
+                  "BFFF 100",
+                  "CSBB 200",
+                  "CSLL 100",
+                  "CSUU 200",
+                  "BZZZ 200"
+              ],
+              "similarity": 0.94
+          }
+      },
+      {
+          "relationship": "SIMILAR_PERFORMANCE",
+          "target": {
+              "identity": {
+                  "low": 199,
+                  "high": 0
+              },
+              "labels": [
+                  "Student"
+              ],
+              "properties": {
+                  "preferredCourseLoad": {
+                      "low": 3,
+                      "high": 0
+                  },
+                  "preferredInstructionMode": "In-person",
+                  "workHoursPerWeek": {
+                      "low": 7,
+                      "high": 0
+                  },
+                  "learningStyle": "Reading-Writing",
+                  "financialAidStatus": "FinancialAid",
+                  "name": "Lisa Terry",
+                  "enrollmentDate": {
+                      "year": {
+                          "low": 2023,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 5,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 19,
+                          "high": 0
+                      }
+                  },
+                  "id": "IS91351",
+                  "expectedGraduation": {
+                      "year": {
+                          "low": 2029,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 10,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 20,
+                          "high": 0
+                      }
+                  },
+                  "preferredPace": "Standard"
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:199"
+          },
+          "properties": {
+              "courses": [
+                  "BGGG 100",
+                  "BKKK 200",
+                  "CSBB 200",
+                  "CSMM 100",
+                  "CSDD 400",
+                  "BFFF 200",
+                  "CSUU 200",
+                  "CSPP 200"
+              ],
+              "similarity": 0.86
+          }
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 69,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 48,
+                      "high": 0
+                  },
+                  "effectiveness": 0.46,
+                  "termId": "Spring2023",
+                  "notes": "Study session for CSLL 100 using note-taking",
+                  "method": "Note-taking",
+                  "startTime": {
+                      "year": {
+                          "low": 2023,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 2,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 1,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 12,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Campus Center",
+                  "id": "session_1",
+                  "endTime": {
+                      "year": {
+                          "low": 2023,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 2,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 1,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 12,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 48,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:69"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 70,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 29,
+                      "high": 0
+                  },
+                  "effectiveness": 0.43,
+                  "termId": "Spring2023",
+                  "notes": "Study session for CSLL 100 using note-taking",
+                  "method": "Note-taking",
+                  "startTime": {
+                      "year": {
+                          "low": 2023,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 4,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 5,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 17,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Home",
+                  "id": "session_2",
+                  "endTime": {
+                      "year": {
+                          "low": 2023,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 4,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 5,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 17,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 29,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:70"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 71,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 31,
+                      "high": 0
+                  },
+                  "effectiveness": 0.45,
+                  "termId": "Spring2023",
+                  "notes": "Study session for CSTT 100 using practice problems",
+                  "method": "Practice Problems",
+                  "startTime": {
+                      "year": {
+                          "low": 2023,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 3,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 6,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 10,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Library",
+                  "id": "session_3",
+                  "endTime": {
+                      "year": {
+                          "low": 2023,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 3,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 6,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 10,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 31,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:71"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 72,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 19,
+                      "high": 0
+                  },
+                  "effectiveness": 0.95,
+                  "termId": "Spring2023",
+                  "notes": "Study session for BKKK 200 using flashcards",
+                  "method": "Flashcards",
+                  "startTime": {
+                      "year": {
+                          "low": 2023,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 4,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 25,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 10,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Dorm Room",
+                  "id": "session_4",
+                  "endTime": {
+                      "year": {
+                          "low": 2023,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 4,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 25,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 10,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 19,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:72"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 73,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 44,
+                      "high": 0
+                  },
+                  "effectiveness": 0.31,
+                  "termId": "Spring2023",
+                  "notes": "Study session for CSUU 200 using practice problems",
+                  "method": "Practice Problems",
+                  "startTime": {
+                      "year": {
+                          "low": 2023,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 3,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 31,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 22,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Study Hall",
+                  "id": "session_5",
+                  "endTime": {
+                      "year": {
+                          "low": 2023,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 3,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 31,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 22,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 44,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:73"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 74,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 50,
+                      "high": 0
+                  },
+                  "effectiveness": 0.87,
+                  "termId": "Summer2023",
+                  "notes": "Study session for CSBB 200 using note-taking",
+                  "method": "Note-taking",
+                  "startTime": {
+                      "year": {
+                          "low": 2023,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 6,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 13,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 14,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Coffee Shop",
+                  "id": "session_6",
+                  "endTime": {
+                      "year": {
+                          "low": 2023,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 6,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 13,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 14,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 50,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:74"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 75,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 41,
+                      "high": 0
+                  },
+                  "effectiveness": 0.95,
+                  "termId": "Summer2023",
+                  "notes": "Study session for BGGG 100 using reading",
+                  "method": "Reading",
+                  "startTime": {
+                      "year": {
+                          "low": 2023,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 6,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 30,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 9,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Dorm Room",
+                  "id": "session_7",
+                  "endTime": {
+                      "year": {
+                          "low": 2023,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 6,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 30,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 9,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 41,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:75"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 76,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 48,
+                      "high": 0
+                  },
+                  "effectiveness": 0.5,
+                  "termId": "Summer2023",
+                  "notes": "Study session for BGGG 100 using group study",
+                  "method": "Group Study",
+                  "startTime": {
+                      "year": {
+                          "low": 2023,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 6,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 9,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 14,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Study Hall",
+                  "id": "session_8",
+                  "endTime": {
+                      "year": {
+                          "low": 2023,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 6,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 9,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 14,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 48,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:76"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 77,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 20,
+                      "high": 0
+                  },
+                  "effectiveness": 0.36,
+                  "termId": "Summer2023",
+                  "notes": "Study session for CSPP 200 using reading",
+                  "method": "Reading",
+                  "startTime": {
+                      "year": {
+                          "low": 2023,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 7,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 30,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 18,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Campus Center",
+                  "id": "session_9",
+                  "endTime": {
+                      "year": {
+                          "low": 2023,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 7,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 30,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 18,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 20,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:77"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 78,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 33,
+                      "high": 0
+                  },
+                  "effectiveness": 0.88,
+                  "termId": "Summer2023",
+                  "notes": "Study session for CSPP 200 using note-taking",
+                  "method": "Note-taking",
+                  "startTime": {
+                      "year": {
+                          "low": 2023,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 7,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 27,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 18,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Home",
+                  "id": "session_10",
+                  "endTime": {
+                      "year": {
+                          "low": 2023,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 7,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 27,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 18,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 33,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:78"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 79,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 57,
+                      "high": 0
+                  },
+                  "effectiveness": 0.63,
+                  "termId": "Fall2023",
+                  "notes": "Study session for CSMM 100 using note-taking",
+                  "method": "Note-taking",
+                  "startTime": {
+                      "year": {
+                          "low": 2023,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 9,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 9,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 14,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Study Hall",
+                  "id": "session_11",
+                  "endTime": {
+                      "year": {
+                          "low": 2023,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 9,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 9,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 14,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 57,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:79"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 80,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 58,
+                      "high": 0
+                  },
+                  "effectiveness": 0.46,
+                  "termId": "Fall2023",
+                  "notes": "Study session for CSMM 100 using note-taking",
+                  "method": "Note-taking",
+                  "startTime": {
+                      "year": {
+                          "low": 2023,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 9,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 9,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 16,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Dorm Room",
+                  "id": "session_12",
+                  "endTime": {
+                      "year": {
+                          "low": 2023,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 9,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 9,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 16,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 58,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:80"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 81,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 37,
+                      "high": 0
+                  },
+                  "effectiveness": 0.39,
+                  "termId": "Fall2023",
+                  "notes": "Study session for CSMM 100 using flashcards",
+                  "method": "Flashcards",
+                  "startTime": {
+                      "year": {
+                          "low": 2023,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 11,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 24,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 20,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Campus Center",
+                  "id": "session_13",
+                  "endTime": {
+                      "year": {
+                          "low": 2023,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 11,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 24,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 20,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 37,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:81"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 82,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 42,
+                      "high": 0
+                  },
+                  "effectiveness": 0.81,
+                  "termId": "Fall2023",
+                  "notes": "Study session for CSDD 400 using practice problems",
+                  "method": "Practice Problems",
+                  "startTime": {
+                      "year": {
+                          "low": 2023,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 11,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 11,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 16,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Home",
+                  "id": "session_14",
+                  "endTime": {
+                      "year": {
+                          "low": 2023,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 11,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 11,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 16,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 42,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:82"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 83,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 49,
+                      "high": 0
+                  },
+                  "effectiveness": 0.96,
+                  "termId": "Spring2024",
+                  "notes": "Study session for BFFF 200 using note-taking",
+                  "method": "Note-taking",
+                  "startTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 4,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 27,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 22,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Campus Center",
+                  "id": "session_15",
+                  "endTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 4,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 27,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 22,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 49,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:83"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 84,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 42,
+                      "high": 0
+                  },
+                  "effectiveness": 0.94,
+                  "termId": "Spring2024",
+                  "notes": "Study session for BFFF 200 using review",
+                  "method": "Review",
+                  "startTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 4,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 30,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 20,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Library",
+                  "id": "session_16",
+                  "endTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 4,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 30,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 20,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 42,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:84"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 85,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 54,
+                      "high": 0
+                  },
+                  "effectiveness": 0.95,
+                  "termId": "Spring2024",
+                  "notes": "Study session for BFFF 200 using review",
+                  "method": "Review",
+                  "startTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 4,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 17,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 8,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Study Hall",
+                  "id": "session_17",
+                  "endTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 4,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 17,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 8,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 54,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:85"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 86,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 60,
+                      "high": 0
+                  },
+                  "effectiveness": 0.52,
+                  "termId": "Spring2024",
+                  "notes": "Study session for BVVV 200 using reading",
+                  "method": "Reading",
+                  "startTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 3,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 16,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 9,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Coffee Shop",
+                  "id": "session_18",
+                  "endTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 3,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 16,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 10,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:86"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 87,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 63,
+                      "high": 0
+                  },
+                  "effectiveness": 0.74,
+                  "termId": "Summer2024",
+                  "notes": "Study session for CSLL 300 using note-taking",
+                  "method": "Note-taking",
+                  "startTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 6,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 17,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 9,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Coffee Shop",
+                  "id": "session_19",
+                  "endTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 6,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 17,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 10,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 3,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:87"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 88,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 38,
+                      "high": 0
+                  },
+                  "effectiveness": 0.91,
+                  "termId": "Summer2024",
+                  "notes": "Study session for CSLL 300 using review",
+                  "method": "Review",
+                  "startTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 7,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 10,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 13,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Coffee Shop",
+                  "id": "session_20",
+                  "endTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 7,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 10,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 13,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 38,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:88"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 89,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 63,
+                      "high": 0
+                  },
+                  "effectiveness": 0.26,
+                  "termId": "Summer2024",
+                  "notes": "Study session for CSLL 300 using practice problems",
+                  "method": "Practice Problems",
+                  "startTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 7,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 25,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 17,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Library",
+                  "id": "session_21",
+                  "endTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 7,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 25,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 18,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 3,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:89"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 90,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 51,
+                      "high": 0
+                  },
+                  "effectiveness": 0.72,
+                  "termId": "Fall2024",
+                  "notes": "Study session for BFFF 100 using practice problems",
+                  "method": "Practice Problems",
+                  "startTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 9,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 13,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 14,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Home",
+                  "id": "session_22",
+                  "endTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 9,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 13,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 14,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 51,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:90"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 91,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 28,
+                      "high": 0
+                  },
+                  "effectiveness": 0.9,
+                  "termId": "Fall2024",
+                  "notes": "Study session for BFFF 300 using flashcards",
+                  "method": "Flashcards",
+                  "startTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 9,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 30,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 21,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Coffee Shop",
+                  "id": "session_23",
+                  "endTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 9,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 30,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 21,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 28,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:91"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 92,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 42,
+                      "high": 0
+                  },
+                  "effectiveness": 0.68,
+                  "termId": "Fall2024",
+                  "notes": "Study session for BFFF 300 using reading",
+                  "method": "Reading",
+                  "startTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 9,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 25,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 20,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Home",
+                  "id": "session_24",
+                  "endTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 9,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 25,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 20,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 42,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:92"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 93,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 45,
+                      "high": 0
+                  },
+                  "effectiveness": 0.33,
+                  "termId": "Fall2024",
+                  "notes": "Study session for BFFF 300 using group study",
+                  "method": "Group Study",
+                  "startTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 11,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 15,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 17,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Home",
+                  "id": "session_25",
+                  "endTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 11,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 15,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 17,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 45,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:93"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 94,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 42,
+                      "high": 0
+                  },
+                  "effectiveness": 0.59,
+                  "termId": "Fall2024",
+                  "notes": "Study session for CSSS 100 using practice problems",
+                  "method": "Practice Problems",
+                  "startTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 9,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 13,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 16,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Coffee Shop",
+                  "id": "session_26",
+                  "endTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 9,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 13,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 16,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 42,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:94"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 99,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 26,
+                      "high": 0
+                  },
+                  "effectiveness": 0.48,
+                  "termId": "Fall2024",
+                  "notes": "Study session for CSHH 200 using reading",
+                  "method": "Reading",
+                  "startTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 9,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 26,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 14,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Home",
+                  "id": "session_27",
+                  "endTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 9,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 26,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 14,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 26,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:99"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 100,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 40,
+                      "high": 0
+                  },
+                  "effectiveness": 0.76,
+                  "termId": "Fall2024",
+                  "notes": "Study session for CSHH 200 using note-taking",
+                  "method": "Note-taking",
+                  "startTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 12,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 5,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 9,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Library",
+                  "id": "session_28",
+                  "endTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 12,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 5,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 9,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 40,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:100"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 101,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 41,
+                      "high": 0
+                  },
+                  "effectiveness": 0.36,
+                  "termId": "Fall2024",
+                  "notes": "Study session for BPPP 300 using flashcards",
+                  "method": "Flashcards",
+                  "startTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 11,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 11,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 18,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Campus Center",
+                  "id": "session_29",
+                  "endTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 11,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 11,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 18,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 41,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:101"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 102,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 38,
+                      "high": 0
+                  },
+                  "effectiveness": 0.33,
+                  "termId": "Fall2024",
+                  "notes": "Study session for BPPP 300 using reading",
+                  "method": "Reading",
+                  "startTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 10,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 3,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 18,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Coffee Shop",
+                  "id": "session_30",
+                  "endTime": {
+                      "year": {
+                          "low": 2024,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 10,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 3,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 18,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 38,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:102"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 103,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 73,
+                      "high": 0
+                  },
+                  "effectiveness": 0.51,
+                  "termId": "Spring2025",
+                  "notes": "Study session for BZZZ 200 using review",
+                  "method": "Review",
+                  "startTime": {
+                      "year": {
+                          "low": 2025,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 3,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 27,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 20,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Library",
+                  "id": "session_31",
+                  "endTime": {
+                      "year": {
+                          "low": 2025,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 3,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 27,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 21,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 13,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:103"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 104,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 71,
+                      "high": 0
+                  },
+                  "effectiveness": 0.86,
+                  "termId": "Spring2025",
+                  "notes": "Study session for BZZZ 200 using review",
+                  "method": "Review",
+                  "startTime": {
+                      "year": {
+                          "low": 2025,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 2,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 22,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 16,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Home",
+                  "id": "session_32",
+                  "endTime": {
+                      "year": {
+                          "low": 2025,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 2,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 22,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 17,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 11,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:104"
+          },
+          "properties": {}
+      },
+      {
+          "relationship": "ATTENDED",
+          "target": {
+              "identity": {
+                  "low": 105,
+                  "high": 0
+              },
+              "labels": [
+                  "StudySession"
+              ],
+              "properties": {
+                  "duration": {
+                      "low": 52,
+                      "high": 0
+                  },
+                  "effectiveness": 0.42,
+                  "termId": "Spring2025",
+                  "notes": "Study session for BZZZ 200 using review",
+                  "method": "Review",
+                  "startTime": {
+                      "year": {
+                          "low": 2025,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 4,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 18,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 9,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  },
+                  "location": "Library",
+                  "id": "session_33",
+                  "endTime": {
+                      "year": {
+                          "low": 2025,
+                          "high": 0
+                      },
+                      "month": {
+                          "low": 4,
+                          "high": 0
+                      },
+                      "day": {
+                          "low": 18,
+                          "high": 0
+                      },
+                      "hour": {
+                          "low": 9,
+                          "high": 0
+                      },
+                      "minute": {
+                          "low": 52,
+                          "high": 0
+                      },
+                      "second": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "nanosecond": {
+                          "low": 0,
+                          "high": 0
+                      },
+                      "timeZoneOffsetSeconds": {
+                          "low": 0,
+                          "high": 0
+                      }
+                  }
+              },
+              "elementId": "4:a9b4e3a7-8390-43c9-8ed8-29429ded2756:105"
+          },
+          "properties": {}
+      }
+  ]
+}]

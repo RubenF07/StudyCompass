@@ -1,11 +1,62 @@
 <script>
-	import Header from '$lib/header/Header.svelte';
+  import { onMount } from 'svelte';
   import { webVitals } from '$lib/vitals';
   import { browser } from '$app/env';
   import { page } from '$app/stores';
+  import { goto } from '$app/navigation';
+  import { clearStudentId, getStudentId, isLoggedIn } from '$lib/auth.js';
   import '../app.css';
 
+
   let analyticsId = import.meta.env.VERCEL_ANALYTICS_ID;
+  let sidebarOpen = false;
+  let isAuthenticated = false;
+  let currentStudentId = '';
+  let authChecked = false;
+
+  function toggleSidebar() {
+    sidebarOpen = !sidebarOpen;
+  }
+
+  function closeSidebar() {
+    sidebarOpen = false;
+  }
+
+  function handleLogout() {
+    clearStudentId();
+    isAuthenticated = false;
+    currentStudentId = '';
+    goto('/login');
+  }
+
+  onMount(() => {
+    // Check authentication status
+    if (browser) {
+      checkAuth();
+    }
+  });
+
+  function checkAuth() {
+    const loggedIn = isLoggedIn();
+    const studentId = getStudentId() || '';
+    
+    isAuthenticated = loggedIn;
+    currentStudentId = studentId;
+    authChecked = true;
+
+    // Redirect to login if not authenticated and not already on login page
+    if (!loggedIn && $page.url.pathname !== '/login') {
+      goto('/login');
+    }
+  }
+
+  // Re-check authentication when the page changes (but only if we're not already on login)
+  $: if (browser && authChecked && $page.url.pathname !== '/login') {
+    // Only re-check if we're not already authenticated
+    if (!isAuthenticated) {
+      checkAuth();
+    }
+  }
 
   $: if (browser && analyticsId) {
     webVitals({
@@ -16,17 +67,297 @@
   }
 </script>
 
-<Header />
+{#if !authChecked}
+  <div class="auth-loading">
+    <div class="loading-spinner"></div>
+    <p>Loading...</p>
+  </div>
+{:else if isAuthenticated || $page.url.pathname === '/login'}
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar" class:open={sidebarOpen}>
+      <div class="sidebar-header">
+        <h2>Navigation</h2>
+        <button class="close-btn" on:click={closeSidebar} aria-label="Close sidebar">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+        <li class:active={$page.url.pathname === '/'}>
+          <a href="/" on:click={closeSidebar}>Home</a>
+        </li>
+        <li class:active={$page.url.pathname === '/performance'}>
+          <a href="/performance" on:click={closeSidebar}>Academic Performance</a>
+        </li>
+        <li class:active={$page.url.pathname === '/studying'}>
+          <a href="/studying" on:click={closeSidebar}>Studying Habits</a>
+        </li>
+        </ul>
+      </nav>
+    </aside>
 
-<main>
-	<slot />
-</main>
+    <!-- Overlay for mobile -->
+  {#if sidebarOpen}
+    <div class="sidebar-overlay" on:click={closeSidebar} on:keydown={(e) => e.key === 'Enter' && closeSidebar()} tabindex="0" role="button" aria-label="Close sidebar"></div>
+  {/if}
 
+    <!-- Main content area -->
+    <div class="main-content">
+      <header class="top-header">
+        <div class="header-left">
+          <button class="menu-btn" on:click={toggleSidebar} aria-label="Open sidebar">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+          <h1>Hack UMBC 2025</h1>
+        </div>
+        {#if isAuthenticated && currentStudentId}
+          <div class="header-right">
+            <span class="student-info">Student: {currentStudentId}</span>
+            <button class="logout-btn" on:click={handleLogout} aria-label="Logout">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                <polyline points="16,17 21,12 16,7"></polyline>
+                <line x1="21" y1="12" x2="9" y2="12"></line>
+              </svg>
+              Logout
+            </button>
+          </div>
+        {/if}
+      </header>
+
+      <main>
+        <slot />
+      </main>
+    </div>
+  </div>
+{/if}
+
+{#if isAuthenticated}
 <footer>
 	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
 </footer>
+{/if}
 
 <style>
+	.auth-loading {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		color: white;
+	}
+
+	.auth-loading .loading-spinner {
+		width: 3rem;
+		height: 3rem;
+		border: 4px solid rgba(255, 255, 255, 0.3);
+		border-top: 4px solid white;
+		border-radius: 50%;
+		animation: spin 1s linear infinite;
+		margin-bottom: 1rem;
+	}
+
+	@keyframes spin {
+		to {
+			transform: rotate(360deg);
+		}
+	}
+
+	.auth-loading p {
+		font-size: 1.125rem;
+		font-weight: 500;
+		margin: 0;
+	}
+
+	.layout {
+		display: flex;
+		min-height: 100vh;
+		position: relative;
+	}
+
+	.sidebar {
+		position: fixed;
+		top: 0;
+		left: -300px;
+		width: 300px;
+		height: 100vh;
+		background: var(--color-bg-2, #f8f9fa);
+		border-right: 1px solid var(--color-border, #e9ecef);
+		transition: left 0.3s ease;
+		z-index: 1000;
+		overflow-y: auto;
+	}
+
+	.sidebar.open {
+		left: 0;
+	}
+
+	.sidebar-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1rem;
+		border-bottom: 1px solid var(--color-border, #e9ecef);
+		background: var(--color-bg-1, #ffffff);
+	}
+
+	.sidebar-header h2 {
+		margin: 0;
+		font-size: 1.25rem;
+		font-weight: 600;
+		color: var(--color-text, #333);
+	}
+
+	.close-btn {
+		background: none;
+		border: none;
+		cursor: pointer;
+		padding: 0.5rem;
+		border-radius: 0.25rem;
+		color: var(--color-text, #333);
+		transition: background-color 0.2s;
+	}
+
+	.close-btn:hover {
+		background-color: var(--color-bg-2, #f8f9fa);
+	}
+
+	.sidebar-nav {
+		padding: 1rem 0;
+	}
+
+	.sidebar-nav ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.sidebar-nav li {
+		margin: 0;
+	}
+
+	.sidebar-nav a {
+		display: block;
+		padding: 0.75rem 1rem;
+		color: var(--color-text, #333);
+		text-decoration: none;
+		transition: background-color 0.2s, color 0.2s;
+		border-left: 3px solid transparent;
+	}
+
+	.sidebar-nav a:hover {
+		background-color: var(--color-bg-2, #f8f9fa);
+		color: var(--accent-color, #ff3e00);
+	}
+
+	.sidebar-nav li.active a {
+		background-color: var(--accent-color, #ff3e00);
+		color: white;
+		border-left-color: var(--color-text, #333);
+	}
+
+	.sidebar-overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: 999;
+	}
+
+	.main-content {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin-left: 0;
+		transition: margin-left 0.3s ease;
+	}
+
+	.top-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1rem;
+		background: var(--color-bg-1, #ffffff);
+		border-bottom: 1px solid var(--color-border, #e9ecef);
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	}
+
+	.header-left {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.header-right {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.student-info {
+		font-size: 0.875rem;
+		color: var(--color-text, #333);
+		background: var(--color-bg-2, #f8f9fa);
+		padding: 0.5rem 0.75rem;
+		border-radius: 0.375rem;
+		font-weight: 500;
+	}
+
+	.logout-btn {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		background: #dc2626;
+		color: white;
+		border: none;
+		padding: 0.5rem 1rem;
+		border-radius: 0.375rem;
+		font-size: 0.875rem;
+		font-weight: 500;
+		cursor: pointer;
+		transition: background-color 0.2s, transform 0.2s;
+	}
+
+	.logout-btn:hover {
+		background: #b91c1c;
+		transform: translateY(-1px);
+	}
+
+	.menu-btn {
+		background: none;
+		border: none;
+		cursor: pointer;
+		padding: 0.5rem;
+		margin-right: 1rem;
+		border-radius: 0.25rem;
+		color: var(--color-text, #333);
+		transition: background-color 0.2s;
+	}
+
+	.menu-btn:hover {
+		background-color: var(--color-bg-2, #f8f9fa);
+	}
+
+	.top-header h1 {
+		margin: 0;
+		font-size: 1.5rem;
+		font-weight: 600;
+		color: var(--color-text, #333);
+	}
+
 	main {
 		flex: 1;
 		display: flex;
@@ -44,10 +375,41 @@
 		justify-content: center;
 		align-items: center;
 		padding: 40px;
+		background: var(--color-bg-1, #ffffff);
+		border-top: 1px solid var(--color-border, #e9ecef);
 	}
 
 	footer a {
 		font-weight: bold;
+	}
+
+	@media (min-width: 768px) {
+		.sidebar {
+			position: static;
+			left: 0;
+			width: 250px;
+			height: auto;
+		}
+
+		.sidebar.open {
+			left: 0;
+		}
+
+		.main-content {
+			margin-left: 0;
+		}
+
+		.sidebar-overlay {
+			display: none;
+		}
+
+		.menu-btn {
+			display: none;
+		}
+
+		.close-btn {
+			display: none;
+		}
 	}
 
 	@media (min-width: 480px) {
