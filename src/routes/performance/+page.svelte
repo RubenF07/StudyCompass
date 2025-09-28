@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import { getStudentId } from '$lib/auth.js';
 	import { parseAllStudentData } from '$lib/parse_student_data.js';
+	import { studentDataStore, loadingStore, errorStore, getPerformanceData } from '$lib/dataStore.js';
 	
 	/** @type {any} */
 	let studentData = null;
@@ -11,6 +12,21 @@
 	let hasLoaded = false;
 	/** @type {any} */
 	let performanceData = null;
+
+	// Subscribe to stores
+	$: loading = $loadingStore.performanceData;
+	$: error = $errorStore.performanceData;
+	$: {
+		// Extract performance data when available
+		if ($studentDataStore.performanceData && $studentDataStore.studentId === getStudentId()) {
+			performanceData = $studentDataStore.performanceData;
+			hasLoaded = true;
+		} else if ($studentDataStore.studentId !== getStudentId()) {
+			// Different student, clear data
+			performanceData = null;
+			hasLoaded = false;
+		}
+	}
 
 	onMount(async () => {
 		await loadPerformanceData();
@@ -24,40 +40,19 @@
 			return;
 		}
 		
-		console.log("Starting load process");
-		loading = true;
-		error = null;
-		
 		// Get the student ID from the cookie
 		const studentId = getStudentId();
 		
 		if (!studentId) {
 			error = 'No student ID found. Please log in again.';
-			loading = false;
 			hasLoaded = true;
 			return;
 		}
 
-		try {
-			console.log("Loading performance data for student ID: ", studentId);
-			const response = await fetch(`/api/students/${studentId}`);
-			const data = await response.json();
-			console.log("DATA: ");
-			console.log(data);
-			
-			if (response.ok) {
-				// Parse the student data to extract performance information
-				performanceData = parseAllStudentData([data.studentData]);
-				console.log("Parsed performance data:", performanceData);
-			} else {
-				error = data.error || 'Failed to fetch student data';
-				performanceData = null;
-			}
-		} catch (/** @type {unknown} */ err) {
-			error = 'Network error: ' + (err instanceof Error ? err.message : String(err));
-			performanceData = null;
-		} finally {
-			loading = false;
+		// Use the data store to load performance data
+		const result = await getPerformanceData(studentId, parseAllStudentData);
+		if (!result.success) {
+			error = result.error;
 			hasLoaded = true;
 		}
 	}
@@ -114,6 +109,42 @@
 		// Fallback for other formats
 		return term;
 	}
+
+	function organizeGradeDistribution(gradeDistribution) {
+		// Define the complete grade hierarchy from F to A+
+		const gradeHierarchy = [
+			'F',
+			'D-', 'D', 'D+',
+			'C-', 'C', 'C+',
+			'B-', 'B', 'B+',
+			'A-', 'A', 'A+'
+		];
+
+		// Group grades by letter grade
+		const organizedGrades = {};
+		
+		// Initialize all letter grades with empty arrays
+		['F', 'D', 'C', 'B', 'A'].forEach(letter => {
+			organizedGrades[letter] = [];
+		});
+
+		// Populate with actual grades
+		gradeHierarchy.forEach(grade => {
+			const letter = grade.charAt(0); // Get the letter part
+			const count = gradeDistribution[grade] || 0;
+			organizedGrades[letter].push({
+				grade: grade,
+				count: count,
+				hasReceived: count > 0
+			});
+		});
+
+		// Convert to array format for display, ordered from F to A
+		return ['F', 'D', 'C', 'B', 'A'].map(letter => ({
+			letter: letter,
+			grades: organizedGrades[letter]
+		}));
+	}
 </script>
 
 <svelte:head>
@@ -122,7 +153,7 @@
 </svelte:head>
 
 <section>
-	<div class="container mx-auto px-4 py-8">
+	<div class="w-full py-8">
 		<h1 class="text-4xl font-bold text-gray-800 mb-8 text-center">Academic Performance</h1>
 		
 		{#if loading}
@@ -137,7 +168,7 @@
 			</div>
 		{:else if performanceData && performanceData.pastSemesterSummary}
 			<!-- Overall Performance Summary -->
-			<div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
 				<div class="stat bg-base-100 shadow rounded-lg p-6">
 					<div class="stat-title">Total Semesters</div>
 					<div class="stat-value text-primary">{performanceData.pastSemesterSummary.totalSemesters}</div>
@@ -159,13 +190,34 @@
 			<!-- Grade Distribution Chart -->
 			{#if performanceData.pastSemesterSummary.gradeDistribution && Object.keys(performanceData.pastSemesterSummary.gradeDistribution).length > 0}
 				<div class="card bg-base-100 shadow-xl mb-8">
-					<div class="card-body">
-						<h2 class="card-title text-2xl mb-4">Grade Distribution</h2>
-						<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-							{#each Object.entries(performanceData.pastSemesterSummary.gradeDistribution) as [grade, count]}
-								<div class="text-center">
-									<div class="text-3xl font-bold {getGradeColor(grade)}">{grade}</div>
-									<div class="text-sm text-gray-600">{count} course{count !== 1 ? 's' : ''}</div>
+					<div class="card-body grade-distribution">
+						<h2 class="card-title text-3xl mb-8 text-center font-bold">Grade Distribution</h2>
+						<div class="grid grid-cols-5 gap-8 w-full">
+							{#each organizeGradeDistribution(performanceData.pastSemesterSummary.gradeDistribution) as letterGroup, index}
+								<div class="flex flex-col items-center space-y-4 grade-column">
+									<!-- Letter Grade Header -->
+									<div class="text-center mb-6">
+										<div class="w-20 h-20 rounded-full flex items-center justify-center mb-4 mx-auto shadow-lg {letterGroup.letter === 'A' ? 'bg-green-100' : letterGroup.letter === 'B' ? 'bg-blue-100' : letterGroup.letter === 'C' ? 'bg-yellow-100' : letterGroup.letter === 'D' ? 'bg-orange-100' : 'bg-red-100'}">
+											<h3 class="text-3xl font-bold {letterGroup.letter === 'A' ? 'text-green-700' : letterGroup.letter === 'B' ? 'text-blue-700' : letterGroup.letter === 'C' ? 'text-yellow-700' : letterGroup.letter === 'D' ? 'text-orange-700' : 'text-red-700'}">{letterGroup.letter}</h3>
+										</div>
+										<div class="text-lg font-bold text-gray-700">
+											{letterGroup.grades.reduce((sum, g) => sum + g.count, 0)} total
+										</div>
+									</div>
+									
+									<!-- Grade Variations (Vertical Stack) -->
+									<div class="space-y-4 w-full">
+										{#each letterGroup.grades as gradeInfo}
+											<div class="text-center p-5 rounded-xl transition-all duration-300 hover:scale-105 grade-card {gradeInfo.hasReceived ? 'bg-white shadow-lg border-2 border-gray-200 hover:shadow-xl' : 'bg-gray-50 border-2 border-gray-100 opacity-60'}">
+												<div class="text-3xl font-bold mb-2 {gradeInfo.hasReceived ? getGradeColor(gradeInfo.grade) : 'text-gray-400'}">
+													{gradeInfo.grade}
+												</div>
+												<div class="text-base font-semibold {gradeInfo.hasReceived ? 'text-gray-700' : 'text-gray-400'}">
+													{gradeInfo.count} course{gradeInfo.count !== 1 ? 's' : ''}
+												</div>
+											</div>
+										{/each}
+									</div>
 								</div>
 							{/each}
 						</div>
@@ -260,6 +312,73 @@
 <style>
 	section {
 		min-height: 100vh;
-		background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+		/* Background is now handled by the main layout */
+	}
+
+	/* Grade Distribution Enhancements */
+	.grade-distribution {
+		background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+		border-radius: 1rem;
+		padding: 2rem;
+	}
+
+	.grade-column {
+		transition: transform 0.3s ease;
+	}
+
+	.grade-column:hover {
+		transform: translateY(-2px);
+	}
+
+	.grade-card {
+		transition: all 0.3s ease;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.grade-card::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+		transition: left 0.5s ease;
+	}
+
+	.grade-card:hover::before {
+		left: 100%;
+	}
+
+	.grade-progress-bar {
+		background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+		background-size: 200% 100%;
+		animation: shimmer 2s ease-in-out infinite;
+	}
+
+	@keyframes shimmer {
+		0% { background-position: -200% 0; }
+		100% { background-position: 200% 0; }
+	}
+
+	/* Responsive adjustments */
+	@media (max-width: 1024px) {
+		.grade-distribution .grid {
+			gap: 1.5rem;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.grade-distribution .grid {
+			grid-template-columns: repeat(3, 1fr);
+			gap: 1rem;
+		}
+	}
+
+	@media (max-width: 640px) {
+		.grade-distribution .grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
 	}
 </style>

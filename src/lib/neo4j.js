@@ -1,9 +1,21 @@
 import neo4j from 'neo4j-driver';
 
 // Neo4j connection configuration
-const NEO4J_URI = 'bolt://localhost:7687';
-const NEO4J_USERNAME = 'neo4j';
-const NEO4J_PASSWORD = 'Cerbumbc5!';
+const NEO4J_URI = process.env.NEO4J_URI;
+const NEO4J_USERNAME = process.env.NEO4J_USERNAME;
+const NEO4J_PASSWORD = process.env.NEO4J_PASSWORD;
+
+// Log configuration (without password for security)
+console.log('Neo4j Configuration:', {
+	uri: NEO4J_URI,
+	username: NEO4J_USERNAME,
+	passwordSet: !!process.env.NEO4J_PASSWORD,
+	envVars: {
+		NEO4J_URI: process.env.NEO4J_URI,
+		NEO4J_USERNAME: process.env.NEO4J_USERNAME,
+		NEO4J_PASSWORD: process.env.NEO4J_PASSWORD
+	}
+});
 
 /** @type {import('neo4j-driver').Driver | null} */
 let driver = null;

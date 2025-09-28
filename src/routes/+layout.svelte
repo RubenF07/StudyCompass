@@ -5,11 +5,13 @@
   import { page } from '$app/stores';
   import { goto } from '$app/navigation';
   import { clearStudentId, getStudentId, isLoggedIn } from '$lib/auth.js';
+  import { clearAllData } from '$lib/dataStore.js';
   import '../app.css';
 
 
   let analyticsId = import.meta.env.VERCEL_ANALYTICS_ID;
   let sidebarOpen = false;
+  let sidebarMinimized = false;
   let isAuthenticated = false;
   let currentStudentId = '';
   let authChecked = false;
@@ -22,8 +24,16 @@
     sidebarOpen = false;
   }
 
+  function toggleSidebarMinimized() {
+    sidebarMinimized = !sidebarMinimized;
+    if (sidebarMinimized) {
+      sidebarOpen = false;
+    }
+  }
+
   function handleLogout() {
     clearStudentId();
+    clearAllData(); // Clear all cached data on logout
     isAuthenticated = false;
     currentStudentId = '';
     goto('/login');
@@ -72,29 +82,62 @@
     <div class="loading-spinner"></div>
     <p>Loading...</p>
   </div>
-{:else if isAuthenticated || $page.url.pathname === '/login'}
-  <div class="layout">
+{:else if isAuthenticated}
+  <div class="layout" class:sidebar-open={sidebarOpen} class:sidebar-minimized={sidebarMinimized}>
     <!-- Sidebar -->
-    <aside class="sidebar" class:open={sidebarOpen}>
+    <aside class="sidebar" class:open={sidebarOpen} class:minimized={sidebarMinimized}>
       <div class="sidebar-header">
-        <h2>Navigation</h2>
-        <button class="close-btn" on:click={closeSidebar} aria-label="Close sidebar">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <line x1="18" y1="6" x2="6" y2="18"></line>
-            <line x1="6" y1="6" x2="18" y2="18"></line>
-          </svg>
-        </button>
+        <h2 class:minimized={sidebarMinimized}>Navigation</h2>
+        <div class="sidebar-controls">
+          <button class="minimize-btn" on:click={toggleSidebarMinimized} aria-label="Minimize sidebar">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 18l6-6-6-6"/>
+            </svg>
+          </button>
+          <button class="close-btn" on:click={closeSidebar} aria-label="Close sidebar">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
       </div>
       <nav class="sidebar-nav">
         <ul>
         <li class:active={$page.url.pathname === '/'}>
-          <a href="/" on:click={closeSidebar}>Home</a>
+          <a href="/" on:click={closeSidebar}>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9,22 9,12 15,12 15,22"/>
+            </svg>
+            <span class:minimized={sidebarMinimized}>Home</span>
+          </a>
         </li>
         <li class:active={$page.url.pathname === '/performance'}>
-          <a href="/performance" on:click={closeSidebar}>Academic Performance</a>
+          <a href="/performance" on:click={closeSidebar}>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+            </svg>
+            <span class:minimized={sidebarMinimized}>Academic Performance</span>
+          </a>
         </li>
         <li class:active={$page.url.pathname === '/studying'}>
-          <a href="/studying" on:click={closeSidebar}>Studying Habits</a>
+          <a href="/studying" on:click={closeSidebar}>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+            </svg>
+            <span class:minimized={sidebarMinimized}>Studying Habits</span>
+          </a>
+        </li>
+        <li class:active={$page.url.pathname === '/graduation'}>
+          <a href="/graduation" on:click={closeSidebar}>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            </svg>
+            <span class:minimized={sidebarMinimized}>Graduation</span>
+          </a>
         </li>
         </ul>
       </nav>
@@ -106,16 +149,24 @@
   {/if}
 
     <!-- Main content area -->
-    <div class="main-content">
+    <div class="main-content" class:sidebar-minimized={sidebarMinimized}>
       <header class="top-header">
         <div class="header-left">
-          <button class="menu-btn" on:click={toggleSidebar} aria-label="Open sidebar">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <line x1="3" y1="6" x2="21" y2="6"></line>
-              <line x1="3" y1="12" x2="21" y2="12"></line>
-              <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
-          </button>
+          {#if sidebarMinimized}
+            <button class="expand-btn" on:click={toggleSidebarMinimized} aria-label="Expand sidebar">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18l6-6-6-6"/>
+              </svg>
+            </button>
+          {:else}
+            <button class="menu-btn" on:click={toggleSidebar} aria-label="Open sidebar">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            </button>
+          {/if}
           <h1>Hack UMBC 2025</h1>
         </div>
         {#if isAuthenticated && currentStudentId}
@@ -138,12 +189,11 @@
       </main>
     </div>
   </div>
-{/if}
-
-{#if isAuthenticated}
-<footer>
-	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-</footer>
+{:else if $page.url.pathname === '/login'}
+  <!-- Login page without navigation - full screen -->
+  <div class="login-layout">
+    <slot />
+  </div>
 {/if}
 
 <style>
@@ -193,13 +243,36 @@
 		height: 100vh;
 		background: var(--color-bg-2, #f8f9fa);
 		border-right: 1px solid var(--color-border, #e9ecef);
-		transition: left 0.3s ease;
-		z-index: 1000;
+		transition: left 0.3s ease, width 0.3s ease;
+		z-index: 1002; /* Higher than header */
 		overflow-y: auto;
 	}
 
 	.sidebar.open {
 		left: 0;
+	}
+
+	/* When sidebar is open, adjust header position */
+	.layout.sidebar-open .top-header {
+		left: 300px;
+	}
+
+	.sidebar.minimized {
+		left: 0;
+		width: 60px;
+	}
+
+	/* When sidebar is minimized, adjust header position */
+	.layout.sidebar-minimized .top-header {
+		left: 60px;
+	}
+
+	.sidebar.minimized .sidebar-header h2.minimized {
+		display: none;
+	}
+
+	.sidebar.minimized .sidebar-nav span.minimized {
+		display: none;
 	}
 
 	.sidebar-header {
@@ -216,9 +289,18 @@
 		font-size: 1.25rem;
 		font-weight: 600;
 		color: var(--color-text, #333);
+		transition: opacity 0.3s ease;
+		white-space: nowrap;
+		overflow: hidden;
 	}
 
-	.close-btn {
+	.sidebar-controls {
+		display: flex;
+		gap: 0.5rem;
+		align-items: center;
+	}
+
+	.minimize-btn, .close-btn {
 		background: none;
 		border: none;
 		cursor: pointer;
@@ -228,8 +310,12 @@
 		transition: background-color 0.2s;
 	}
 
-	.close-btn:hover {
+	.minimize-btn:hover, .close-btn:hover {
 		background-color: var(--color-bg-2, #f8f9fa);
+	}
+
+	.sidebar.minimized .close-btn {
+		display: none;
 	}
 
 	.sidebar-nav {
@@ -244,15 +330,33 @@
 
 	.sidebar-nav li {
 		margin: 0;
+		height: 3rem; /* Fixed height to match navigation links */
+		min-height: 3rem;
 	}
 
 	.sidebar-nav a {
-		display: block;
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
 		padding: 0.75rem 1rem;
 		color: var(--color-text, #333);
 		text-decoration: none;
 		transition: background-color 0.2s, color 0.2s;
 		border-left: 3px solid transparent;
+		white-space: nowrap;
+		overflow: hidden;
+		height: 3rem; /* Fixed height to prevent icon shifting */
+		min-height: 3rem;
+	}
+
+	.sidebar-nav a svg {
+		flex-shrink: 0;
+	}
+
+	.sidebar-nav a span {
+		transition: opacity 0.3s ease;
+		white-space: nowrap;
+		overflow: hidden;
 	}
 
 	.sidebar-nav a:hover {
@@ -282,10 +386,27 @@
 		flex-direction: column;
 		width: 100%;
 		margin-left: 0;
+		margin-top: 80px; /* Account for fixed header height */
 		transition: margin-left 0.3s ease;
 	}
 
+	/* Adjust main content when sidebar is open */
+	.layout.sidebar-open .main-content {
+		margin-left: 300px;
+	}
+
+	/* Adjust main content when sidebar is minimized */
+	.layout.sidebar-minimized .main-content {
+		margin-left: 60px;
+	}
+
+
 	.top-header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 1001;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -336,7 +457,7 @@
 		transform: translateY(-1px);
 	}
 
-	.menu-btn {
+	.menu-btn, .expand-btn {
 		background: none;
 		border: none;
 		cursor: pointer;
@@ -347,7 +468,7 @@
 		transition: background-color 0.2s;
 	}
 
-	.menu-btn:hover {
+	.menu-btn:hover, .expand-btn:hover {
 		background-color: var(--color-bg-2, #f8f9fa);
 	}
 
@@ -362,11 +483,32 @@
 		flex: 1;
 		display: flex;
 		flex-direction: column;
-		padding: 1rem;
+		padding: 2rem;
 		width: 100%;
-		max-width: 1024px;
+		max-width: 1400px;
 		margin: 0 auto;
 		box-sizing: border-box;
+		height: calc(100vh - 80px); /* Full height minus header */
+		overflow-y: auto;
+		background: 
+			radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.1) 0%, transparent 50%),
+			radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.1) 0%, transparent 50%),
+			radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.1) 0%, transparent 50%),
+			linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+		background-attachment: fixed;
+		position: relative;
+	}
+
+
+	main > * {
+		position: relative;
+		z-index: 1;
+	}
+
+	.login-layout {
+		width: 100vw;
+		height: 100vh;
+		overflow: hidden;
 	}
 
 	footer {
@@ -385,25 +527,43 @@
 
 	@media (min-width: 768px) {
 		.sidebar {
-			position: static;
+			position: fixed;
+			top: 0;
 			left: 0;
 			width: 250px;
-			height: auto;
+			height: 100vh;
 		}
 
 		.sidebar.open {
 			left: 0;
 		}
 
+		.sidebar.minimized {
+			width: 60px;
+		}
+
+		/* Desktop: sidebar is always visible, so adjust header and main content */
+		.top-header {
+			left: 250px;
+		}
+
+		.layout.sidebar-minimized .top-header {
+			left: 60px;
+		}
+
 		.main-content {
-			margin-left: 0;
+			margin-left: 250px;
+		}
+
+		.layout.sidebar-minimized .main-content {
+			margin-left: 60px;
 		}
 
 		.sidebar-overlay {
 			display: none;
 		}
 
-		.menu-btn {
+		.menu-btn, .expand-btn {
 			display: none;
 		}
 

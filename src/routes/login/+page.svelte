@@ -1,7 +1,8 @@
 <script>
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
-	import { setStudentId, isLoggedIn, validateStudent } from '$lib/auth.js';
+	import { setStudentId, isLoggedIn, validateStudent, getStudentId } from '$lib/auth.js';
+	import { clearAllData, forceRefreshData } from '$lib/dataStore.js';
 
 
 	let studentId = '';
@@ -33,9 +34,23 @@
 			console.log('Validation result:', validation);
 
 			if (validation.exists) {
+				// Check if this is a different student than currently logged in
+				const currentStudentId = getStudentId();
+				const newStudentId = studentId.trim();
+				
+				if (currentStudentId && currentStudentId !== newStudentId) {
+					// Different student, clear all cached data
+					console.log('Different student detected, clearing cached data');
+					clearAllData();
+				}
+				
 				// Student exists, set cookie and redirect
 				console.log('Student found, logging in:', validation.studentData);
-				setStudentId(studentId.trim());
+				setStudentId(newStudentId);
+				
+				// Force refresh data for the new student
+				await forceRefreshData(newStudentId);
+				
 				goto('/');
 			} else {
 				// Student not found or validation error
