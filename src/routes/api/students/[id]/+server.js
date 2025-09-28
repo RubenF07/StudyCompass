@@ -28,7 +28,7 @@ export async function GET({ params }) {
 	} catch (error) {
 		console.error('Error querying students:', error);
 		return json({ 
-			error: 'Failed to query students',
+			error: 'Could not find student',
 			studentCount: 0 
 		}, { status: 500 });
 	}

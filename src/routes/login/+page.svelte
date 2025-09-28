@@ -85,7 +85,7 @@
 					id="studentId"
 					type="text"
 					bind:value={studentId}
-					placeholder="Enter your student ID (e.g., GB00803)"
+					placeholder="Enter your student ID"
 					class="form-input"
 					disabled={loading}
 					required
