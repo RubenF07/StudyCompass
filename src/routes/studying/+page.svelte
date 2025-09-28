@@ -42,7 +42,7 @@
 		
 		if (currentStudentId && $studentDataStore.studentId === currentStudentId) {
 			if ($studentDataStore.aiInsights) {
-				console.log('Loading AI insights from store:', $studentDataStore.aiInsights);
+				// console.log('Loading AI insights from store:', $studentDataStore.aiInsights);
 				insights = $studentDataStore.aiInsights;
 				showInsights = true;
 			} else {
@@ -106,13 +106,13 @@
 
 		try {
 			console.log("Analyzing study habits with AI...");
-			console.log("Study habits data:", studyHabitsData);
+			// console.log("Study habits data:", studyHabitsData);
 			
 			// Call Gemini directly from client
 			const result = await generateStudyInsights(studyHabitsData);
 			
 			insights = result.insights;
-			console.log("AI insights generated:", result.insights);
+			// console.log("AI insights generated:", result.insights);
 		} catch (err) {
 			insightsError = `Failed to generate insights: ${err.message}`;
 			console.error("Error analyzing study habits:", err);

@@ -86,7 +86,7 @@ export function clearAllData() {
 		localStorage.removeItem('aiInsightsStudentId');
 		localStorage.removeItem('courseRoadmap');
 		localStorage.removeItem('courseRoadmapStudentId');
-		console.log('🗑️ Cleared AI insights and course roadmap from localStorage');
+		console.log('Cleared AI insights and course roadmap from localStorage');
 	}
 	
 	studentDataStore.set({
@@ -325,7 +325,7 @@ export async function getStudyHabitsData(studentId, parseFunction) {
  * @returns {void}
  */
 export function saveAIInsights(studentId, insights) {
-	console.log('💾 saveAIInsights called with:', { studentId, insights });
+	// console.log('saveAIInsights called with:', { studentId, insights });
 	
 	if (!studentId || !insights) {
 		console.warn('Cannot save AI insights: missing studentId or insights');
@@ -337,7 +337,7 @@ export function saveAIInsights(studentId, insights) {
 		try {
 			localStorage.setItem('aiInsights', JSON.stringify(insights));
 			localStorage.setItem('aiInsightsStudentId', studentId);
-			console.log('💾 Saved AI insights to localStorage for student:', studentId);
+			console.log('Saved AI insights to localStorage for student:', studentId);
 		} catch (error) {
 			console.error('Failed to save AI insights to localStorage:', error);
 		}
@@ -346,7 +346,7 @@ export function saveAIInsights(studentId, insights) {
 	// Update the store with AI insights
 	// @ts-ignore
 	studentDataStore.update(store => {
-		console.log('🔄 Updating store. Current store state:', store);
+		// console.log('Updating store. Current store state:', store);
 		if (store.studentId === studentId) {
 			const newStore = {
 				...store,
@@ -354,10 +354,10 @@ export function saveAIInsights(studentId, insights) {
 				// @ts-ignore
 				lastUpdated: new Date().toISOString()
 			};
-			console.log('✅ Updated store with AI insights:', newStore);
+			// console.log('Updated store with AI insights:', newStore);
 			return newStore;
 		}
-		console.log('❌ Student ID mismatch in store update');
+		console.log('Student ID mismatch in store update');
 		return store;
 	});
 
@@ -386,7 +386,7 @@ export function getAIInsights(studentId) {
  * @returns {void}
  */
 export function saveCourseRoadmap(studentId, roadmap) {
-	console.log('💾 saveCourseRoadmap called with:', { studentId, roadmap });
+	// console.log('saveCourseRoadmap called with:', { studentId, roadmap });
 	
 	if (!studentId || !roadmap) {
 		console.warn('Cannot save course roadmap: missing studentId or roadmap');
@@ -398,7 +398,7 @@ export function saveCourseRoadmap(studentId, roadmap) {
 		try {
 			localStorage.setItem('courseRoadmap', JSON.stringify(roadmap));
 			localStorage.setItem('courseRoadmapStudentId', studentId);
-			console.log('💾 Saved course roadmap to localStorage for student:', studentId);
+			console.log('Saved course roadmap to localStorage for student:', studentId);
 		} catch (error) {
 			console.error('Failed to save course roadmap to localStorage:', error);
 		}
@@ -407,7 +407,7 @@ export function saveCourseRoadmap(studentId, roadmap) {
 	// Update the store with course roadmap
 	// @ts-ignore
 	studentDataStore.update(store => {
-		console.log('🔄 Updating store with course roadmap. Current store state:', store);
+		// console.log('Updating store with course roadmap. Current store state:', store);
 		if (store.studentId === studentId) {
 			const newStore = {
 				...store,
@@ -415,10 +415,10 @@ export function saveCourseRoadmap(studentId, roadmap) {
 				// @ts-ignore
 				lastUpdated: new Date().toISOString()
 			};
-			console.log('✅ Updated store with course roadmap:', newStore);
+			// console.log('Updated store with course roadmap:', newStore);
 			return newStore;
 		}
-		console.log('❌ Student ID mismatch in store update');
+		console.log('Student ID mismatch in store update');
 		return store;
 	});
 
@@ -446,7 +446,7 @@ export function getCourseRoadmap(studentId) {
  * @returns {void}
  */
 export function deleteAIInsights(studentId) {
-	console.log('🗑️ deleteAIInsights called for student:', studentId);
+	// console.log('deleteAIInsights called for student:', studentId);
 	
 	if (!studentId) {
 		console.warn('Cannot delete AI insights: missing studentId');
@@ -458,7 +458,7 @@ export function deleteAIInsights(studentId) {
 		try {
 			localStorage.removeItem('aiInsights');
 			localStorage.removeItem('aiInsightsStudentId');
-			console.log('🗑️ Removed AI insights from localStorage');
+			console.log('Removed AI insights from localStorage');
 		} catch (error) {
 			console.error('Failed to remove AI insights from localStorage:', error);
 		}
@@ -471,10 +471,10 @@ export function deleteAIInsights(studentId) {
 				...store,
 				aiInsights: null
 			};
-			console.log('✅ Removed AI insights from store');
+			console.log('Removed AI insights from store');
 			return newStore;
 		}
-		console.log('❌ Student ID mismatch in store update');
+		console.log('Student ID mismatch in store update');
 		return store;
 	});
 
@@ -487,7 +487,7 @@ export function deleteAIInsights(studentId) {
  * @returns {void}
  */
 export function deleteCourseRoadmap(studentId) {
-	console.log('🗑️ deleteCourseRoadmap called for student:', studentId);
+	// console.log('deleteCourseRoadmap called for student:', studentId);
 	
 	if (!studentId) {
 		console.warn('Cannot delete course roadmap: missing studentId');
@@ -499,7 +499,7 @@ export function deleteCourseRoadmap(studentId) {
 		try {
 			localStorage.removeItem('courseRoadmap');
 			localStorage.removeItem('courseRoadmapStudentId');
-			console.log('🗑️ Removed course roadmap from localStorage');
+			console.log('Removed course roadmap from localStorage');
 		} catch (error) {
 			console.error('Failed to remove course roadmap from localStorage:', error);
 		}
@@ -512,10 +512,10 @@ export function deleteCourseRoadmap(studentId) {
 				...store,
 				courseRoadmap: null
 			};
-			console.log('✅ Removed course roadmap from store');
+			console.log('Removed course roadmap from store');
 			return newStore;
 		}
-		console.log('❌ Student ID mismatch in store update');
+		console.log('Student ID mismatch in store update');
 		return store;
 	});
 
@@ -536,7 +536,7 @@ export async function forceRefreshData(studentId) {
 		localStorage.removeItem('aiInsightsStudentId');
 		localStorage.removeItem('courseRoadmap');
 		localStorage.removeItem('courseRoadmapStudentId');
-		console.log('🗑️ Cleared AI insights and course roadmap from localStorage during force refresh');
+		console.log('Cleared AI insights and course roadmap from localStorage during force refresh');
 	}
 	
 	// Clear existing data for this student

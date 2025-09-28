@@ -190,7 +190,7 @@
       
       roadmap = result.roadmap;
       roadmapGenerated = true;
-      console.log('AI Course Roadmap generated successfully!', roadmap);
+      // console.log('AI Course Roadmap generated successfully!', roadmap);
     } catch (err) {
       roadmapError = `Failed to generate roadmap: ${err.message}`;
       console.error('Error generating roadmap:', err);

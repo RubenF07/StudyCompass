@@ -74,7 +74,7 @@
 <div class="login-container">
 	<div class="login-card">
 		<div class="login-header">
-			<h1>🎓 StudyCompass</h1>
+			<h1><img src="/StudyCompassLogo.png" alt="StudyCompass" class="logo" /> StudyCompass</h1>
 			<p class="login-subtitle">Student Login</p>
 		</div>
 
@@ -146,6 +146,15 @@
 		font-weight: 700;
 		color: #1f2937;
 		margin: 0 0 0.5rem 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.5rem;
+	}
+
+	.logo {
+		height: 2rem;
+		width: auto;
 	}
 
 	.login-subtitle {

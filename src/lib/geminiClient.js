@@ -82,8 +82,8 @@ ${JSON.stringify(studyHabitsData, null, 2)}`;
 			contents: prompt,
 		});
 		
-		console.log('Received response from Gemini AI');
-		console.log('Raw response:', response.text);
+		// console.log('Received response from Gemini AI');
+		// console.log('Raw response:', response.text);
 		
 		// Extract JSON from markdown code blocks if present
 		let jsonText = response.text || '{}';
@@ -92,7 +92,7 @@ ${JSON.stringify(studyHabitsData, null, 2)}`;
 		const jsonMatch = jsonText.match(/```(?:json)?\s*(\{[\s\S]*?\})\s*```/);
 		if (jsonMatch) {
 			jsonText = jsonMatch[1];
-			console.log('Extracted JSON from markdown:', jsonText);
+			// console.log('Extracted JSON from markdown:', jsonText);
 		}
 		
 		// Parse the AI response as JSON
@@ -101,7 +101,7 @@ ${JSON.stringify(studyHabitsData, null, 2)}`;
 		
 		// Save insights to data store
 		const studentId = getStudentId();
-		console.log('Saving AI insights for student:', studentId, insights);
+		// console.log('Saving AI insights for student:', studentId, insights);
 		if (studentId) {
 			saveAIInsights(studentId, insights);
 		} else {
@@ -236,8 +236,8 @@ ${JSON.stringify(studentData, null, 2)}`;
 			contents: prompt,
 		});
 		
-		console.log('Received graduation roadmap response from Gemini AI');
-		console.log('Raw response:', response.text);
+		// console.log('Received graduation roadmap response from Gemini AI');
+		// console.log('Raw response:', response.text);
 		
 		// Extract JSON from markdown code blocks if present
 		let jsonText = response.text || '{}';
@@ -246,7 +246,7 @@ ${JSON.stringify(studentData, null, 2)}`;
 		const jsonMatch = jsonText.match(/```(?:json)?\s*(\{[\s\S]*?\})\s*```/);
 		if (jsonMatch) {
 			jsonText = jsonMatch[1];
-			console.log('Extracted JSON from markdown:', jsonText);
+			// console.log('Extracted JSON from markdown:', jsonText);
 		}
 		
 		// Parse the AI response as JSON
@@ -255,7 +255,7 @@ ${JSON.stringify(studentData, null, 2)}`;
 		
 		// Save roadmap to data store
 		const studentId = getStudentId();
-		console.log('Saving graduation roadmap for student:', studentId, roadmap);
+		// console.log('Saving graduation roadmap for student:', studentId, roadmap);
 		if (studentId) {
 			saveCourseRoadmap(studentId, roadmap);
 		} else {

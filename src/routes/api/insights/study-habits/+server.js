@@ -14,14 +14,12 @@ export async function GET() {
 
 export async function POST({ request }) {
 	console.log('=== POST REQUEST RECEIVED ===');
-	console.log('POST request received for study habits insights');
 	console.log('Request headers:', Object.fromEntries(request.headers.entries()));
 	
 	try {
 		
 		// Check if request has a body
 		const contentType = request.headers.get('content-type');
-		console.log('Content-Type:', contentType);
 		
 		if (!contentType || !contentType.includes('application/json')) {
 			console.error('Invalid content type:', contentType);
@@ -34,7 +32,6 @@ export async function POST({ request }) {
 		let requestBody;
 		try {
 			requestBody = await request.json();
-			console.log('Request body parsed successfully:', Object.keys(requestBody));
 		} catch (parseError) {
 			console.error('Failed to parse request body:', parseError);
 			return json({ 
@@ -51,7 +48,7 @@ export async function POST({ request }) {
 			}, { status: 400 });
 		}
 		
-		console.log('Study habits data received, keys:', Object.keys(studyHabitsData));
+		// console.log('Study habits data received, keys:', Object.keys(studyHabitsData));
 
 		const prompt = `You are an intelligent academic advisor analyzing a student's study habits and academic performance data. Generate personalized insights that help the student understand their patterns and optimize their academic success.
 
@@ -120,11 +117,11 @@ ${JSON.stringify(studyHabitsData, null, 2)}`;
 			contents: prompt,
 		});
 		
-		console.log('Received response from Gemini AI');
+		// console.log('Received response from Gemini AI');
 		
 		try {
 			const insights = JSON.parse(response.text || '{}');
-			console.log('Successfully parsed AI insights');
+			// console.log('Successfully parsed AI insights');
 			return json({ insights });
 		} catch (parseError) {
 			console.error("Failed to parse AI response as JSON:", parseError);

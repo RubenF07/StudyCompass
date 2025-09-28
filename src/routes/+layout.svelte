@@ -167,7 +167,7 @@
               </svg>
             </button>
           {/if}
-          <h1>StudyCompass</h1>
+          <h1><img src="/StudyCompassLogo.png" alt="StudyCompass" class="header-logo" /> StudyCompass</h1>
         </div>
         {#if isAuthenticated && currentStudentId}
           <div class="header-right">
@@ -477,6 +477,14 @@
 		font-size: 1.5rem;
 		font-weight: 600;
 		color: var(--color-text, #333);
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
+	.header-logo {
+		height: 1.5rem;
+		width: auto;
 	}
 
 	main {
