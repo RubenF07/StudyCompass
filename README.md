@@ -61,3 +61,5 @@ To set up StudyCompass locally:
    ```
 
 The app will be available at [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal).
+
+> **Note:** The data used in the Neo4j database (and the generated `/lib/db_emulator.json`) is based on the sample student data generation from [this repository](https://github.com/jasonpaluck/hackumbc-2025). The data has been adapted and expanded for demonstration purposes in StudyCompass.
