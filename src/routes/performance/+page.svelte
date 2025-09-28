@@ -208,7 +208,7 @@
 									<!-- Grade Variations (Vertical Stack) -->
 									<div class="space-y-4 w-full">
 										{#each letterGroup.grades as gradeInfo}
-											<div class="text-center p-5 rounded-xl transition-all duration-300 hover:scale-105 grade-card {gradeInfo.hasReceived ? 'bg-white shadow-lg border-2 border-gray-200 hover:shadow-xl' : 'bg-gray-50 border-2 border-gray-100 opacity-60'}">
+											<div class="text-center p-5 rounded-xl transition-all duration-300 grade-card {gradeInfo.hasReceived ? 'bg-white shadow-lg border-2 border-gray-200' : 'bg-gray-50 border-2 border-gray-100 opacity-60'}">
 												<div class="text-3xl font-bold mb-2 {gradeInfo.hasReceived ? getGradeColor(gradeInfo.grade) : 'text-gray-400'}">
 													{gradeInfo.grade}
 												</div>
@@ -326,30 +326,12 @@
 		transition: transform 0.3s ease;
 	}
 
-	.grade-column:hover {
-		transform: translateY(-2px);
-	}
-
 	.grade-card {
 		transition: all 0.3s ease;
 		position: relative;
 		overflow: hidden;
 	}
 
-	.grade-card::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: -100%;
-		width: 100%;
-		height: 100%;
-		background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-		transition: left 0.5s ease;
-	}
-
-	.grade-card:hover::before {
-		left: 100%;
-	}
 
 	.grade-progress-bar {
 		background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);

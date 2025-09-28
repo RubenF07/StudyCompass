@@ -1,0 +1,5823 @@
+{
+  "IS91351": {
+    "studentData": {
+      "s": {
+        "properties": {
+          "properties": {
+            "properties": {
+              "preferredCourseLoad": {
+                "low": 3
+              },
+              "preferredInstructionMode": "In-person",
+              "workHoursPerWeek": {
+                "low": 7
+              },
+              "learningStyle": "Reading-Writing",
+              "financialAidStatus": "FinancialAid",
+              "name": "Lisa Terry",
+              "enrollmentDate": "2023-05-19",
+              "id": "IS91351",
+              "expectedGraduation": "2029-10-20",
+              "preferredPace": "Standard"
+            }
+          }
+        }
+      },
+      "relationships": [
+        {
+          "relationship": "PURSUING",
+          "properties": {},
+          "target": {
+            "labels": [
+              "Degree"
+            ],
+            "properties": {
+              "coreCreditsRequired": {
+                "low": 65
+              },
+              "electiveCreditsRequired": {
+                "low": 55
+              },
+              "name": "Bachelor of Arts in Biology",
+              "id": "BA-Biology-2",
+              "department": "Biology",
+              "type": "Bachelor",
+              "totalCreditsRequired": {
+                "low": 120
+              }
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": true,
+            "term": "Spring2024",
+            "grade": "B",
+            "difficulty": {
+              "low": 4
+            },
+            "instructionMode": "In-person",
+            "timeSpent": {
+              "low": 13
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.86,
+              "avgDifficulty": {
+                "low": 4
+              },
+              "level": {
+                "low": 400
+              },
+              "avgTimeCommitment": {
+                "low": 11
+              },
+              "readingLearnerSuccess": 0.92,
+              "tags": [
+                "Computer Science",
+                "Level-4"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Special Topics in Edge Computing",
+              "instructionModes": [
+                "In-person",
+                "Online",
+                "Hybrid"
+              ],
+              "id": "CSDD 400",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.88,
+              "visualLearnerSuccess": 0.71
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": false,
+            "term": "Summer2023",
+            "grade": "C+",
+            "difficulty": {
+              "low": 4
+            },
+            "instructionMode": "In-person",
+            "timeSpent": {
+              "low": 9
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.73,
+              "avgDifficulty": {
+                "low": 4
+              },
+              "level": {
+                "low": 200
+              },
+              "avgTimeCommitment": {
+                "low": 9
+              },
+              "readingLearnerSuccess": 0.77,
+              "tags": [
+                "Computer Science",
+                "Level-2"
+              ],
+              "credits": {
+                "low": 1
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring",
+                "Summer"
+              ],
+              "name": "Artificial Intelligence",
+              "instructionModes": [
+                "In-person",
+                "Online"
+              ],
+              "id": "CSBB 200",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.62,
+              "visualLearnerSuccess": 0.82
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": false,
+            "term": "Fall2023",
+            "grade": "C",
+            "difficulty": {
+              "low": 2
+            },
+            "instructionMode": "Online",
+            "timeSpent": {
+              "low": 8
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.98,
+              "avgDifficulty": {
+                "low": 2
+              },
+              "level": {
+                "low": 200
+              },
+              "avgTimeCommitment": {
+                "low": 7
+              },
+              "readingLearnerSuccess": 0.73,
+              "tags": [
+                "Computer Science",
+                "Level-2",
+                "Intro",
+                "Programming"
+              ],
+              "credits": {
+                "low": 1
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Introduction to Programming",
+              "instructionModes": [
+                "In-person",
+                "Online",
+                "Hybrid"
+              ],
+              "id": "CSUU 200",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.83,
+              "visualLearnerSuccess": 0.74
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": true,
+            "term": "Spring2025",
+            "grade": "B",
+            "difficulty": {
+              "low": 2
+            },
+            "instructionMode": "Online",
+            "timeSpent": {
+              "low": 3
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.64,
+              "avgDifficulty": {
+                "low": 2
+              },
+              "level": {
+                "low": 100
+              },
+              "avgTimeCommitment": {
+                "low": 4
+              },
+              "readingLearnerSuccess": 0.92,
+              "tags": [
+                "Computer Science",
+                "Level-1"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Fundamentals of Computer Networks",
+              "instructionModes": [
+                "In-person",
+                "Online",
+                "Hybrid"
+              ],
+              "id": "CSZZ 100",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.8,
+              "visualLearnerSuccess": 0.9
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": true,
+            "term": "Summer2023",
+            "grade": "B",
+            "difficulty": {
+              "low": 4
+            },
+            "instructionMode": "In-person",
+            "timeSpent": {
+              "low": 5
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.66,
+              "avgDifficulty": {
+                "low": 4
+              },
+              "level": {
+                "low": 200
+              },
+              "avgTimeCommitment": {
+                "low": 7
+              },
+              "readingLearnerSuccess": 0.9,
+              "tags": [
+                "Computer Science",
+                "Level-2"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring",
+                "Summer"
+              ],
+              "name": "Artificial Intelligence",
+              "instructionModes": [
+                "In-person",
+                "Online"
+              ],
+              "id": "CSPP 200",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.83,
+              "visualLearnerSuccess": 0.69
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": true,
+            "term": "Spring2025",
+            "grade": "A-",
+            "difficulty": {
+              "low": 3
+            },
+            "instructionMode": "Online",
+            "timeSpent": {
+              "low": 6
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.93,
+              "avgDifficulty": {
+                "low": 3
+              },
+              "level": {
+                "low": 300
+              },
+              "avgTimeCommitment": {
+                "low": 9
+              },
+              "readingLearnerSuccess": 0.77,
+              "tags": [
+                "Computer Science",
+                "Level-3",
+                "Data",
+                "Methods",
+                "Systems"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Database Systems Methods",
+              "instructionModes": [
+                "In-person",
+                "Online"
+              ],
+              "id": "CSEE 300-6",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.81,
+              "visualLearnerSuccess": 0.62
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": false,
+            "term": "Fall2024",
+            "grade": "B-",
+            "difficulty": {
+              "low": 2
+            },
+            "instructionMode": "In-person",
+            "timeSpent": {
+              "low": 3
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.76,
+              "avgDifficulty": {
+                "low": 2
+              },
+              "level": {
+                "low": 100
+              },
+              "avgTimeCommitment": {
+                "low": 4
+              },
+              "readingLearnerSuccess": 0.88,
+              "tags": [
+                "Computer Science",
+                "Level-1",
+                "Data"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Fundamentals of Big Data Analytics",
+              "instructionModes": [
+                "In-person"
+              ],
+              "id": "CSMM 100",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.7,
+              "visualLearnerSuccess": 0.68
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": true,
+            "term": "Fall2024",
+            "grade": "B+",
+            "difficulty": {
+              "low": 2
+            },
+            "instructionMode": "Online",
+            "timeSpent": {
+              "low": 7
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.71,
+              "avgDifficulty": {
+                "low": 2
+              },
+              "level": {
+                "low": 200
+              },
+              "avgTimeCommitment": {
+                "low": 7
+              },
+              "readingLearnerSuccess": 0.76,
+              "tags": [
+                "Biology",
+                "Level-2",
+                "Ecology"
+              ],
+              "credits": {
+                "low": 2
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Ecology",
+              "instructionModes": [
+                "In-person",
+                "Online",
+                "Hybrid"
+              ],
+              "id": "BFFF 200",
+              "department": "Biology",
+              "kinestheticLearnerSuccess": 0.96,
+              "visualLearnerSuccess": 0.72
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": false,
+            "term": "Fall2023",
+            "grade": "C",
+            "difficulty": {
+              "low": 1
+            },
+            "instructionMode": "In-person",
+            "timeSpent": {
+              "low": 5
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.84,
+              "avgDifficulty": {
+                "low": 1
+              },
+              "level": {
+                "low": 200
+              },
+              "avgTimeCommitment": {
+                "low": 5
+              },
+              "readingLearnerSuccess": 0.89,
+              "tags": [
+                "Biology",
+                "Level-2",
+                "Conservation"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Conservation Biology",
+              "instructionModes": [
+                "In-person"
+              ],
+              "id": "BKKK 200",
+              "department": "Biology",
+              "kinestheticLearnerSuccess": 0.71,
+              "visualLearnerSuccess": 0.85
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": false,
+            "term": "Summer2023",
+            "grade": "B-",
+            "difficulty": {
+              "low": 3
+            },
+            "instructionMode": "In-person",
+            "timeSpent": {
+              "low": 4
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.7,
+              "avgDifficulty": {
+                "low": 3
+              },
+              "level": {
+                "low": 100
+              },
+              "avgTimeCommitment": {
+                "low": 6
+              },
+              "readingLearnerSuccess": 0.78,
+              "tags": [
+                "Biology",
+                "Level-1",
+                "Intro"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring",
+                "Summer"
+              ],
+              "name": "Introduction to Computational Biology",
+              "instructionModes": [
+                "In-person"
+              ],
+              "id": "BGGG 100",
+              "department": "Biology",
+              "kinestheticLearnerSuccess": 0.91,
+              "visualLearnerSuccess": 0.61
+            }
+          }
+        },
+        {
+          "relationship": "ENROLLED_IN",
+          "properties": {},
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.95,
+              "avgDifficulty": {
+                "low": 3
+              },
+              "level": {
+                "low": 300
+              },
+              "avgTimeCommitment": {
+                "low": 8
+              },
+              "readingLearnerSuccess": 0.98,
+              "tags": [
+                "Computer Science",
+                "Level-3",
+                "Theory",
+                "Vision"
+              ],
+              "credits": {
+                "low": 4
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring",
+                "Summer"
+              ],
+              "name": "Computer Vision Theory",
+              "instructionModes": [
+                "In-person",
+                "Online",
+                "Hybrid"
+              ],
+              "id": "CSLL 300",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.97,
+              "visualLearnerSuccess": 0.64
+            }
+          }
+        },
+        {
+          "relationship": "SIMILAR_LEARNING_STYLE",
+          "properties": {
+            "similarity": 0.85
+          },
+          "target": {
+            "labels": [
+              "Student"
+            ],
+            "properties": {
+              "preferredCourseLoad": 4,
+              "preferredInstructionMode": "Online",
+              "workHoursPerWeek": 2,
+              "learningStyle": "Reading-Writing",
+              "financialAidStatus": "FinancialAid",
+              "name": "Angela Johnson",
+              "enrollmentDate": "neo4j.time.Date(2025",
+              "id": "NP94595",
+              "expectedGraduation": "neo4j.time.Date(2027",
+              "preferredPace": "Standard"
+            }
+          }
+        },
+        {
+          "relationship": "SIMILAR_LEARNING_STYLE",
+          "properties": {
+            "similarity": 0.76
+          },
+          "target": {
+            "labels": [
+              "Student"
+            ],
+            "properties": {
+              "preferredCourseLoad": 2,
+              "preferredInstructionMode": "In-person",
+              "workHoursPerWeek": 20,
+              "learningStyle": "Reading-Writing",
+              "financialAidStatus": "FinancialAid",
+              "name": "Corey Henry",
+              "enrollmentDate": "neo4j.time.Date(2024",
+              "id": "JM67808",
+              "expectedGraduation": "neo4j.time.Date(2027",
+              "preferredPace": "Part-time"
+            }
+          }
+        },
+        {
+          "relationship": "SIMILAR_LEARNING_STYLE",
+          "properties": {
+            "similarity": 0.71
+          },
+          "target": {
+            "labels": [
+              "Student"
+            ],
+            "properties": {
+              "preferredCourseLoad": 3,
+              "preferredInstructionMode": "Online",
+              "workHoursPerWeek": 36,
+              "learningStyle": "Reading-Writing",
+              "financialAidStatus": "FinancialAid",
+              "name": "Jessica Melton",
+              "enrollmentDate": "neo4j.time.Date(2025",
+              "id": "XB55501",
+              "expectedGraduation": "neo4j.time.Date(2028",
+              "preferredPace": "Part-time"
+            }
+          }
+        },
+        {
+          "relationship": "SIMILAR_LEARNING_STYLE",
+          "properties": {
+            "similarity": 0.81
+          },
+          "target": {
+            "labels": [
+              "Student"
+            ],
+            "properties": {
+              "preferredCourseLoad": 5,
+              "preferredInstructionMode": "Hybrid",
+              "workHoursPerWeek": 11,
+              "learningStyle": "Reading-Writing",
+              "financialAidStatus": "Self-Pay",
+              "name": "David Turner",
+              "enrollmentDate": "neo4j.time.Date(2025",
+              "id": "NQ78891",
+              "expectedGraduation": "neo4j.time.Date(2028",
+              "preferredPace": "Standard"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 28,
+              "effectiveness": 0.92,
+              "termId": "Summer2023",
+              "notes": "Study session for CSBB 200 using reading",
+              "method": "Reading",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Library",
+              "id": "session_68",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 32,
+              "effectiveness": 0.93,
+              "termId": "Summer2023",
+              "notes": "Study session for CSBB 200 using practice problems",
+              "method": "Practice Problems",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Library",
+              "id": "session_69",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 46,
+              "effectiveness": 0.98,
+              "termId": "Summer2023",
+              "notes": "Study session for CSBB 200 using practice problems",
+              "method": "Practice Problems",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Library",
+              "id": "session_70",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 43,
+              "effectiveness": 1.0,
+              "termId": "Summer2023",
+              "notes": "Study session for CSPP 200 using reading",
+              "method": "Reading",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Coffee Shop",
+              "id": "session_71",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 20,
+              "effectiveness": 0.34,
+              "termId": "Summer2023",
+              "notes": "Study session for CSPP 200 using reading",
+              "method": "Reading",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Dorm Room",
+              "id": "session_72",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 43,
+              "effectiveness": 1.0,
+              "termId": "Summer2023",
+              "notes": "Study session for CSPP 200 using review",
+              "method": "Review",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Dorm Room",
+              "id": "session_73",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 64,
+              "effectiveness": 0.4,
+              "termId": "Summer2023",
+              "notes": "Study session for BGGG 100 using practice problems",
+              "method": "Practice Problems",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Dorm Room",
+              "id": "session_74",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 62,
+              "effectiveness": 0.61,
+              "termId": "Summer2023",
+              "notes": "Study session for BGGG 100 using practice problems",
+              "method": "Practice Problems",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Campus Center",
+              "id": "session_75",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 62,
+              "effectiveness": 0.41,
+              "termId": "Summer2023",
+              "notes": "Study session for BGGG 100 using practice problems",
+              "method": "Practice Problems",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Campus Center",
+              "id": "session_76",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 49,
+              "effectiveness": 0.66,
+              "termId": "Fall2023",
+              "notes": "Study session for BKKK 200 using group study",
+              "method": "Group Study",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Home",
+              "id": "session_77",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 26,
+              "effectiveness": 0.88,
+              "termId": "Fall2023",
+              "notes": "Study session for BKKK 200 using review",
+              "method": "Review",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Study Hall",
+              "id": "session_78",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 43,
+              "effectiveness": 0.36,
+              "termId": "Fall2023",
+              "notes": "Study session for BKKK 200 using flashcards",
+              "method": "Flashcards",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Study Hall",
+              "id": "session_79",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 51,
+              "effectiveness": 0.71,
+              "termId": "Fall2023",
+              "notes": "Study session for CSUU 200 using group study",
+              "method": "Group Study",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Coffee Shop",
+              "id": "session_80",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 58,
+              "effectiveness": 0.89,
+              "termId": "Fall2023",
+              "notes": "Study session for CSUU 200 using reading",
+              "method": "Reading",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Home",
+              "id": "session_81",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 50,
+              "effectiveness": 0.7,
+              "termId": "Spring2024",
+              "notes": "Study session for CSDD 400 using reading",
+              "method": "Reading",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Library",
+              "id": "session_82",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 69,
+              "effectiveness": 0.63,
+              "termId": "Fall2024",
+              "notes": "Study session for BFFF 200 using review",
+              "method": "Review",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Coffee Shop",
+              "id": "session_83",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 50,
+              "effectiveness": 0.96,
+              "termId": "Fall2024",
+              "notes": "Study session for BFFF 200 using note-taking",
+              "method": "Note-taking",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Coffee Shop",
+              "id": "session_84",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 55,
+              "effectiveness": 0.75,
+              "termId": "Fall2024",
+              "notes": "Study session for BFFF 200 using reading",
+              "method": "Reading",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Home",
+              "id": "session_85",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 59,
+              "effectiveness": 0.41,
+              "termId": "Fall2024",
+              "notes": "Study session for CSMM 100 using flashcards",
+              "method": "Flashcards",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Library",
+              "id": "session_86",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 53,
+              "effectiveness": 0.86,
+              "termId": "Fall2024",
+              "notes": "Study session for CSMM 100 using reading",
+              "method": "Reading",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Campus Center",
+              "id": "session_87",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 34,
+              "effectiveness": 0.97,
+              "termId": "Fall2024",
+              "notes": "Study session for CSMM 100 using note-taking",
+              "method": "Note-taking",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Coffee Shop",
+              "id": "session_88",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 18,
+              "effectiveness": 0.97,
+              "termId": "Spring2025",
+              "notes": "Study session for CSEE 300-6 using review",
+              "method": "Review",
+              "startTime": "neo4j.time.DateTime(2025",
+              "location": "Campus Center",
+              "id": "session_89",
+              "endTime": "neo4j.time.DateTime(2025"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 41,
+              "effectiveness": 0.73,
+              "termId": "Spring2025",
+              "notes": "Study session for CSZZ 100 using review",
+              "method": "Review",
+              "startTime": "neo4j.time.DateTime(2025",
+              "location": "Library",
+              "id": "session_90",
+              "endTime": "neo4j.time.DateTime(2025"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 24,
+              "effectiveness": 0.51,
+              "termId": "Spring2025",
+              "notes": "Study session for CSZZ 100 using reading",
+              "method": "Reading",
+              "startTime": "neo4j.time.DateTime(2025",
+              "location": "Dorm Room",
+              "id": "session_91",
+              "endTime": "neo4j.time.DateTime(2025"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 36,
+              "effectiveness": 0.4,
+              "termId": "Spring2025",
+              "notes": "Study session for CSZZ 100 using flashcards",
+              "method": "Flashcards",
+              "startTime": "neo4j.time.DateTime(2025",
+              "location": "Study Hall",
+              "id": "session_92",
+              "endTime": "neo4j.time.DateTime(2025"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "JM67808": {
+    "studentData": {
+      "s": {
+        "properties": {
+          "properties": {
+            "properties": {
+              "preferredCourseLoad": {
+                "low": 2
+              },
+              "preferredInstructionMode": "In-person",
+              "workHoursPerWeek": {
+                "low": 20
+              },
+              "learningStyle": "Reading-Writing",
+              "financialAidStatus": "FinancialAid",
+              "name": "Corey Henry",
+              "enrollmentDate": "2024-10-11",
+              "id": "JM67808",
+              "expectedGraduation": "2027-07-23",
+              "preferredPace": "Part-time"
+            }
+          }
+        }
+      },
+      "relationships": [
+        {
+          "relationship": "PURSUING",
+          "properties": {},
+          "target": {
+            "labels": [
+              "Degree"
+            ],
+            "properties": {
+              "coreCreditsRequired": {
+                "low": 80
+              },
+              "electiveCreditsRequired": {
+                "low": 40
+              },
+              "name": "Bachelor of Science in Biology",
+              "id": "BS-Biology-1",
+              "department": "Biology",
+              "type": "Bachelor",
+              "totalCreditsRequired": {
+                "low": 120
+              }
+            }
+          }
+        },
+        {
+          "relationship": "PURSUING",
+          "properties": {},
+          "target": {
+            "labels": [
+              "Degree"
+            ],
+            "properties": {
+              "coreCreditsRequired": {
+                "low": 65
+              },
+              "electiveCreditsRequired": {
+                "low": 55
+              },
+              "name": "Bachelor of Arts in Biology",
+              "id": "BA-Biology-2",
+              "department": "Biology",
+              "type": "Bachelor",
+              "totalCreditsRequired": {
+                "low": 120
+              }
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": true,
+            "term": "Spring2025",
+            "grade": "A",
+            "difficulty": {
+              "low": 2
+            },
+            "instructionMode": "Online",
+            "timeSpent": {
+              "low": 7
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.61,
+              "avgDifficulty": {
+                "low": 2
+              },
+              "level": {
+                "low": 100
+              },
+              "avgTimeCommitment": {
+                "low": 6
+              },
+              "readingLearnerSuccess": 0.86,
+              "tags": [
+                "Biology",
+                "Level-1",
+                "Intro"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Introduction to Computational Biology",
+              "instructionModes": [
+                "In-person",
+                "Online"
+              ],
+              "id": "BVVV 100",
+              "department": "Biology",
+              "kinestheticLearnerSuccess": 0.67,
+              "visualLearnerSuccess": 0.72
+            }
+          }
+        },
+        {
+          "relationship": "ENROLLED_IN",
+          "properties": {},
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.73,
+              "avgDifficulty": {
+                "low": 4
+              },
+              "level": {
+                "low": 200
+              },
+              "avgTimeCommitment": {
+                "low": 9
+              },
+              "readingLearnerSuccess": 0.77,
+              "tags": [
+                "Computer Science",
+                "Level-2"
+              ],
+              "credits": {
+                "low": 1
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring",
+                "Summer"
+              ],
+              "name": "Artificial Intelligence",
+              "instructionModes": [
+                "In-person",
+                "Online"
+              ],
+              "id": "CSBB 200",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.62,
+              "visualLearnerSuccess": 0.82
+            }
+          }
+        },
+        {
+          "relationship": "SIMILAR_LEARNING_STYLE",
+          "properties": {
+            "similarity": 0.58
+          },
+          "target": {
+            "labels": [
+              "Student"
+            ],
+            "properties": {
+              "preferredCourseLoad": 4,
+              "preferredInstructionMode": "Online",
+              "workHoursPerWeek": 2,
+              "learningStyle": "Reading-Writing",
+              "financialAidStatus": "FinancialAid",
+              "name": "Angela Johnson",
+              "enrollmentDate": "neo4j.time.Date(2025",
+              "id": "NP94595",
+              "expectedGraduation": "neo4j.time.Date(2027",
+              "preferredPace": "Standard"
+            }
+          }
+        },
+        {
+          "relationship": "SIMILAR_LEARNING_STYLE",
+          "properties": {
+            "similarity": 0.75
+          },
+          "target": {
+            "labels": [
+              "Student"
+            ],
+            "properties": {
+              "preferredCourseLoad": 3,
+              "preferredInstructionMode": "Online",
+              "workHoursPerWeek": 36,
+              "learningStyle": "Reading-Writing",
+              "financialAidStatus": "FinancialAid",
+              "name": "Jessica Melton",
+              "enrollmentDate": "neo4j.time.Date(2025",
+              "id": "XB55501",
+              "expectedGraduation": "neo4j.time.Date(2028",
+              "preferredPace": "Part-time"
+            }
+          }
+        },
+        {
+          "relationship": "SIMILAR_LEARNING_STYLE",
+          "properties": {
+            "similarity": 0.63
+          },
+          "target": {
+            "labels": [
+              "Student"
+            ],
+            "properties": {
+              "preferredCourseLoad": 5,
+              "preferredInstructionMode": "Hybrid",
+              "workHoursPerWeek": 11,
+              "learningStyle": "Reading-Writing",
+              "financialAidStatus": "Self-Pay",
+              "name": "David Turner",
+              "enrollmentDate": "neo4j.time.Date(2025",
+              "id": "NQ78891",
+              "expectedGraduation": "neo4j.time.Date(2028",
+              "preferredPace": "Standard"
+            }
+          }
+        },
+        {
+          "relationship": "SIMILAR_LEARNING_STYLE",
+          "properties": {
+            "similarity": 0.71
+          },
+          "target": {
+            "labels": [
+              "Student"
+            ],
+            "properties": {
+              "preferredCourseLoad": 3,
+              "preferredInstructionMode": "In-person",
+              "workHoursPerWeek": 7,
+              "learningStyle": "Reading-Writing",
+              "financialAidStatus": "FinancialAid",
+              "name": "Lisa Terry",
+              "enrollmentDate": "neo4j.time.Date(2023",
+              "id": "IS91351",
+              "expectedGraduation": "neo4j.time.Date(2029",
+              "preferredPace": "Standard"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 56,
+              "effectiveness": 0.89,
+              "termId": "Spring2025",
+              "notes": "Study session for BVVV 100 using group study",
+              "method": "Group Study",
+              "startTime": "neo4j.time.DateTime(2025",
+              "location": "Dorm Room",
+              "id": "session_43",
+              "endTime": "neo4j.time.DateTime(2025"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "NC59222": {
+    "studentData": {
+      "s": {
+        "properties": {
+          "properties": {
+            "properties": {
+              "preferredCourseLoad": {
+                "low": 5
+              },
+              "preferredInstructionMode": "Hybrid",
+              "workHoursPerWeek": {
+                "low": 13
+              },
+              "learningStyle": "Auditory",
+              "financialAidStatus": "Self-Pay",
+              "name": "April Shea",
+              "enrollmentDate": "2020-05-21",
+              "id": "NC59222",
+              "expectedGraduation": "2027-06-02",
+              "preferredPace": "Standard"
+            }
+          }
+        }
+      },
+      "relationships": [
+        {
+          "relationship": "PURSUING",
+          "properties": {},
+          "target": {
+            "labels": [
+              "Degree"
+            ],
+            "properties": {
+              "coreCreditsRequired": {
+                "low": 75
+              },
+              "electiveCreditsRequired": {
+                "low": 45
+              },
+              "name": "Bachelor of Science in Computer Science",
+              "id": "BS-ComputerScience-1",
+              "department": "Computer Science",
+              "type": "Bachelor",
+              "totalCreditsRequired": {
+                "low": 120
+              }
+            }
+          }
+        },
+        {
+          "relationship": "PURSUING",
+          "properties": {},
+          "target": {
+            "labels": [
+              "Degree"
+            ],
+            "properties": {
+              "coreCreditsRequired": {
+                "low": 65
+              },
+              "electiveCreditsRequired": {
+                "low": 55
+              },
+              "name": "Bachelor of Arts in Biology",
+              "id": "BA-Biology-2",
+              "department": "Biology",
+              "type": "Bachelor",
+              "totalCreditsRequired": {
+                "low": 120
+              }
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": false,
+            "term": "Fall2023",
+            "grade": "D",
+            "difficulty": {
+              "low": 4
+            },
+            "instructionMode": "Hybrid",
+            "timeSpent": {
+              "low": 11
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.86,
+              "avgDifficulty": {
+                "low": 4
+              },
+              "level": {
+                "low": 400
+              },
+              "avgTimeCommitment": {
+                "low": 11
+              },
+              "readingLearnerSuccess": 0.92,
+              "tags": [
+                "Computer Science",
+                "Level-4"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Special Topics in Edge Computing",
+              "instructionModes": [
+                "In-person",
+                "Online",
+                "Hybrid"
+              ],
+              "id": "CSDD 400",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.88,
+              "visualLearnerSuccess": 0.71
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": true,
+            "term": "Summer2023",
+            "grade": "A",
+            "difficulty": {
+              "low": 4
+            },
+            "instructionMode": "Online",
+            "timeSpent": {
+              "low": 10
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.73,
+              "avgDifficulty": {
+                "low": 4
+              },
+              "level": {
+                "low": 200
+              },
+              "avgTimeCommitment": {
+                "low": 9
+              },
+              "readingLearnerSuccess": 0.77,
+              "tags": [
+                "Computer Science",
+                "Level-2"
+              ],
+              "credits": {
+                "low": 1
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring",
+                "Summer"
+              ],
+              "name": "Artificial Intelligence",
+              "instructionModes": [
+                "In-person",
+                "Online"
+              ],
+              "id": "CSBB 200",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.62,
+              "visualLearnerSuccess": 0.82
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": true,
+            "term": "Spring2023",
+            "grade": "B",
+            "difficulty": {
+              "low": 2
+            },
+            "instructionMode": "In-person",
+            "timeSpent": {
+              "low": 6
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.98,
+              "avgDifficulty": {
+                "low": 2
+              },
+              "level": {
+                "low": 200
+              },
+              "avgTimeCommitment": {
+                "low": 7
+              },
+              "readingLearnerSuccess": 0.73,
+              "tags": [
+                "Computer Science",
+                "Level-2",
+                "Intro",
+                "Programming"
+              ],
+              "credits": {
+                "low": 1
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Introduction to Programming",
+              "instructionModes": [
+                "In-person",
+                "Online",
+                "Hybrid"
+              ],
+              "id": "CSUU 200",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.83,
+              "visualLearnerSuccess": 0.74
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": false,
+            "term": "Spring2023",
+            "grade": "C+",
+            "difficulty": {
+              "low": 4
+            },
+            "instructionMode": "Hybrid",
+            "timeSpent": {
+              "low": 7
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.92,
+              "avgDifficulty": {
+                "low": 4
+              },
+              "level": {
+                "low": 100
+              },
+              "avgTimeCommitment": {
+                "low": 8
+              },
+              "readingLearnerSuccess": 0.88,
+              "tags": [
+                "Computer Science",
+                "Level-1",
+                "Mobile"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Principles of Mobile Computing",
+              "instructionModes": [
+                "In-person",
+                "Hybrid"
+              ],
+              "id": "CSLL 100",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.93,
+              "visualLearnerSuccess": 0.66
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": false,
+            "term": "Summer2024",
+            "grade": "C-",
+            "difficulty": {
+              "low": 3
+            },
+            "instructionMode": "Hybrid",
+            "timeSpent": {
+              "low": 9
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.95,
+              "avgDifficulty": {
+                "low": 3
+              },
+              "level": {
+                "low": 300
+              },
+              "avgTimeCommitment": {
+                "low": 8
+              },
+              "readingLearnerSuccess": 0.98,
+              "tags": [
+                "Computer Science",
+                "Level-3",
+                "Theory",
+                "Vision"
+              ],
+              "credits": {
+                "low": 4
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring",
+                "Summer"
+              ],
+              "name": "Computer Vision Theory",
+              "instructionModes": [
+                "In-person",
+                "Online",
+                "Hybrid"
+              ],
+              "id": "CSLL 300",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.97,
+              "visualLearnerSuccess": 0.64
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": false,
+            "term": "Spring2023",
+            "grade": "B-",
+            "difficulty": {
+              "low": 2
+            },
+            "instructionMode": "Online",
+            "timeSpent": {
+              "low": 5
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.82,
+              "avgDifficulty": {
+                "low": 2
+              },
+              "level": {
+                "low": 100
+              },
+              "avgTimeCommitment": {
+                "low": 4
+              },
+              "readingLearnerSuccess": 1.0,
+              "tags": [
+                "Computer Science",
+                "Level-1",
+                "Intro"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Introduction to Natural Language Processing",
+              "instructionModes": [
+                "In-person",
+                "Online"
+              ],
+              "id": "CSTT 100",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.65,
+              "visualLearnerSuccess": 1.0
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": false,
+            "term": "Fall2024",
+            "grade": "C",
+            "difficulty": {
+              "low": 4
+            },
+            "instructionMode": "Online",
+            "timeSpent": {
+              "low": 6
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.67,
+              "avgDifficulty": {
+                "low": 4
+              },
+              "level": {
+                "low": 100
+              },
+              "avgTimeCommitment": {
+                "low": 6
+              },
+              "readingLearnerSuccess": 0.88,
+              "tags": [
+                "Computer Science",
+                "Level-1"
+              ],
+              "credits": {
+                "low": 2
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Basic Software Testing",
+              "instructionModes": [
+                "In-person",
+                "Online"
+              ],
+              "id": "CSSS 100",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.65,
+              "visualLearnerSuccess": 0.63
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": true,
+            "term": "Summer2023",
+            "grade": "B",
+            "difficulty": {
+              "low": 4
+            },
+            "instructionMode": "Online",
+            "timeSpent": {
+              "low": 5
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.66,
+              "avgDifficulty": {
+                "low": 4
+              },
+              "level": {
+                "low": 200
+              },
+              "avgTimeCommitment": {
+                "low": 7
+              },
+              "readingLearnerSuccess": 0.9,
+              "tags": [
+                "Computer Science",
+                "Level-2"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring",
+                "Summer"
+              ],
+              "name": "Artificial Intelligence",
+              "instructionModes": [
+                "In-person",
+                "Online"
+              ],
+              "id": "CSPP 200",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.83,
+              "visualLearnerSuccess": 0.69
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": true,
+            "term": "Fall2024",
+            "grade": "A-",
+            "difficulty": {
+              "low": 4
+            },
+            "instructionMode": "Online",
+            "timeSpent": {
+              "low": 7
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.98,
+              "avgDifficulty": {
+                "low": 4
+              },
+              "level": {
+                "low": 200
+              },
+              "avgTimeCommitment": {
+                "low": 9
+              },
+              "readingLearnerSuccess": 0.82,
+              "tags": [
+                "Computer Science",
+                "Level-2",
+                "Game"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Game Development",
+              "instructionModes": [
+                "In-person",
+                "Online",
+                "Hybrid"
+              ],
+              "id": "CSHH 200",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.95,
+              "visualLearnerSuccess": 0.9
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": true,
+            "term": "Fall2023",
+            "grade": "B",
+            "difficulty": {
+              "low": 2
+            },
+            "instructionMode": "In-person",
+            "timeSpent": {
+              "low": 3
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.76,
+              "avgDifficulty": {
+                "low": 2
+              },
+              "level": {
+                "low": 100
+              },
+              "avgTimeCommitment": {
+                "low": 4
+              },
+              "readingLearnerSuccess": 0.88,
+              "tags": [
+                "Computer Science",
+                "Level-1",
+                "Data"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Fundamentals of Big Data Analytics",
+              "instructionModes": [
+                "In-person"
+              ],
+              "id": "CSMM 100",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.7,
+              "visualLearnerSuccess": 0.68
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": true,
+            "term": "Spring2024",
+            "grade": "B",
+            "difficulty": {
+              "low": 2
+            },
+            "instructionMode": "Hybrid",
+            "timeSpent": {
+              "low": 7
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.71,
+              "avgDifficulty": {
+                "low": 2
+              },
+              "level": {
+                "low": 200
+              },
+              "avgTimeCommitment": {
+                "low": 7
+              },
+              "readingLearnerSuccess": 0.76,
+              "tags": [
+                "Biology",
+                "Level-2",
+                "Ecology"
+              ],
+              "credits": {
+                "low": 2
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Ecology",
+              "instructionModes": [
+                "In-person",
+                "Online",
+                "Hybrid"
+              ],
+              "id": "BFFF 200",
+              "department": "Biology",
+              "kinestheticLearnerSuccess": 0.96,
+              "visualLearnerSuccess": 0.72
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": true,
+            "term": "Spring2024",
+            "grade": "A",
+            "difficulty": {
+              "low": 3
+            },
+            "instructionMode": "In-person",
+            "timeSpent": {
+              "low": 5
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.7,
+              "avgDifficulty": {
+                "low": 3
+              },
+              "level": {
+                "low": 200
+              },
+              "avgTimeCommitment": {
+                "low": 6
+              },
+              "readingLearnerSuccess": 0.8,
+              "tags": [
+                "Biology",
+                "Level-2",
+                "Biochemistry"
+              ],
+              "credits": {
+                "low": 2
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Biochemistry",
+              "instructionModes": [
+                "In-person",
+                "Online"
+              ],
+              "id": "BVVV 200",
+              "department": "Biology",
+              "kinestheticLearnerSuccess": 0.72,
+              "visualLearnerSuccess": 0.86
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": true,
+            "term": "Fall2024",
+            "grade": "B",
+            "difficulty": {
+              "low": 4
+            },
+            "instructionMode": "In-person",
+            "timeSpent": {
+              "low": 6
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.73,
+              "avgDifficulty": {
+                "low": 4
+              },
+              "level": {
+                "low": 100
+              },
+              "avgTimeCommitment": {
+                "low": 7
+              },
+              "readingLearnerSuccess": 0.62,
+              "tags": [
+                "Biology",
+                "Level-1",
+                "Intro",
+                "Tropical"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Introduction to Tropical Biology",
+              "instructionModes": [
+                "In-person",
+                "Hybrid"
+              ],
+              "id": "BFFF 100",
+              "department": "Biology",
+              "kinestheticLearnerSuccess": 0.66,
+              "visualLearnerSuccess": 0.76
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": true,
+            "term": "Spring2023",
+            "grade": "B",
+            "difficulty": {
+              "low": 1
+            },
+            "instructionMode": "In-person",
+            "timeSpent": {
+              "low": 5
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.84,
+              "avgDifficulty": {
+                "low": 1
+              },
+              "level": {
+                "low": 200
+              },
+              "avgTimeCommitment": {
+                "low": 5
+              },
+              "readingLearnerSuccess": 0.89,
+              "tags": [
+                "Biology",
+                "Level-2",
+                "Conservation"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Conservation Biology",
+              "instructionModes": [
+                "In-person"
+              ],
+              "id": "BKKK 200",
+              "department": "Biology",
+              "kinestheticLearnerSuccess": 0.71,
+              "visualLearnerSuccess": 0.85
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": true,
+            "term": "Fall2024",
+            "grade": "B+",
+            "difficulty": {
+              "low": 4
+            },
+            "instructionMode": "Hybrid",
+            "timeSpent": {
+              "low": 5
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 1.0,
+              "avgDifficulty": {
+                "low": 4
+              },
+              "level": {
+                "low": 300
+              },
+              "avgTimeCommitment": {
+                "low": 8
+              },
+              "readingLearnerSuccess": 0.74,
+              "tags": [
+                "Biology",
+                "Level-3"
+              ],
+              "credits": {
+                "low": 1
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Metabolomics Theory",
+              "instructionModes": [
+                "In-person",
+                "Online",
+                "Hybrid"
+              ],
+              "id": "BPPP 300",
+              "department": "Biology",
+              "kinestheticLearnerSuccess": 0.75,
+              "visualLearnerSuccess": 0.98
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": true,
+            "term": "Spring2025",
+            "grade": "B+",
+            "difficulty": {
+              "low": 2
+            },
+            "instructionMode": "In-person",
+            "timeSpent": {
+              "low": 4
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.68,
+              "avgDifficulty": {
+                "low": 2
+              },
+              "level": {
+                "low": 200
+              },
+              "avgTimeCommitment": {
+                "low": 5
+              },
+              "readingLearnerSuccess": 0.86,
+              "tags": [
+                "Biology",
+                "Level-2",
+                "Bioinformatics"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Bioinformatics",
+              "instructionModes": [
+                "In-person"
+              ],
+              "id": "BZZZ 200",
+              "department": "Biology",
+              "kinestheticLearnerSuccess": 0.71,
+              "visualLearnerSuccess": 0.6
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": true,
+            "term": "Fall2024",
+            "grade": "B+",
+            "difficulty": {
+              "low": 4
+            },
+            "instructionMode": "In-person",
+            "timeSpent": {
+              "low": 10
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 1.0,
+              "avgDifficulty": {
+                "low": 4
+              },
+              "level": {
+                "low": 300
+              },
+              "avgTimeCommitment": {
+                "low": 8
+              },
+              "readingLearnerSuccess": 0.81,
+              "tags": [
+                "Biology",
+                "Level-3",
+                "Development"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Developmental Biology I",
+              "instructionModes": [
+                "In-person",
+                "Online"
+              ],
+              "id": "BFFF 300",
+              "department": "Biology",
+              "kinestheticLearnerSuccess": 0.65,
+              "visualLearnerSuccess": 0.75
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": false,
+            "term": "Summer2023",
+            "grade": "B-",
+            "difficulty": {
+              "low": 3
+            },
+            "instructionMode": "In-person",
+            "timeSpent": {
+              "low": 4
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.7,
+              "avgDifficulty": {
+                "low": 3
+              },
+              "level": {
+                "low": 100
+              },
+              "avgTimeCommitment": {
+                "low": 6
+              },
+              "readingLearnerSuccess": 0.78,
+              "tags": [
+                "Biology",
+                "Level-1",
+                "Intro"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring",
+                "Summer"
+              ],
+              "name": "Introduction to Computational Biology",
+              "instructionModes": [
+                "In-person"
+              ],
+              "id": "BGGG 100",
+              "department": "Biology",
+              "kinestheticLearnerSuccess": 0.91,
+              "visualLearnerSuccess": 0.61
+            }
+          }
+        },
+        {
+          "relationship": "ENROLLED_IN",
+          "properties": {},
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.95,
+              "avgDifficulty": {
+                "low": 3
+              },
+              "level": {
+                "low": 300
+              },
+              "avgTimeCommitment": {
+                "low": 9
+              },
+              "readingLearnerSuccess": 0.68,
+              "tags": [
+                "Computer Science",
+                "Level-3",
+                "Theory",
+                "Game"
+              ],
+              "credits": {
+                "low": 4
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring",
+                "Summer"
+              ],
+              "name": "Game Development Theory",
+              "instructionModes": [
+                "In-person"
+              ],
+              "id": "CSTT 300",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.73,
+              "visualLearnerSuccess": 0.65
+            }
+          }
+        },
+        {
+          "relationship": "SIMILAR_LEARNING_STYLE",
+          "properties": {
+            "similarity": 0.71
+          },
+          "target": {
+            "labels": [
+              "Student"
+            ],
+            "properties": {
+              "preferredCourseLoad": 3,
+              "preferredInstructionMode": "In-person",
+              "workHoursPerWeek": 13,
+              "learningStyle": "Auditory",
+              "financialAidStatus": "FinancialAid",
+              "name": "Richard Gibson",
+              "enrollmentDate": "neo4j.time.Date(2025",
+              "id": "SZ67045",
+              "expectedGraduation": "neo4j.time.Date(2026",
+              "preferredPace": "Standard"
+            }
+          }
+        },
+        {
+          "relationship": "SIMILAR_PERFORMANCE",
+          "properties": {
+            "courses": [
+              "BGGG 100",
+              "BFFF 100",
+              "CSBB 200",
+              "CSLL 100",
+              "CSUU 200",
+              "BZZZ 200"
+            ],
+            "similarity": 0.94
+          },
+          "target": {
+            "labels": [
+              "Student"
+            ],
+            "properties": {
+              "preferredCourseLoad": 3,
+              "preferredInstructionMode": "Hybrid",
+              "workHoursPerWeek": 33,
+              "learningStyle": "Visual",
+              "financialAidStatus": "FinancialAid",
+              "name": "Kerri Stewart",
+              "enrollmentDate": "neo4j.time.Date(2023",
+              "id": "QM87698",
+              "expectedGraduation": "neo4j.time.Date(2026",
+              "preferredPace": "Part-time"
+            }
+          }
+        },
+        {
+          "relationship": "SIMILAR_PERFORMANCE",
+          "properties": {
+            "courses": [
+              "BGGG 100",
+              "BKKK 200",
+              "CSBB 200",
+              "CSMM 100",
+              "CSDD 400",
+              "BFFF 200",
+              "CSUU 200",
+              "CSPP 200"
+            ],
+            "similarity": 0.86
+          },
+          "target": {
+            "labels": [
+              "Student"
+            ],
+            "properties": {
+              "preferredCourseLoad": 3,
+              "preferredInstructionMode": "In-person",
+              "workHoursPerWeek": 7,
+              "learningStyle": "Reading-Writing",
+              "financialAidStatus": "FinancialAid",
+              "name": "Lisa Terry",
+              "enrollmentDate": "neo4j.time.Date(2023",
+              "id": "IS91351",
+              "expectedGraduation": "neo4j.time.Date(2029",
+              "preferredPace": "Standard"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 48,
+              "effectiveness": 0.46,
+              "termId": "Spring2023",
+              "notes": "Study session for CSLL 100 using note-taking",
+              "method": "Note-taking",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Campus Center",
+              "id": "session_1",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 29,
+              "effectiveness": 0.43,
+              "termId": "Spring2023",
+              "notes": "Study session for CSLL 100 using note-taking",
+              "method": "Note-taking",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Home",
+              "id": "session_2",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 31,
+              "effectiveness": 0.45,
+              "termId": "Spring2023",
+              "notes": "Study session for CSTT 100 using practice problems",
+              "method": "Practice Problems",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Library",
+              "id": "session_3",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 19,
+              "effectiveness": 0.95,
+              "termId": "Spring2023",
+              "notes": "Study session for BKKK 200 using flashcards",
+              "method": "Flashcards",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Dorm Room",
+              "id": "session_4",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 44,
+              "effectiveness": 0.31,
+              "termId": "Spring2023",
+              "notes": "Study session for CSUU 200 using practice problems",
+              "method": "Practice Problems",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Study Hall",
+              "id": "session_5",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 50,
+              "effectiveness": 0.87,
+              "termId": "Summer2023",
+              "notes": "Study session for CSBB 200 using note-taking",
+              "method": "Note-taking",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Coffee Shop",
+              "id": "session_6",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 41,
+              "effectiveness": 0.95,
+              "termId": "Summer2023",
+              "notes": "Study session for BGGG 100 using reading",
+              "method": "Reading",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Dorm Room",
+              "id": "session_7",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 48,
+              "effectiveness": 0.5,
+              "termId": "Summer2023",
+              "notes": "Study session for BGGG 100 using group study",
+              "method": "Group Study",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Study Hall",
+              "id": "session_8",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 20,
+              "effectiveness": 0.36,
+              "termId": "Summer2023",
+              "notes": "Study session for CSPP 200 using reading",
+              "method": "Reading",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Campus Center",
+              "id": "session_9",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 33,
+              "effectiveness": 0.88,
+              "termId": "Summer2023",
+              "notes": "Study session for CSPP 200 using note-taking",
+              "method": "Note-taking",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Home",
+              "id": "session_10",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 57,
+              "effectiveness": 0.63,
+              "termId": "Fall2023",
+              "notes": "Study session for CSMM 100 using note-taking",
+              "method": "Note-taking",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Study Hall",
+              "id": "session_11",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 58,
+              "effectiveness": 0.46,
+              "termId": "Fall2023",
+              "notes": "Study session for CSMM 100 using note-taking",
+              "method": "Note-taking",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Dorm Room",
+              "id": "session_12",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 37,
+              "effectiveness": 0.39,
+              "termId": "Fall2023",
+              "notes": "Study session for CSMM 100 using flashcards",
+              "method": "Flashcards",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Campus Center",
+              "id": "session_13",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 42,
+              "effectiveness": 0.81,
+              "termId": "Fall2023",
+              "notes": "Study session for CSDD 400 using practice problems",
+              "method": "Practice Problems",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Home",
+              "id": "session_14",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 49,
+              "effectiveness": 0.96,
+              "termId": "Spring2024",
+              "notes": "Study session for BFFF 200 using note-taking",
+              "method": "Note-taking",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Campus Center",
+              "id": "session_15",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 42,
+              "effectiveness": 0.94,
+              "termId": "Spring2024",
+              "notes": "Study session for BFFF 200 using review",
+              "method": "Review",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Library",
+              "id": "session_16",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 54,
+              "effectiveness": 0.95,
+              "termId": "Spring2024",
+              "notes": "Study session for BFFF 200 using review",
+              "method": "Review",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Study Hall",
+              "id": "session_17",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 60,
+              "effectiveness": 0.52,
+              "termId": "Spring2024",
+              "notes": "Study session for BVVV 200 using reading",
+              "method": "Reading",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Coffee Shop",
+              "id": "session_18",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 63,
+              "effectiveness": 0.74,
+              "termId": "Summer2024",
+              "notes": "Study session for CSLL 300 using note-taking",
+              "method": "Note-taking",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Coffee Shop",
+              "id": "session_19",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 38,
+              "effectiveness": 0.91,
+              "termId": "Summer2024",
+              "notes": "Study session for CSLL 300 using review",
+              "method": "Review",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Coffee Shop",
+              "id": "session_20",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 63,
+              "effectiveness": 0.26,
+              "termId": "Summer2024",
+              "notes": "Study session for CSLL 300 using practice problems",
+              "method": "Practice Problems",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Library",
+              "id": "session_21",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 51,
+              "effectiveness": 0.72,
+              "termId": "Fall2024",
+              "notes": "Study session for BFFF 100 using practice problems",
+              "method": "Practice Problems",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Home",
+              "id": "session_22",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 28,
+              "effectiveness": 0.9,
+              "termId": "Fall2024",
+              "notes": "Study session for BFFF 300 using flashcards",
+              "method": "Flashcards",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Coffee Shop",
+              "id": "session_23",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 42,
+              "effectiveness": 0.68,
+              "termId": "Fall2024",
+              "notes": "Study session for BFFF 300 using reading",
+              "method": "Reading",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Home",
+              "id": "session_24",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 45,
+              "effectiveness": 0.33,
+              "termId": "Fall2024",
+              "notes": "Study session for BFFF 300 using group study",
+              "method": "Group Study",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Home",
+              "id": "session_25",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 42,
+              "effectiveness": 0.59,
+              "termId": "Fall2024",
+              "notes": "Study session for CSSS 100 using practice problems",
+              "method": "Practice Problems",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Coffee Shop",
+              "id": "session_26",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 26,
+              "effectiveness": 0.48,
+              "termId": "Fall2024",
+              "notes": "Study session for CSHH 200 using reading",
+              "method": "Reading",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Home",
+              "id": "session_27",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 40,
+              "effectiveness": 0.76,
+              "termId": "Fall2024",
+              "notes": "Study session for CSHH 200 using note-taking",
+              "method": "Note-taking",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Library",
+              "id": "session_28",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 41,
+              "effectiveness": 0.36,
+              "termId": "Fall2024",
+              "notes": "Study session for BPPP 300 using flashcards",
+              "method": "Flashcards",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Campus Center",
+              "id": "session_29",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 38,
+              "effectiveness": 0.33,
+              "termId": "Fall2024",
+              "notes": "Study session for BPPP 300 using reading",
+              "method": "Reading",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Coffee Shop",
+              "id": "session_30",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 73,
+              "effectiveness": 0.51,
+              "termId": "Spring2025",
+              "notes": "Study session for BZZZ 200 using review",
+              "method": "Review",
+              "startTime": "neo4j.time.DateTime(2025",
+              "location": "Library",
+              "id": "session_31",
+              "endTime": "neo4j.time.DateTime(2025"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 71,
+              "effectiveness": 0.86,
+              "termId": "Spring2025",
+              "notes": "Study session for BZZZ 200 using review",
+              "method": "Review",
+              "startTime": "neo4j.time.DateTime(2025",
+              "location": "Home",
+              "id": "session_32",
+              "endTime": "neo4j.time.DateTime(2025"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 52,
+              "effectiveness": 0.42,
+              "termId": "Spring2025",
+              "notes": "Study session for BZZZ 200 using review",
+              "method": "Review",
+              "startTime": "neo4j.time.DateTime(2025",
+              "location": "Library",
+              "id": "session_33",
+              "endTime": "neo4j.time.DateTime(2025"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "NP94595": {
+    "studentData": {
+      "s": {
+        "properties": {
+          "properties": {
+            "properties": {
+              "preferredCourseLoad": {
+                "low": 4
+              },
+              "preferredInstructionMode": "Online",
+              "workHoursPerWeek": {
+                "low": 2
+              },
+              "learningStyle": "Reading-Writing",
+              "financialAidStatus": "FinancialAid",
+              "name": "Angela Johnson",
+              "enrollmentDate": "2025-08-10",
+              "id": "NP94595",
+              "expectedGraduation": "2027-10-06",
+              "preferredPace": "Standard"
+            }
+          }
+        }
+      },
+      "relationships": [
+        {
+          "relationship": "PURSUING",
+          "properties": {},
+          "target": {
+            "labels": [
+              "Degree"
+            ],
+            "properties": {
+              "coreCreditsRequired": {
+                "low": 60
+              },
+              "electiveCreditsRequired": {
+                "low": 60
+              },
+              "name": "Bachelor of Arts in Computer Science",
+              "id": "BA-ComputerScience-2",
+              "department": "Computer Science",
+              "type": "Bachelor",
+              "totalCreditsRequired": {
+                "low": 120
+              }
+            }
+          }
+        },
+        {
+          "relationship": "ENROLLED_IN",
+          "properties": {},
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.73,
+              "avgDifficulty": {
+                "low": 4
+              },
+              "level": {
+                "low": 200
+              },
+              "avgTimeCommitment": {
+                "low": 9
+              },
+              "readingLearnerSuccess": 0.77,
+              "tags": [
+                "Computer Science",
+                "Level-2"
+              ],
+              "credits": {
+                "low": 1
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring",
+                "Summer"
+              ],
+              "name": "Artificial Intelligence",
+              "instructionModes": [
+                "In-person",
+                "Online"
+              ],
+              "id": "CSBB 200",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.62,
+              "visualLearnerSuccess": 0.82
+            }
+          }
+        },
+        {
+          "relationship": "ENROLLED_IN",
+          "properties": {},
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.7,
+              "avgDifficulty": {
+                "low": 3
+              },
+              "level": {
+                "low": 100
+              },
+              "avgTimeCommitment": {
+                "low": 6
+              },
+              "readingLearnerSuccess": 0.78,
+              "tags": [
+                "Biology",
+                "Level-1",
+                "Intro"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring",
+                "Summer"
+              ],
+              "name": "Introduction to Computational Biology",
+              "instructionModes": [
+                "In-person"
+              ],
+              "id": "BGGG 100",
+              "department": "Biology",
+              "kinestheticLearnerSuccess": 0.91,
+              "visualLearnerSuccess": 0.61
+            }
+          }
+        },
+        {
+          "relationship": "SIMILAR_LEARNING_STYLE",
+          "properties": {
+            "similarity": 0.64
+          },
+          "target": {
+            "labels": [
+              "Student"
+            ],
+            "properties": {
+              "preferredCourseLoad": 2,
+              "preferredInstructionMode": "In-person",
+              "workHoursPerWeek": 20,
+              "learningStyle": "Reading-Writing",
+              "financialAidStatus": "FinancialAid",
+              "name": "Corey Henry",
+              "enrollmentDate": "neo4j.time.Date(2024",
+              "id": "JM67808",
+              "expectedGraduation": "neo4j.time.Date(2027",
+              "preferredPace": "Part-time"
+            }
+          }
+        },
+        {
+          "relationship": "SIMILAR_LEARNING_STYLE",
+          "properties": {
+            "similarity": 0.7
+          },
+          "target": {
+            "labels": [
+              "Student"
+            ],
+            "properties": {
+              "preferredCourseLoad": 3,
+              "preferredInstructionMode": "Online",
+              "workHoursPerWeek": 36,
+              "learningStyle": "Reading-Writing",
+              "financialAidStatus": "FinancialAid",
+              "name": "Jessica Melton",
+              "enrollmentDate": "neo4j.time.Date(2025",
+              "id": "XB55501",
+              "expectedGraduation": "neo4j.time.Date(2028",
+              "preferredPace": "Part-time"
+            }
+          }
+        },
+        {
+          "relationship": "SIMILAR_LEARNING_STYLE",
+          "properties": {
+            "similarity": 0.74
+          },
+          "target": {
+            "labels": [
+              "Student"
+            ],
+            "properties": {
+              "preferredCourseLoad": 5,
+              "preferredInstructionMode": "Hybrid",
+              "workHoursPerWeek": 11,
+              "learningStyle": "Reading-Writing",
+              "financialAidStatus": "Self-Pay",
+              "name": "David Turner",
+              "enrollmentDate": "neo4j.time.Date(2025",
+              "id": "NQ78891",
+              "expectedGraduation": "neo4j.time.Date(2028",
+              "preferredPace": "Standard"
+            }
+          }
+        },
+        {
+          "relationship": "SIMILAR_LEARNING_STYLE",
+          "properties": {
+            "similarity": 0.73
+          },
+          "target": {
+            "labels": [
+              "Student"
+            ],
+            "properties": {
+              "preferredCourseLoad": 3,
+              "preferredInstructionMode": "In-person",
+              "workHoursPerWeek": 7,
+              "learningStyle": "Reading-Writing",
+              "financialAidStatus": "FinancialAid",
+              "name": "Lisa Terry",
+              "enrollmentDate": "neo4j.time.Date(2023",
+              "id": "IS91351",
+              "expectedGraduation": "neo4j.time.Date(2029",
+              "preferredPace": "Standard"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "NQ78891": {
+    "studentData": {
+      "s": {
+        "properties": {
+          "properties": {
+            "properties": {
+              "preferredCourseLoad": {
+                "low": 5
+              },
+              "preferredInstructionMode": "Hybrid",
+              "workHoursPerWeek": {
+                "low": 11
+              },
+              "learningStyle": "Reading-Writing",
+              "financialAidStatus": "Self-Pay",
+              "name": "David Turner",
+              "enrollmentDate": "2025-11-25",
+              "id": "NQ78891",
+              "expectedGraduation": "2028-04-26",
+              "preferredPace": "Standard"
+            }
+          }
+        }
+      },
+      "relationships": [
+        {
+          "relationship": "PURSUING",
+          "properties": {},
+          "target": {
+            "labels": [
+              "Degree"
+            ],
+            "properties": {
+              "coreCreditsRequired": {
+                "low": 80
+              },
+              "electiveCreditsRequired": {
+                "low": 40
+              },
+              "name": "Bachelor of Science in Biology",
+              "id": "BS-Biology-1",
+              "department": "Biology",
+              "type": "Bachelor",
+              "totalCreditsRequired": {
+                "low": 120
+              }
+            }
+          }
+        },
+        {
+          "relationship": "SIMILAR_LEARNING_STYLE",
+          "properties": {
+            "similarity": 0.79
+          },
+          "target": {
+            "labels": [
+              "Student"
+            ],
+            "properties": {
+              "preferredCourseLoad": 4,
+              "preferredInstructionMode": "Online",
+              "workHoursPerWeek": 2,
+              "learningStyle": "Reading-Writing",
+              "financialAidStatus": "FinancialAid",
+              "name": "Angela Johnson",
+              "enrollmentDate": "neo4j.time.Date(2025",
+              "id": "NP94595",
+              "expectedGraduation": "neo4j.time.Date(2027",
+              "preferredPace": "Standard"
+            }
+          }
+        },
+        {
+          "relationship": "SIMILAR_LEARNING_STYLE",
+          "properties": {
+            "similarity": 0.58
+          },
+          "target": {
+            "labels": [
+              "Student"
+            ],
+            "properties": {
+              "preferredCourseLoad": 2,
+              "preferredInstructionMode": "In-person",
+              "workHoursPerWeek": 20,
+              "learningStyle": "Reading-Writing",
+              "financialAidStatus": "FinancialAid",
+              "name": "Corey Henry",
+              "enrollmentDate": "neo4j.time.Date(2024",
+              "id": "JM67808",
+              "expectedGraduation": "neo4j.time.Date(2027",
+              "preferredPace": "Part-time"
+            }
+          }
+        },
+        {
+          "relationship": "SIMILAR_LEARNING_STYLE",
+          "properties": {
+            "similarity": 0.72
+          },
+          "target": {
+            "labels": [
+              "Student"
+            ],
+            "properties": {
+              "preferredCourseLoad": 3,
+              "preferredInstructionMode": "Online",
+              "workHoursPerWeek": 36,
+              "learningStyle": "Reading-Writing",
+              "financialAidStatus": "FinancialAid",
+              "name": "Jessica Melton",
+              "enrollmentDate": "neo4j.time.Date(2025",
+              "id": "XB55501",
+              "expectedGraduation": "neo4j.time.Date(2028",
+              "preferredPace": "Part-time"
+            }
+          }
+        },
+        {
+          "relationship": "SIMILAR_LEARNING_STYLE",
+          "properties": {
+            "similarity": 0.71
+          },
+          "target": {
+            "labels": [
+              "Student"
+            ],
+            "properties": {
+              "preferredCourseLoad": 3,
+              "preferredInstructionMode": "In-person",
+              "workHoursPerWeek": 7,
+              "learningStyle": "Reading-Writing",
+              "financialAidStatus": "FinancialAid",
+              "name": "Lisa Terry",
+              "enrollmentDate": "neo4j.time.Date(2023",
+              "id": "IS91351",
+              "expectedGraduation": "neo4j.time.Date(2029",
+              "preferredPace": "Standard"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "PQ37065": {
+    "studentData": {
+      "s": {
+        "properties": {
+          "properties": {
+            "properties": {
+              "preferredCourseLoad": {
+                "low": 3
+              },
+              "preferredInstructionMode": "Hybrid",
+              "workHoursPerWeek": {
+                "low": 0
+              },
+              "learningStyle": "Kinesthetic",
+              "financialAidStatus": "Loans",
+              "name": "Annette Murphy",
+              "enrollmentDate": "2025-08-08",
+              "id": "PQ37065",
+              "expectedGraduation": "2025-01-29",
+              "preferredPace": "Standard"
+            }
+          }
+        }
+      },
+      "relationships": [
+        {
+          "relationship": "PURSUING",
+          "properties": {},
+          "target": {
+            "labels": [
+              "Degree"
+            ],
+            "properties": {
+              "coreCreditsRequired": {
+                "low": 80
+              },
+              "electiveCreditsRequired": {
+                "low": 40
+              },
+              "name": "Bachelor of Science in Biology",
+              "id": "BS-Biology-1",
+              "department": "Biology",
+              "type": "Bachelor",
+              "totalCreditsRequired": {
+                "low": 120
+              }
+            }
+          }
+        },
+        {
+          "relationship": "ENROLLED_IN",
+          "properties": {},
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.73,
+              "avgDifficulty": {
+                "low": 4
+              },
+              "level": {
+                "low": 200
+              },
+              "avgTimeCommitment": {
+                "low": 9
+              },
+              "readingLearnerSuccess": 0.77,
+              "tags": [
+                "Computer Science",
+                "Level-2"
+              ],
+              "credits": {
+                "low": 1
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring",
+                "Summer"
+              ],
+              "name": "Artificial Intelligence",
+              "instructionModes": [
+                "In-person",
+                "Online"
+              ],
+              "id": "CSBB 200",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.62,
+              "visualLearnerSuccess": 0.82
+            }
+          }
+        },
+        {
+          "relationship": "ENROLLED_IN",
+          "properties": {},
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.66,
+              "avgDifficulty": {
+                "low": 4
+              },
+              "level": {
+                "low": 200
+              },
+              "avgTimeCommitment": {
+                "low": 7
+              },
+              "readingLearnerSuccess": 0.9,
+              "tags": [
+                "Computer Science",
+                "Level-2"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring",
+                "Summer"
+              ],
+              "name": "Artificial Intelligence",
+              "instructionModes": [
+                "In-person",
+                "Online"
+              ],
+              "id": "CSPP 200",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.83,
+              "visualLearnerSuccess": 0.69
+            }
+          }
+        }
+      ]
+    }
+  },
+  "QM87698": {
+    "studentData": {
+      "s": {
+        "properties": {
+          "properties": {
+            "properties": {
+              "preferredCourseLoad": {
+                "low": 3
+              },
+              "preferredInstructionMode": "Hybrid",
+              "workHoursPerWeek": {
+                "low": 33
+              },
+              "learningStyle": "Visual",
+              "financialAidStatus": "FinancialAid",
+              "name": "Kerri Stewart",
+              "enrollmentDate": "2023-08-02",
+              "id": "QM87698",
+              "expectedGraduation": "2026-03-06",
+              "preferredPace": "Part-time"
+            }
+          }
+        }
+      },
+      "relationships": [
+        {
+          "relationship": "PURSUING",
+          "properties": {},
+          "target": {
+            "labels": [
+              "Degree"
+            ],
+            "properties": {
+              "coreCreditsRequired": {
+                "low": 60
+              },
+              "electiveCreditsRequired": {
+                "low": 60
+              },
+              "name": "Bachelor of Arts in Computer Science",
+              "id": "BA-ComputerScience-2",
+              "department": "Computer Science",
+              "type": "Bachelor",
+              "totalCreditsRequired": {
+                "low": 120
+              }
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": true,
+            "term": "Summer2024",
+            "grade": "A",
+            "difficulty": {
+              "low": 4
+            },
+            "instructionMode": "Online",
+            "timeSpent": {
+              "low": 7
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.73,
+              "avgDifficulty": {
+                "low": 4
+              },
+              "level": {
+                "low": 200
+              },
+              "avgTimeCommitment": {
+                "low": 9
+              },
+              "readingLearnerSuccess": 0.77,
+              "tags": [
+                "Computer Science",
+                "Level-2"
+              ],
+              "credits": {
+                "low": 1
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring",
+                "Summer"
+              ],
+              "name": "Artificial Intelligence",
+              "instructionModes": [
+                "In-person",
+                "Online"
+              ],
+              "id": "CSBB 200",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.62,
+              "visualLearnerSuccess": 0.82
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": true,
+            "term": "Fall2023",
+            "grade": "B",
+            "difficulty": {
+              "low": 2
+            },
+            "instructionMode": "Hybrid",
+            "timeSpent": {
+              "low": 5
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.98,
+              "avgDifficulty": {
+                "low": 2
+              },
+              "level": {
+                "low": 200
+              },
+              "avgTimeCommitment": {
+                "low": 7
+              },
+              "readingLearnerSuccess": 0.73,
+              "tags": [
+                "Computer Science",
+                "Level-2",
+                "Intro",
+                "Programming"
+              ],
+              "credits": {
+                "low": 1
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Introduction to Programming",
+              "instructionModes": [
+                "In-person",
+                "Online",
+                "Hybrid"
+              ],
+              "id": "CSUU 200",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.83,
+              "visualLearnerSuccess": 0.74
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": true,
+            "term": "Fall2023",
+            "grade": "A-",
+            "difficulty": {
+              "low": 4
+            },
+            "instructionMode": "Hybrid",
+            "timeSpent": {
+              "low": 6
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.92,
+              "avgDifficulty": {
+                "low": 4
+              },
+              "level": {
+                "low": 100
+              },
+              "avgTimeCommitment": {
+                "low": 8
+              },
+              "readingLearnerSuccess": 0.88,
+              "tags": [
+                "Computer Science",
+                "Level-1",
+                "Mobile"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Principles of Mobile Computing",
+              "instructionModes": [
+                "In-person",
+                "Hybrid"
+              ],
+              "id": "CSLL 100",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.93,
+              "visualLearnerSuccess": 0.66
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": false,
+            "term": "Fall2024",
+            "grade": "C+",
+            "difficulty": {
+              "low": 4
+            },
+            "instructionMode": "In-person",
+            "timeSpent": {
+              "low": 8
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.73,
+              "avgDifficulty": {
+                "low": 4
+              },
+              "level": {
+                "low": 100
+              },
+              "avgTimeCommitment": {
+                "low": 7
+              },
+              "readingLearnerSuccess": 0.62,
+              "tags": [
+                "Biology",
+                "Level-1",
+                "Intro",
+                "Tropical"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Introduction to Tropical Biology",
+              "instructionModes": [
+                "In-person",
+                "Hybrid"
+              ],
+              "id": "BFFF 100",
+              "department": "Biology",
+              "kinestheticLearnerSuccess": 0.66,
+              "visualLearnerSuccess": 0.76
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": true,
+            "term": "Spring2024",
+            "grade": "B+",
+            "difficulty": {
+              "low": 2
+            },
+            "instructionMode": "In-person",
+            "timeSpent": {
+              "low": 5
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.68,
+              "avgDifficulty": {
+                "low": 2
+              },
+              "level": {
+                "low": 200
+              },
+              "avgTimeCommitment": {
+                "low": 5
+              },
+              "readingLearnerSuccess": 0.86,
+              "tags": [
+                "Biology",
+                "Level-2",
+                "Bioinformatics"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Bioinformatics",
+              "instructionModes": [
+                "In-person"
+              ],
+              "id": "BZZZ 200",
+              "department": "Biology",
+              "kinestheticLearnerSuccess": 0.71,
+              "visualLearnerSuccess": 0.6
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": false,
+            "term": "Fall2024",
+            "grade": "B-",
+            "difficulty": {
+              "low": 2
+            },
+            "instructionMode": "In-person",
+            "timeSpent": {
+              "low": 6
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.61,
+              "avgDifficulty": {
+                "low": 2
+              },
+              "level": {
+                "low": 100
+              },
+              "avgTimeCommitment": {
+                "low": 6
+              },
+              "readingLearnerSuccess": 0.86,
+              "tags": [
+                "Biology",
+                "Level-1",
+                "Intro"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Introduction to Computational Biology",
+              "instructionModes": [
+                "In-person",
+                "Online"
+              ],
+              "id": "BVVV 100",
+              "department": "Biology",
+              "kinestheticLearnerSuccess": 0.67,
+              "visualLearnerSuccess": 0.72
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": false,
+            "term": "Summer2024",
+            "grade": "B-",
+            "difficulty": {
+              "low": 3
+            },
+            "instructionMode": "In-person",
+            "timeSpent": {
+              "low": 6
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.7,
+              "avgDifficulty": {
+                "low": 3
+              },
+              "level": {
+                "low": 100
+              },
+              "avgTimeCommitment": {
+                "low": 6
+              },
+              "readingLearnerSuccess": 0.78,
+              "tags": [
+                "Biology",
+                "Level-1",
+                "Intro"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring",
+                "Summer"
+              ],
+              "name": "Introduction to Computational Biology",
+              "instructionModes": [
+                "In-person"
+              ],
+              "id": "BGGG 100",
+              "department": "Biology",
+              "kinestheticLearnerSuccess": 0.91,
+              "visualLearnerSuccess": 0.61
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": true,
+            "term": "Spring2025",
+            "grade": "A",
+            "difficulty": {
+              "low": 3
+            },
+            "instructionMode": "In-person",
+            "timeSpent": {
+              "low": 4
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.78,
+              "avgDifficulty": {
+                "low": 3
+              },
+              "level": {
+                "low": 200
+              },
+              "avgTimeCommitment": {
+                "low": 6
+              },
+              "readingLearnerSuccess": 0.88,
+              "tags": [
+                "Biology",
+                "Level-2",
+                "Marine"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Marine Biology",
+              "instructionModes": [
+                "In-person",
+                "Online"
+              ],
+              "id": "BWWW 200",
+              "department": "Biology",
+              "kinestheticLearnerSuccess": 0.75,
+              "visualLearnerSuccess": 0.87
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": true,
+            "term": "Spring2024",
+            "grade": "A-",
+            "difficulty": {
+              "low": 2
+            },
+            "instructionMode": "In-person",
+            "timeSpent": {
+              "low": 7
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.75,
+              "avgDifficulty": {
+                "low": 2
+              },
+              "level": {
+                "low": 200
+              },
+              "avgTimeCommitment": {
+                "low": 7
+              },
+              "readingLearnerSuccess": 0.98,
+              "tags": [
+                "Biology",
+                "Level-2",
+                "Genomics"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Genomics",
+              "instructionModes": [
+                "In-person",
+                "Online"
+              ],
+              "id": "BLLL 200",
+              "department": "Biology",
+              "kinestheticLearnerSuccess": 0.67,
+              "visualLearnerSuccess": 0.68
+            }
+          }
+        },
+        {
+          "relationship": "ENROLLED_IN",
+          "properties": {},
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.92,
+              "avgDifficulty": {
+                "low": 4
+              },
+              "level": {
+                "low": 300
+              },
+              "avgTimeCommitment": {
+                "low": 9
+              },
+              "readingLearnerSuccess": 0.62,
+              "tags": [
+                "Biology",
+                "Level-3",
+                "Ecology",
+                "Behavioral"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring",
+                "Summer"
+              ],
+              "name": "Behavioral Ecology I",
+              "instructionModes": [
+                "In-person",
+                "Online",
+                "Hybrid"
+              ],
+              "id": "BZZZ 300",
+              "department": "Biology",
+              "kinestheticLearnerSuccess": 0.76,
+              "visualLearnerSuccess": 0.91
+            }
+          }
+        },
+        {
+          "relationship": "SIMILAR_LEARNING_STYLE",
+          "properties": {
+            "similarity": 0.63
+          },
+          "target": {
+            "labels": [
+              "Student"
+            ],
+            "properties": {
+              "preferredCourseLoad": 4,
+              "preferredInstructionMode": "Online",
+              "workHoursPerWeek": 5,
+              "learningStyle": "Visual",
+              "financialAidStatus": "Loans",
+              "name": "Dawn Henry",
+              "enrollmentDate": "neo4j.time.Date(2024",
+              "id": "YV11003",
+              "expectedGraduation": "neo4j.time.Date(2027",
+              "preferredPace": "Standard"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 62,
+              "effectiveness": 0.84,
+              "termId": "Fall2023",
+              "notes": "Study session for CSUU 200 using note-taking",
+              "method": "Note-taking",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Home",
+              "id": "session_44",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 52,
+              "effectiveness": 0.49,
+              "termId": "Fall2023",
+              "notes": "Study session for CSUU 200 using practice problems",
+              "method": "Practice Problems",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Library",
+              "id": "session_45",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 65,
+              "effectiveness": 0.69,
+              "termId": "Fall2023",
+              "notes": "Study session for CSUU 200 using review",
+              "method": "Review",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Coffee Shop",
+              "id": "session_46",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 40,
+              "effectiveness": 0.93,
+              "termId": "Fall2023",
+              "notes": "Study session for CSLL 100 using flashcards",
+              "method": "Flashcards",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Dorm Room",
+              "id": "session_47",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 51,
+              "effectiveness": 0.69,
+              "termId": "Fall2023",
+              "notes": "Study session for CSLL 100 using practice problems",
+              "method": "Practice Problems",
+              "startTime": "neo4j.time.DateTime(2023",
+              "location": "Study Hall",
+              "id": "session_48",
+              "endTime": "neo4j.time.DateTime(2023"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 44,
+              "effectiveness": 0.94,
+              "termId": "Spring2024",
+              "notes": "Study session for BZZZ 200 using flashcards",
+              "method": "Flashcards",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Coffee Shop",
+              "id": "session_49",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 42,
+              "effectiveness": 0.46,
+              "termId": "Spring2024",
+              "notes": "Study session for BZZZ 200 using review",
+              "method": "Review",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Library",
+              "id": "session_50",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 33,
+              "effectiveness": 0.93,
+              "termId": "Spring2024",
+              "notes": "Study session for BZZZ 200 using note-taking",
+              "method": "Note-taking",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Campus Center",
+              "id": "session_51",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 42,
+              "effectiveness": 0.78,
+              "termId": "Spring2024",
+              "notes": "Study session for BZZZ 200 using review",
+              "method": "Review",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Campus Center",
+              "id": "session_52",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 60,
+              "effectiveness": 0.36,
+              "termId": "Spring2024",
+              "notes": "Study session for BLLL 200 using flashcards",
+              "method": "Flashcards",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Dorm Room",
+              "id": "session_53",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 49,
+              "effectiveness": 0.73,
+              "termId": "Spring2024",
+              "notes": "Study session for BLLL 200 using practice problems",
+              "method": "Practice Problems",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Home",
+              "id": "session_54",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 36,
+              "effectiveness": 0.52,
+              "termId": "Summer2024",
+              "notes": "Study session for CSBB 200 using note-taking",
+              "method": "Note-taking",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Coffee Shop",
+              "id": "session_55",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 40,
+              "effectiveness": 0.63,
+              "termId": "Summer2024",
+              "notes": "Study session for CSBB 200 using review",
+              "method": "Review",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Library",
+              "id": "session_56",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 20,
+              "effectiveness": 0.58,
+              "termId": "Summer2024",
+              "notes": "Study session for BGGG 100 using review",
+              "method": "Review",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Home",
+              "id": "session_57",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 47,
+              "effectiveness": 0.97,
+              "termId": "Summer2024",
+              "notes": "Study session for BGGG 100 using reading",
+              "method": "Reading",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Library",
+              "id": "session_58",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 40,
+              "effectiveness": 0.85,
+              "termId": "Fall2024",
+              "notes": "Study session for BVVV 100 using group study",
+              "method": "Group Study",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Home",
+              "id": "session_59",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 61,
+              "effectiveness": 0.4,
+              "termId": "Fall2024",
+              "notes": "Study session for BVVV 100 using group study",
+              "method": "Group Study",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Coffee Shop",
+              "id": "session_60",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 62,
+              "effectiveness": 0.55,
+              "termId": "Fall2024",
+              "notes": "Study session for BFFF 100 using practice problems",
+              "method": "Practice Problems",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Home",
+              "id": "session_61",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 43,
+              "effectiveness": 0.31,
+              "termId": "Fall2024",
+              "notes": "Study session for BFFF 100 using note-taking",
+              "method": "Note-taking",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Library",
+              "id": "session_62",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 47,
+              "effectiveness": 0.4,
+              "termId": "Fall2024",
+              "notes": "Study session for BFFF 100 using review",
+              "method": "Review",
+              "startTime": "neo4j.time.DateTime(2024",
+              "location": "Campus Center",
+              "id": "session_63",
+              "endTime": "neo4j.time.DateTime(2024"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 44,
+              "effectiveness": 0.38,
+              "termId": "Spring2025",
+              "notes": "Study session for BWWW 200 using group study",
+              "method": "Group Study",
+              "startTime": "neo4j.time.DateTime(2025",
+              "location": "Coffee Shop",
+              "id": "session_64",
+              "endTime": "neo4j.time.DateTime(2025"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 39,
+              "effectiveness": 0.61,
+              "termId": "Spring2025",
+              "notes": "Study session for BWWW 200 using review",
+              "method": "Review",
+              "startTime": "neo4j.time.DateTime(2025",
+              "location": "Coffee Shop",
+              "id": "session_65",
+              "endTime": "neo4j.time.DateTime(2025"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 29,
+              "effectiveness": 0.84,
+              "termId": "Spring2025",
+              "notes": "Study session for BWWW 200 using practice problems",
+              "method": "Practice Problems",
+              "startTime": "neo4j.time.DateTime(2025",
+              "location": "Dorm Room",
+              "id": "session_66",
+              "endTime": "neo4j.time.DateTime(2025"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 33,
+              "effectiveness": 0.82,
+              "termId": "Spring2025",
+              "notes": "Study session for BWWW 200 using flashcards",
+              "method": "Flashcards",
+              "startTime": "neo4j.time.DateTime(2025",
+              "location": "Campus Center",
+              "id": "session_67",
+              "endTime": "neo4j.time.DateTime(2025"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "SZ67045": {
+    "studentData": {
+      "s": {
+        "properties": {
+          "properties": {
+            "properties": {
+              "preferredCourseLoad": {
+                "low": 3
+              },
+              "preferredInstructionMode": "In-person",
+              "workHoursPerWeek": {
+                "low": 13
+              },
+              "learningStyle": "Auditory",
+              "financialAidStatus": "FinancialAid",
+              "name": "Richard Gibson",
+              "enrollmentDate": "2025-07-07",
+              "id": "SZ67045",
+              "expectedGraduation": "2026-03-10",
+              "preferredPace": "Standard"
+            }
+          }
+        }
+      },
+      "relationships": [
+        {
+          "relationship": "PURSUING",
+          "properties": {},
+          "target": {
+            "labels": [
+              "Degree"
+            ],
+            "properties": {
+              "coreCreditsRequired": {
+                "low": 80
+              },
+              "electiveCreditsRequired": {
+                "low": 40
+              },
+              "name": "Bachelor of Science in Biology",
+              "id": "BS-Biology-1",
+              "department": "Biology",
+              "type": "Bachelor",
+              "totalCreditsRequired": {
+                "low": 120
+              }
+            }
+          }
+        },
+        {
+          "relationship": "ENROLLED_IN",
+          "properties": {},
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.73,
+              "avgDifficulty": {
+                "low": 4
+              },
+              "level": {
+                "low": 200
+              },
+              "avgTimeCommitment": {
+                "low": 9
+              },
+              "readingLearnerSuccess": 0.77,
+              "tags": [
+                "Computer Science",
+                "Level-2"
+              ],
+              "credits": {
+                "low": 1
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring",
+                "Summer"
+              ],
+              "name": "Artificial Intelligence",
+              "instructionModes": [
+                "In-person",
+                "Online"
+              ],
+              "id": "CSBB 200",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.62,
+              "visualLearnerSuccess": 0.82
+            }
+          }
+        },
+        {
+          "relationship": "ENROLLED_IN",
+          "properties": {},
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.66,
+              "avgDifficulty": {
+                "low": 4
+              },
+              "level": {
+                "low": 200
+              },
+              "avgTimeCommitment": {
+                "low": 7
+              },
+              "readingLearnerSuccess": 0.9,
+              "tags": [
+                "Computer Science",
+                "Level-2"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring",
+                "Summer"
+              ],
+              "name": "Artificial Intelligence",
+              "instructionModes": [
+                "In-person",
+                "Online"
+              ],
+              "id": "CSPP 200",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.83,
+              "visualLearnerSuccess": 0.69
+            }
+          }
+        },
+        {
+          "relationship": "ENROLLED_IN",
+          "properties": {},
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.7,
+              "avgDifficulty": {
+                "low": 3
+              },
+              "level": {
+                "low": 100
+              },
+              "avgTimeCommitment": {
+                "low": 6
+              },
+              "readingLearnerSuccess": 0.78,
+              "tags": [
+                "Biology",
+                "Level-1",
+                "Intro"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring",
+                "Summer"
+              ],
+              "name": "Introduction to Computational Biology",
+              "instructionModes": [
+                "In-person"
+              ],
+              "id": "BGGG 100",
+              "department": "Biology",
+              "kinestheticLearnerSuccess": 0.91,
+              "visualLearnerSuccess": 0.61
+            }
+          }
+        },
+        {
+          "relationship": "SIMILAR_LEARNING_STYLE",
+          "properties": {
+            "similarity": 0.82
+          },
+          "target": {
+            "labels": [
+              "Student"
+            ],
+            "properties": {
+              "preferredCourseLoad": 5,
+              "preferredInstructionMode": "Hybrid",
+              "workHoursPerWeek": 13,
+              "learningStyle": "Auditory",
+              "financialAidStatus": "Self-Pay",
+              "name": "April Shea",
+              "enrollmentDate": "neo4j.time.Date(2020",
+              "id": "NC59222",
+              "expectedGraduation": "neo4j.time.Date(2027",
+              "preferredPace": "Standard"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "XB55501": {
+    "studentData": {
+      "s": {
+        "properties": {
+          "properties": {
+            "properties": {
+              "preferredCourseLoad": {
+                "low": 3
+              },
+              "preferredInstructionMode": "Online",
+              "workHoursPerWeek": {
+                "low": 36
+              },
+              "learningStyle": "Reading-Writing",
+              "financialAidStatus": "FinancialAid",
+              "name": "Jessica Melton",
+              "enrollmentDate": "2025-11-27",
+              "id": "XB55501",
+              "expectedGraduation": "2028-05-04",
+              "preferredPace": "Part-time"
+            }
+          }
+        }
+      },
+      "relationships": [
+        {
+          "relationship": "PURSUING",
+          "properties": {},
+          "target": {
+            "labels": [
+              "Degree"
+            ],
+            "properties": {
+              "coreCreditsRequired": {
+                "low": 60
+              },
+              "electiveCreditsRequired": {
+                "low": 60
+              },
+              "name": "Bachelor of Arts in Computer Science",
+              "id": "BA-ComputerScience-2",
+              "department": "Computer Science",
+              "type": "Bachelor",
+              "totalCreditsRequired": {
+                "low": 120
+              }
+            }
+          }
+        },
+        {
+          "relationship": "SIMILAR_LEARNING_STYLE",
+          "properties": {
+            "similarity": 0.83
+          },
+          "target": {
+            "labels": [
+              "Student"
+            ],
+            "properties": {
+              "preferredCourseLoad": 4,
+              "preferredInstructionMode": "Online",
+              "workHoursPerWeek": 2,
+              "learningStyle": "Reading-Writing",
+              "financialAidStatus": "FinancialAid",
+              "name": "Angela Johnson",
+              "enrollmentDate": "neo4j.time.Date(2025",
+              "id": "NP94595",
+              "expectedGraduation": "neo4j.time.Date(2027",
+              "preferredPace": "Standard"
+            }
+          }
+        },
+        {
+          "relationship": "SIMILAR_LEARNING_STYLE",
+          "properties": {
+            "similarity": 0.77
+          },
+          "target": {
+            "labels": [
+              "Student"
+            ],
+            "properties": {
+              "preferredCourseLoad": 2,
+              "preferredInstructionMode": "In-person",
+              "workHoursPerWeek": 20,
+              "learningStyle": "Reading-Writing",
+              "financialAidStatus": "FinancialAid",
+              "name": "Corey Henry",
+              "enrollmentDate": "neo4j.time.Date(2024",
+              "id": "JM67808",
+              "expectedGraduation": "neo4j.time.Date(2027",
+              "preferredPace": "Part-time"
+            }
+          }
+        },
+        {
+          "relationship": "SIMILAR_LEARNING_STYLE",
+          "properties": {
+            "similarity": 0.72
+          },
+          "target": {
+            "labels": [
+              "Student"
+            ],
+            "properties": {
+              "preferredCourseLoad": 5,
+              "preferredInstructionMode": "Hybrid",
+              "workHoursPerWeek": 11,
+              "learningStyle": "Reading-Writing",
+              "financialAidStatus": "Self-Pay",
+              "name": "David Turner",
+              "enrollmentDate": "neo4j.time.Date(2025",
+              "id": "NQ78891",
+              "expectedGraduation": "neo4j.time.Date(2028",
+              "preferredPace": "Standard"
+            }
+          }
+        },
+        {
+          "relationship": "SIMILAR_LEARNING_STYLE",
+          "properties": {
+            "similarity": 0.72
+          },
+          "target": {
+            "labels": [
+              "Student"
+            ],
+            "properties": {
+              "preferredCourseLoad": 3,
+              "preferredInstructionMode": "In-person",
+              "workHoursPerWeek": 7,
+              "learningStyle": "Reading-Writing",
+              "financialAidStatus": "FinancialAid",
+              "name": "Lisa Terry",
+              "enrollmentDate": "neo4j.time.Date(2023",
+              "id": "IS91351",
+              "expectedGraduation": "neo4j.time.Date(2029",
+              "preferredPace": "Standard"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "YV11003": {
+    "studentData": {
+      "s": {
+        "properties": {
+          "properties": {
+            "properties": {
+              "preferredCourseLoad": {
+                "low": 4
+              },
+              "preferredInstructionMode": "Online",
+              "workHoursPerWeek": {
+                "low": 5
+              },
+              "learningStyle": "Visual",
+              "financialAidStatus": "Loans",
+              "name": "Dawn Henry",
+              "enrollmentDate": "2024-12-12",
+              "id": "YV11003",
+              "expectedGraduation": "2027-07-19",
+              "preferredPace": "Standard"
+            }
+          }
+        }
+      },
+      "relationships": [
+        {
+          "relationship": "PURSUING",
+          "properties": {},
+          "target": {
+            "labels": [
+              "Degree"
+            ],
+            "properties": {
+              "coreCreditsRequired": {
+                "low": 60
+              },
+              "electiveCreditsRequired": {
+                "low": 60
+              },
+              "name": "Bachelor of Arts in Computer Science",
+              "id": "BA-ComputerScience-2",
+              "department": "Computer Science",
+              "type": "Bachelor",
+              "totalCreditsRequired": {
+                "low": 120
+              }
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": false,
+            "term": "Spring2025",
+            "grade": "D",
+            "difficulty": {
+              "low": 2
+            },
+            "instructionMode": "In-person",
+            "timeSpent": {
+              "low": 4
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.9,
+              "avgDifficulty": {
+                "low": 2
+              },
+              "level": {
+                "low": 200
+              },
+              "avgTimeCommitment": {
+                "low": 5
+              },
+              "readingLearnerSuccess": 0.91,
+              "tags": [
+                "Computer Science",
+                "Level-2"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Computer Architecture",
+              "instructionModes": [
+                "In-person",
+                "Online"
+              ],
+              "id": "CSQQ 200",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.8,
+              "visualLearnerSuccess": 0.77
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": false,
+            "term": "Spring2025",
+            "grade": "B-",
+            "difficulty": {
+              "low": 3
+            },
+            "instructionMode": "In-person",
+            "timeSpent": {
+              "low": 9
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.7,
+              "avgDifficulty": {
+                "low": 3
+              },
+              "level": {
+                "low": 200
+              },
+              "avgTimeCommitment": {
+                "low": 8
+              },
+              "readingLearnerSuccess": 0.9,
+              "tags": [
+                "Computer Science",
+                "Level-2",
+                "Security"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Cybersecurity",
+              "instructionModes": [
+                "In-person"
+              ],
+              "id": "CSII 200",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.99,
+              "visualLearnerSuccess": 0.98
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": true,
+            "term": "Spring2025",
+            "grade": "B",
+            "difficulty": {
+              "low": 4
+            },
+            "instructionMode": "Online",
+            "timeSpent": {
+              "low": 4
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.67,
+              "avgDifficulty": {
+                "low": 4
+              },
+              "level": {
+                "low": 100
+              },
+              "avgTimeCommitment": {
+                "low": 6
+              },
+              "readingLearnerSuccess": 0.88,
+              "tags": [
+                "Computer Science",
+                "Level-1"
+              ],
+              "credits": {
+                "low": 2
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring"
+              ],
+              "name": "Basic Software Testing",
+              "instructionModes": [
+                "In-person",
+                "Online"
+              ],
+              "id": "CSSS 100",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.65,
+              "visualLearnerSuccess": 0.63
+            }
+          }
+        },
+        {
+          "relationship": "COMPLETED",
+          "properties": {
+            "enjoyment": true,
+            "term": "Spring2025",
+            "grade": "A",
+            "difficulty": {
+              "low": 4
+            },
+            "instructionMode": "Online",
+            "timeSpent": {
+              "low": 5
+            }
+          },
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.66,
+              "avgDifficulty": {
+                "low": 4
+              },
+              "level": {
+                "low": 200
+              },
+              "avgTimeCommitment": {
+                "low": 7
+              },
+              "readingLearnerSuccess": 0.9,
+              "tags": [
+                "Computer Science",
+                "Level-2"
+              ],
+              "credits": {
+                "low": 3
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring",
+                "Summer"
+              ],
+              "name": "Artificial Intelligence",
+              "instructionModes": [
+                "In-person",
+                "Online"
+              ],
+              "id": "CSPP 200",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.83,
+              "visualLearnerSuccess": 0.69
+            }
+          }
+        },
+        {
+          "relationship": "ENROLLED_IN",
+          "properties": {},
+          "target": {
+            "labels": [
+              "Course"
+            ],
+            "properties": {
+              "auditoryLearnerSuccess": 0.73,
+              "avgDifficulty": {
+                "low": 4
+              },
+              "level": {
+                "low": 200
+              },
+              "avgTimeCommitment": {
+                "low": 9
+              },
+              "readingLearnerSuccess": 0.77,
+              "tags": [
+                "Computer Science",
+                "Level-2"
+              ],
+              "credits": {
+                "low": 1
+              },
+              "termAvailability": [
+                "Fall",
+                "Spring",
+                "Summer"
+              ],
+              "name": "Artificial Intelligence",
+              "instructionModes": [
+                "In-person",
+                "Online"
+              ],
+              "id": "CSBB 200",
+              "department": "Computer Science",
+              "kinestheticLearnerSuccess": 0.62,
+              "visualLearnerSuccess": 0.82
+            }
+          }
+        },
+        {
+          "relationship": "SIMILAR_LEARNING_STYLE",
+          "properties": {
+            "similarity": 0.73
+          },
+          "target": {
+            "labels": [
+              "Student"
+            ],
+            "properties": {
+              "preferredCourseLoad": 3,
+              "preferredInstructionMode": "Hybrid",
+              "workHoursPerWeek": 33,
+              "learningStyle": "Visual",
+              "financialAidStatus": "FinancialAid",
+              "name": "Kerri Stewart",
+              "enrollmentDate": "neo4j.time.Date(2023",
+              "id": "QM87698",
+              "expectedGraduation": "neo4j.time.Date(2026",
+              "preferredPace": "Part-time"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 56,
+              "effectiveness": 0.31,
+              "termId": "Spring2025",
+              "notes": "Study session for CSPP 200 using reading",
+              "method": "Reading",
+              "startTime": "neo4j.time.DateTime(2025",
+              "location": "Library",
+              "id": "session_34",
+              "endTime": "neo4j.time.DateTime(2025"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 59,
+              "effectiveness": 0.89,
+              "termId": "Spring2025",
+              "notes": "Study session for CSPP 200 using note-taking",
+              "method": "Note-taking",
+              "startTime": "neo4j.time.DateTime(2025",
+              "location": "Dorm Room",
+              "id": "session_35",
+              "endTime": "neo4j.time.DateTime(2025"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 43,
+              "effectiveness": 0.84,
+              "termId": "Spring2025",
+              "notes": "Study session for CSSS 100 using flashcards",
+              "method": "Flashcards",
+              "startTime": "neo4j.time.DateTime(2025",
+              "location": "Library",
+              "id": "session_36",
+              "endTime": "neo4j.time.DateTime(2025"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 39,
+              "effectiveness": 0.75,
+              "termId": "Spring2025",
+              "notes": "Study session for CSSS 100 using review",
+              "method": "Review",
+              "startTime": "neo4j.time.DateTime(2025",
+              "location": "Library",
+              "id": "session_37",
+              "endTime": "neo4j.time.DateTime(2025"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 24,
+              "effectiveness": 0.34,
+              "termId": "Spring2025",
+              "notes": "Study session for CSSS 100 using review",
+              "method": "Review",
+              "startTime": "neo4j.time.DateTime(2025",
+              "location": "Study Hall",
+              "id": "session_38",
+              "endTime": "neo4j.time.DateTime(2025"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 25,
+              "effectiveness": 0.3,
+              "termId": "Spring2025",
+              "notes": "Study session for CSQQ 200 using group study",
+              "method": "Group Study",
+              "startTime": "neo4j.time.DateTime(2025",
+              "location": "Campus Center",
+              "id": "session_39",
+              "endTime": "neo4j.time.DateTime(2025"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 41,
+              "effectiveness": 0.51,
+              "termId": "Spring2025",
+              "notes": "Study session for CSQQ 200 using reading",
+              "method": "Reading",
+              "startTime": "neo4j.time.DateTime(2025",
+              "location": "Home",
+              "id": "session_40",
+              "endTime": "neo4j.time.DateTime(2025"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 65,
+              "effectiveness": 0.93,
+              "termId": "Spring2025",
+              "notes": "Study session for CSII 200 using reading",
+              "method": "Reading",
+              "startTime": "neo4j.time.DateTime(2025",
+              "location": "Home",
+              "id": "session_41",
+              "endTime": "neo4j.time.DateTime(2025"
+            }
+          }
+        },
+        {
+          "relationship": "ATTENDED",
+          "properties": {},
+          "target": {
+            "labels": [
+              "StudySession"
+            ],
+            "properties": {
+              "duration": 46,
+              "effectiveness": 0.7,
+              "termId": "Spring2025",
+              "notes": "Study session for CSII 200 using reading",
+              "method": "Reading",
+              "startTime": "neo4j.time.DateTime(2025",
+              "location": "Study Hall",
+              "id": "session_42",
+              "endTime": "neo4j.time.DateTime(2025"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

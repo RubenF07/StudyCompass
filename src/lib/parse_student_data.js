@@ -1,4 +1,33 @@
 // @ts-nocheck
+
+/**
+ * Helper function to safely get numeric values from Neo4j properties
+ * Handles both {low: value} format and direct value format
+ * @param {any} value - The value to extract
+ * @returns {number} The numeric value
+ */
+function getNumericValue(value) {
+	if (typeof value === 'number') {
+		return value;
+	}
+	if (value && typeof value === 'object' && typeof value.low === 'number') {
+		return value.low;
+	}
+	return 0;
+}
+
+/**
+ * Helper function to safely get string values from Neo4j properties
+ * @param {any} value - The value to extract
+ * @returns {string} The string value
+ */
+function getStringValue(value) {
+	if (typeof value === 'string') {
+		return value;
+	}
+	return value || '';
+}
+
 /**
  * Extracts past semester data from Neo4j query result format
  * @param {Array<any>} neo4jData - Array containing Neo4j query results in the format of test.json
@@ -35,15 +64,15 @@ export function getPastSemesterData(neo4jData) {
       
       // Extract course information
       const courseInfo = {
-        id: course.properties.id,
-        name: course.properties.name,
-        department: course.properties.department,
-        credits: course.properties.credits?.low || 0,
-        level: course.properties.level?.low || 0,
-        grade: properties.grade,
-        difficulty: properties.difficulty?.low || 0,
-        timeSpent: properties.timeSpent?.low || 0,
-        instructionMode: properties.instructionMode,
+        id: getStringValue(course.properties.id),
+        name: getStringValue(course.properties.name),
+        department: getStringValue(course.properties.department),
+        credits: getNumericValue(course.properties.credits),
+        level: getNumericValue(course.properties.level),
+        grade: getStringValue(properties.grade),
+        difficulty: getNumericValue(properties.difficulty),
+        timeSpent: getNumericValue(properties.timeSpent),
+        instructionMode: getStringValue(properties.instructionMode),
         enjoyment: properties.enjoyment,
         tags: course.properties.tags || [],
         termAvailability: course.properties.termAvailability || [],
@@ -190,16 +219,16 @@ export function getStudentInfo(neo4jData) {
   const student = studentData.s;
   
   return {
-    id: student.properties.id,
-    name: student.properties.name,
-    learningStyle: student.properties.learningStyle,
-    preferredCourseLoad: student.properties.preferredCourseLoad?.low || 0,
-    preferredInstructionMode: student.properties.preferredInstructionMode,
-    workHoursPerWeek: student.properties.workHoursPerWeek?.low || 0,
-    financialAidStatus: student.properties.financialAidStatus,
-    preferredPace: student.properties.preferredPace,
-    enrollmentDate: student.properties.enrollmentDate,
-    expectedGraduation: student.properties.expectedGraduation
+    id: getStringValue(student.properties.id),
+    name: getStringValue(student.properties.name),
+    learningStyle: getStringValue(student.properties.learningStyle),
+    preferredCourseLoad: getNumericValue(student.properties.preferredCourseLoad),
+    preferredInstructionMode: getStringValue(student.properties.preferredInstructionMode),
+    workHoursPerWeek: getNumericValue(student.properties.workHoursPerWeek),
+    financialAidStatus: getStringValue(student.properties.financialAidStatus),
+    preferredPace: getStringValue(student.properties.preferredPace),
+    enrollmentDate: getStringValue(student.properties.enrollmentDate),
+    expectedGraduation: getStringValue(student.properties.expectedGraduation)
   };
 }
   

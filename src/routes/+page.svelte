@@ -170,6 +170,30 @@
 			</div>
 		</div>
 
+		<!-- Graduation Card -->
+		<div class="feature-card graduation-card" on:click={() => navigateToPage('/graduation')} role="button" tabindex="0">
+			<div class="card-icon graduation-icon">
+				<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+					<path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+					<path d="M6 12v5c3 3 9 3 12 0v-5"/>
+				</svg>
+			</div>
+			<div class="card-content">
+				<h3>Graduation Requirements</h3>
+				<p>Track your progress toward graduation, view degree requirements, and get AI-powered course roadmaps.</p>
+				<div class="card-features">
+					<span class="feature-tag">🎓 Progress</span>
+					<span class="feature-tag">📋 Requirements</span>
+					<span class="feature-tag">🗺️ Roadmap</span>
+				</div>
+			</div>
+			<div class="card-arrow">
+				<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+					<path d="M9 18l6-6-6-6"/>
+				</svg>
+			</div>
+		</div>
+
 		
 	</div>
 </div>
@@ -337,7 +361,7 @@
 
 	.features-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+		grid-template-columns: repeat(3, 1fr);
 		gap: 2.5rem;
 		max-width: 1200px;
 		margin: 0 auto;
@@ -373,6 +397,10 @@
 		border-left: 4px solid #10b981;
 	}
 
+	.graduation-card {
+		border-left: 4px solid #8b5cf6;
+	}
+
 	.stats-card {
 		border-left: 4px solid #f59e0b;
 	}
@@ -394,6 +422,11 @@
 
 	.study-icon {
 		background: linear-gradient(135deg, #10b981, #059669);
+		color: white;
+	}
+
+	.graduation-icon {
+		background: linear-gradient(135deg, #8b5cf6, #7c3aed);
 		color: white;
 	}
 
@@ -545,6 +578,13 @@
 	}
 
 	/* Responsive Design */
+	@media (max-width: 1024px) {
+		.features-grid {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 2rem;
+		}
+	}
+
 	@media (max-width: 768px) {
 		.hero-section {
 			padding: 2rem 1rem;

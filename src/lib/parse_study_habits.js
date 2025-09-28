@@ -1,4 +1,20 @@
 /**
+ * Helper function to safely get numeric values from Neo4j properties
+ * Handles both {low: value} format and direct value format
+ * @param {any} value - The value to extract
+ * @returns {number} The numeric value
+ */
+function getNumericValue(value) {
+	if (typeof value === 'number') {
+		return value;
+	}
+	if (value && typeof value === 'object' && typeof value.low === 'number') {
+		return value.low;
+	}
+	return 0;
+}
+
+/**
  * Parse study habits data from the student endpoint response
  * @param {Array} studentDataArray - Array of student data objects from the API
  * @returns {Object} Parsed study habits data
@@ -25,7 +41,7 @@ export function parseStudyHabitsData(studentDataArray) {
 	
 	// Filter study sessions from relationships
 	const studySessions = relationships
-		.filter(rel => rel.relationship === 'ATTENDED' && rel.target.labels.includes('StudySession'))
+		.filter(rel => rel.relationship === 'ATTENDED' && rel.target && rel.target.labels && rel.target.labels.includes('StudySession'))
 		.map(rel => ({
 			...rel.target.properties,
 			termId: rel.target.properties.termId
@@ -33,7 +49,7 @@ export function parseStudyHabitsData(studentDataArray) {
 
 	// Filter completed courses from relationships
 	const completedCourses = relationships
-		.filter(rel => rel.relationship === 'COMPLETED' && rel.target.labels.includes('Course'))
+		.filter(rel => rel.relationship === 'COMPLETED' && rel.target && rel.target.labels && rel.target.labels.includes('Course'))
 		.map(rel => ({
 			...rel.target.properties,
 			...rel.properties, // Include relationship properties (grade, term, etc.)
@@ -197,7 +213,7 @@ function processTermSessions(sessions, term, courses = []) {
 
 	// Basic stats
 	const totalSessions = sessions.length;
-	const totalTimeSpent = sessions.reduce((sum, session) => sum + (session.duration?.low || 0), 0);
+	const totalTimeSpent = sessions.reduce((sum, session) => sum + getNumericValue(session.duration), 0);
 	const averageSessionDuration = totalTimeSpent / totalSessions;
 	const averageEffectiveness = sessions.reduce((sum, session) => sum + (session.effectiveness || 0), 0) / totalSessions;
 
@@ -243,7 +259,7 @@ function processTermSessions(sessions, term, courses = []) {
 			};
 		}
 		timeByLocation[location].sessions++;
-		timeByLocation[location].totalTime += session.duration?.low || 0;
+		timeByLocation[location].totalTime += getNumericValue(session.duration);
 	});
 
 	// Calculate averages
@@ -315,7 +331,7 @@ function calculateOverallStats(allSessions) {
 	}
 
 	const totalSessions = allSessions.length;
-	const totalTimeSpent = allSessions.reduce((sum, session) => sum + (session.duration?.low || 0), 0);
+	const totalTimeSpent = allSessions.reduce((sum, session) => sum + getNumericValue(session.duration), 0);
 	const averageSessionDuration = totalTimeSpent / totalSessions;
 	const averageEffectiveness = allSessions.reduce((sum, session) => sum + (session.effectiveness || 0), 0) / totalSessions;
 

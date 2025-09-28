@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import { getStudentId } from '$lib/auth.js';
 	import { parseStudyHabitsData, formatDuration, formatTerm } from '$lib/parse_study_habits.js';
-	import { studentDataStore, loadingStore, errorStore, getStudyHabitsData } from '$lib/dataStore.js';
+	import { studentDataStore, loadingStore, errorStore, getStudyHabitsData, deleteAIInsights } from '$lib/dataStore.js';
 	import { generateStudyInsights } from '$lib/geminiClient.js';
 	
 	/** @type {any} */
@@ -149,6 +149,24 @@
 		if (gpa >= 3.0) return 'bg-yellow-100';
 		if (gpa >= 2.7) return 'bg-orange-100';
 		return 'bg-red-100';
+	}
+
+	function deleteInsights() {
+		const currentStudentId = getStudentId();
+		if (!currentStudentId) {
+			console.warn('Cannot delete insights: no student ID');
+			return;
+		}
+
+		// Delete from store and localStorage
+		deleteAIInsights(currentStudentId);
+		
+		// Reset local state
+		insights = null;
+		showInsights = false;
+		insightsError = null;
+		
+		console.log('Insights deleted and reset for regeneration');
 	}
 </script>
 
@@ -476,6 +494,19 @@
 									</div>
 								{/if}
 							</div>
+
+							<!-- Delete Insights Button -->
+							<div class="insights-delete-section">
+								<button 
+									class="btn btn-error delete-insights-btn" 
+									on:click={deleteInsights}
+								>
+									<svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+									</svg>
+									Delete Insight
+								</button>
+							</div>
 							{/if}
 						{/if}
 					</div>
@@ -690,5 +721,37 @@
 		100% {
 			left: 100%;
 		}
+	}
+
+	.insights-delete-section {
+		display: flex;
+		justify-content: center;
+		margin-top: 2rem;
+		padding-top: 2rem;
+		border-top: 2px solid #e2e8f0;
+	}
+
+	.delete-insights-btn {
+		background: #dc2626;
+		color: white;
+		border: none;
+		padding: 0.75rem 1.5rem;
+		border-radius: 0.5rem;
+		font-weight: 600;
+		cursor: pointer;
+		transition: all 0.2s ease;
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
+	.delete-insights-btn:hover {
+		background: #b91c1c;
+		transform: translateY(-1px);
+		box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+	}
+
+	.delete-insights-btn:active {
+		transform: translateY(0);
 	}
 </style>

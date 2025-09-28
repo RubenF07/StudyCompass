@@ -1,0 +1,3 @@
+# Python dependencies for the database emulator script
+neo4j==5.28.2
+python-dotenv==1.0.1

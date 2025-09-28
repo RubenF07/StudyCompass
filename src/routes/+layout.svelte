@@ -167,7 +167,7 @@
               </svg>
             </button>
           {/if}
-          <h1>Hack UMBC 2025</h1>
+          <h1>StudyCompass</h1>
         </div>
         {#if isAuthenticated && currentStudentId}
           <div class="header-right">
@@ -361,11 +361,11 @@
 
 	.sidebar-nav a:hover {
 		background-color: var(--color-bg-2, #f8f9fa);
-		color: var(--accent-color, #ff3e00);
+		color: #5e81ac;
 	}
 
 	.sidebar-nav li.active a {
-		background-color: var(--accent-color, #ff3e00);
+		background-color: #5e81ac;
 		color: white;
 		border-left-color: var(--color-text, #333);
 	}

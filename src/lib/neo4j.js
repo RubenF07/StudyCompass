@@ -40,13 +40,75 @@ export async function closeDriver() {
  * @param {Record<string, any>} parameters
  */
 export async function runQuery(query, parameters = {}) {
-	const driver = getDriver();
-	const session = driver.session();
+	//! Use when connected to the database
+	// const driver = getDriver();
+	// const session = driver.session();
 	
+	// try {
+	// 	const result = await session.run(query, parameters);
+	// 	return result.records.map(/** @param {any} record */ record => record.toObject());
+	// } finally {
+	// 	await session.close();
+	// }
+
+	// For demo: Return the student data from db_emulator.json if available
+	const fs = await import('fs/promises');
 	try {
-		const result = await session.run(query, parameters);
-		return result.records.map(/** @param {any} record */ record => record.toObject());
-	} finally {
-		await session.close();
+		const dbEmulatorRaw = await fs.readFile('db_emulator.json', 'utf-8');
+		const dbEmulator = JSON.parse(dbEmulatorRaw);
+
+		// Use the id as passed in parameters
+		let studentId = parameters.studentId;
+
+		if (!studentId) {
+			throw new Error('No studentId provided in parameters');
+		}
+
+		const studentData = dbEmulator[studentId]["studentData"];
+		if (!studentData) {
+			throw new Error(`Student ID ${studentId} not found in db_emulator.json`);
+		}
+
+		// Convert emulator format to Neo4j driver format for compatibility
+		const neo4jFormat = convertToNeo4jFormat(studentData);
+		return [neo4jFormat];
+	} catch (err) {
+		console.error('Error reading db_emulator.json or finding student:', err);
+		throw err;
 	}
+}
+
+/**
+ * Convert emulator format to Neo4j driver format
+ * @param {any} studentData - Student data in emulator format
+ * @returns {any} Student data in Neo4j driver format
+ */
+function convertToNeo4jFormat(studentData) {
+	// Convert student node - handle nested properties
+	let studentProperties = studentData.s.properties;
+	while (studentProperties && studentProperties.properties) {
+		studentProperties = studentProperties.properties;
+	}
+	
+	const studentNode = {
+		identity: { low: 1, high: 0 },
+		labels: ['Student'],
+		properties: studentProperties
+	};
+
+	// Convert relationships
+	const relationships = studentData.relationships.map((rel, index) => ({
+		relationship: rel.relationship,
+		properties: rel.properties,
+		target: {
+			identity: { low: index + 2, high: 0 },
+			labels: rel.target.labels,
+			properties: rel.target.properties
+		}
+	}));
+
+	return {
+		s: studentNode,
+		relationships: relationships
+	};
 }

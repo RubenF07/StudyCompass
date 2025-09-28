@@ -67,14 +67,14 @@
 </script>
 
 <svelte:head>
-	<title>Login - Hack UMBC 2025</title>
+	<title>Login - StudyCompass</title>
 	<meta name="description" content="Login to access student dashboard" />
 </svelte:head>
 
 <div class="login-container">
 	<div class="login-card">
 		<div class="login-header">
-			<h1>🎓 Hack UMBC 2025</h1>
+			<h1>🎓 StudyCompass</h1>
 			<p class="login-subtitle">Student Login</p>
 		</div>
 
