@@ -40,39 +40,41 @@ export async function closeDriver() {
  * @param {Record<string, any>} parameters
  */
 export async function runQuery(query, parameters = {}) {
-	//! Use when connected to the database
-	// const driver = getDriver();
-	// const session = driver.session();
-	
-	// try {
-	// 	const result = await session.run(query, parameters);
-	// 	return result.records.map(/** @param {any} record */ record => record.toObject());
-	// } finally {
-	// 	await session.close();
-	// }
+	// If no Neo4j URI is set, use the emulator. Otherwise, always try the real database and do not fall back.
+	if (!NEO4J_URI) {
+		console.log('No Neo4j connection, using db_emulator');
+		// No Neo4j connection, use emulator
+		try {
+			const dbEmulator = await import('./db_emulator.json');
 
-	// For demo: Return the student data from db_emulator.json if available
-	try {
-		const dbEmulator = await import('./db_emulator.json');
+			let studentId = parameters.studentId;
 
-		// Use the id as passed in parameters
-		let studentId = parameters.studentId;
+			if (!studentId) {
+				throw new Error('No studentId provided in parameters');
+			}
 
-		if (!studentId) {
-			throw new Error('No studentId provided in parameters');
+			const studentData = dbEmulator.default[studentId]?.["studentData"];
+			if (!studentData) {
+				throw new Error(`Student ID ${studentId} not found in db_emulator.json`);
+			}
+
+			const neo4jFormat = convertToNeo4jFormat(studentData);
+			return [neo4jFormat];
+		} catch (err) {
+			console.error('Error reading db_emulator.json or finding student:', err);
+			throw err;
 		}
+	} else {
+		// Neo4j URI is set, use the real database only
+		const driver = getDriver();
+		const session = driver.session();
 
-		const studentData = dbEmulator.default[studentId]["studentData"];
-		if (!studentData) {
-			throw new Error(`Student ID ${studentId} not found in db_emulator.json`);
+		try {
+			const result = await session.run(query, parameters);
+			return result.records.map(record => record.toObject());
+		} finally {
+			await session.close();
 		}
-
-		// Convert emulator format to Neo4j driver format for compatibility
-		const neo4jFormat = convertToNeo4jFormat(studentData);
-		return [neo4jFormat];
-	} catch (err) {
-		console.error('Error reading db_emulator.json or finding student:', err);
-		throw err;
 	}
 }
 
