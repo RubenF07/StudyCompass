@@ -2,6 +2,8 @@
 
 A SvelteKit application for personalized academic planning and study insights, powered by AI with an example deployed to Vercel.
 
+Made during the 24-hour HackUMBC 2025 Competition.
+
 ## Features
 
 - **AI-Powered Study Insights**: Personalized recommendations based on study habits
@@ -18,13 +20,8 @@ The app uses a generated database with fabricated data
 ### Example Student IDS to try
 
 - IS91351
-- JM67808
 - NC59222
-- NP94595
-- NQ78891
-- PQ37065
 - QM87698
-- SZ67045
 
 *more can be found in the /lib/db_emulator.json*
 
